@@ -2,6 +2,8 @@
 
 ## Management of Electronic Surface Transport Regulations – Part 1: Concept of Operations
 
+[__Button|Upcoming Workshops__](https://iso-tc204.github.io/iso24315p1/index.html#Workshops)
+
 This site is dedicated to the development of ISO 24315 Part 1, which is the Concept of Operations for the Management of Electronic Surface Transport Regulations and other official notices.
 
 Surface transport regulations include all of the rules related to using the surface transport infrastruture. This includes:
