@@ -1,0 +1,243 @@
+	[
+		{
+		"id": "advocate",
+		"src": "cc", 
+		"term": "advocate",
+		"defn": "person who defends interests realated to a particular topic <br>NOTE: Example topics include safety, the environment, equity, and disability rights."
+		},
+		{
+		"id": "authoritative_information",
+		"src": "cc", 
+		"term": "authoritative information",
+		"defn": "trustworthy rule(s) from a jurisdictional entity"
+		},
+		{
+		"id": "ADS",
+		"src": "ISO 14812", 
+		"term": "ADS",
+		"alt": "Automated Driving System",
+		"defn": "driving automation system (hardware and software system) that is able to perform the entire dynamic driving task on a sustained basis"
+		},
+		{
+		"id": "campus",
+		"src": "cc", 
+		"term": "campus",
+		"defn": "jurisdictional area, such as a school, hospital, or store, that is not managed as a part of the regional transport network"
+		},
+		{
+		"id": "condition_based",
+		"src": "cc", 
+		"term": "condition-based",
+		"defn": "being active based on explicitly stated conditions <br> &quot;when workers present&quot;, other than time-based conditions"
+		},
+		{
+		"id": "C-ITS",
+		"src": "ISO 14812", 
+		"term": "cooperative ITS",
+		"alt": "C-ITS",
+		"defn": "subset of ITS where information is shared among ITS stations in a manner that enables its use by multiple ITS services"
+		},
+		{
+		"id": "driver_support_system",
+		"src": "ISO 14812", 
+		"term": "driver support system",
+		"defn": "driving automation system (hardware and software system) that is able to perform part of the dynamic driving task"
+		},
+		{
+		"id": "dynamic_driving_task",
+		"src": "ISO 14812", 
+		"term": "dynamic driving task",
+		"alt": "DDT",
+		"defn": "all real-time operational and tactical functions required to operate a vehicle in on-road traffic"
+		},
+		{
+		"id": "dynamic_rule",
+		"src": "cc", 
+		"term": "dynamic rule",
+		"defn": "rule that can change or be applied based on real-time operational decisions made by a regulator or that otherwise cannot be known in advance <br>EXAMPLE: variable speed limit, emergency road closure"
+		},
+		{
+		"id": "enforcement_personnel",
+		"src": "cc", 
+		"term": "enforcement personnel",
+		"defn": "person involved in the application of laws <br>EXAMPLE: law enforcement officer, lawyer, insurance company representative"
+		},
+		{
+		"id": "information_support_personnel",
+		"src": "cc", 		
+		"term": "information support personnel",
+		"defn": "person that represents an ITS support system <br>EXAMPLE: person representing a map provider, navigation provider, or traveller information provider"
+		},
+		{
+		"id": "iso_tc_204",
+		"src": "cc", 
+		"term": "ISO/TC 204/WG 19",
+		"defn": "International Organization for Standardization (ISO) Technical Committee (TC) 204 develops standards for intelligent transport systems (ITS). Working Group (WG) 19 is tasked with developing standards for integrated mobility, which includes the cross-cutting work of providing transport regulations to user systems."
+		},
+		{
+		"id": "jurisdiction",
+		"src": "cc", 
+		"term": "jurisdiction",
+		"alt": "jurisdictional authority",
+		"defn": "legal power to issue rules of behaviour for a defined geographical territory"
+		},
+		{
+		"id": "jurisdictional_entity",
+		"src": "cc", 
+		"term": "jurisdictional entity",
+		"defn": "person or organization who has legal power to issue rules of behaviour for a defined geographical territory"
+		},
+		{
+		"id": "kerbside",
+		"src": "cc", 
+		"term": "kerbside",
+		"defn": "boundary between a road segment for motor vehicles and a transport facility for another mode of travel where interactions are possible <br>EXAMPLE: boundary between a road segment and a sidewalk segment where a pedestrian can board a bus"
+		},
+		{
+		"id": "lane",
+		"src": "ISO 14812", 
+		"term": "lane",
+		"defn": "portion of road reservation intended to accommodate a single line of moving material entities along its length"
+		},
+		{
+		"id": "maintenance_and_construction_personnel",
+		"src": "cc", 
+		"term": "maintenance and construction personnel",
+		"defn": "person that performs or manages the maintenance and construction of transport infrastructure <br>EXAMPLE: roadwork equipment operators, field supervisory personnel, field crew, work zone safety personnel"
+		},
+		{
+		"id": "manufacturers",
+		"src": "cc", 
+		"term": "manufacturer",
+		"defn": "person that represents an organization that produces vehicular equipment <br>EXAMPLE: person representing an organization that produces automated driving systems, driver assistive technologies, and/or sidewalk delivery robots"
+		},
+		{
+		"id": "METR_standards",
+		"src": "cc", 
+		"term": "METR standards",
+		"defn": "These standards will be part of the ISO 24315 series, which currently has a working title of Management of Electronic Transport Regulations (METR). Current efforts are focused on Part 1, which will establish the Operational Concept (ConOps) for the system. Future parts are expected to heavily leverage existing interface standards."
+		},
+		{
+		"id": "micromobility",
+		"src": "cc", 
+		"term": "micromobility",
+		"defn": "transport using moderately low-speed, light-weight, limited sized vehicles"
+		},
+		{
+		"id": "nomadic_device",
+		"src": "ISO 14812", 
+		"term": "nomadic device",
+		"defn": "personal information device, such as a smartphone, that is taken with and can be accessed by the traveller during a journey"
+		},
+		{
+		"id": "operational_design_domain",
+		"src": "ISO 14812", 
+		"term": "operational design domain",
+		"alt": "ODD",
+		"defn": "set of operating conditions under which a given driving automation system or feature thereof is specifically designed to function"
+		},
+		{
+		"id": "regulator",
+		"src": "cc", 
+		"term": "regulator",
+		"alt": "regulatory agency",
+		"defn": "agency (e.g., road authority, city council) appointed by a jurisdictional entity to issue rules for a jurisdictional area"
+		},
+		{
+		"id": "rideshare_service",
+		"src": "ISO 14812", 
+		"term": "rideshare service",
+		"defn": "transport service that relies upon the same resourcess to concurrently fulfil the transport needs of multiple unrelated transport users, who jointly share costs for the service, and where the transport provider has the primary responsibility for the operation of the vehicle"
+		},
+		{
+		"id": "roadwork",
+		"src": "cc", 
+		"term": "roadwork",
+		"defn": "maintenance and/or construction activities on or near a roadway"
+		},
+		{
+		"id": "rule",
+		"src": "cc", 
+		"term": "rule",
+		"defn": "regulation, advisory, or guidance"
+		},
+		{
+		"id": "stakeholder",
+		"src": "ISO 14812", 
+		"term": "stakeholder",
+		"defn": "individual, team,  or organization, or classes thereof, having an interest in a system"
+		},
+		{
+		"id": "static_rule",
+		"src": "cc", 
+		"term": "static rule",
+		"defn": "rule that does not change based on real-time operational decisions <br>NOTE: Static rules can be determined in advance and will be known to be valid for a defined period of time.<br>NOTE: Static rules can be complex and be associated with activation times or conditions.<br>NOTE: Static rules can be overridden by dymanic rules."
+		},
+		{
+		"id": "surface_transport_system",
+		"src": "ISO 14812", 
+		"term": "surface transport system",
+		"alt": "transport system",
+		"defn": "system designed to move material entities across the surface or near-surface of the Earth"
+		},
+		{
+		"id": "technology_specialist",
+		"src": "cc", 
+		"term": "technology specialist",
+		"defn": "person that specializes in a particular technology related to modern transport systems <br>EXAMPLE: automated vehicle expert, location perception expert, video image processing expert"
+		},
+		{
+		"id": "transport_entity_owner",
+		"src": "cc", 
+		"term": "transport entity owner",
+		"defn": "person representing an entity that owns transport infrastructure or vehicles <br>EXAMPLE: person representing a municipality, campus, or fleet manager,"
+		},
+		{
+		"id": "transport_infrastructure_operator",
+		"src": "cc", 
+		"term": "transport infrastructure operator",
+		"defn": "person that is responsible for operating transport infrastructure <br>EXAMPLE: traffic engineer, toll road operator, parking facility operator"
+		},
+		{
+		"id": "transport_service_operator",
+		"src": "cc", 
+		"term": "transport service operator",
+		"defn": "person that represents an entity that provides transport services <br>EXAMPLE: person representing a public transport agency, delivery company, or ridesourcing company"
+		},
+		{
+		"id": "transport_user",
+		"src": "cc", 
+		"term": "transport user",
+		"defn": "entity that has a transport need to be fulfiled <br>EXAMPLE: vulnerable road user, automobile operator, sender of a package, recipient of a package"
+		},
+		{
+		"id": "transport_user_system",
+		"src": "cc", 
+		"term": "transport user system",
+		"defn": "functional object that receives rules and acts upon those rules <br>EXAMPLE: ADS, smartphone"
+		},
+		{
+		"id": "trustworthy",
+		"src": "cc", 
+		"term": "trustworthy",
+		"defn": "being able to meet users' expectations in a verifiable way"
+		},
+		{
+		"id": "user_need",
+		"src": "ISO 14812", 
+		"term": "user need",
+		"defn": "factor or conditon necessary to achieve desired results within a specified context of use"
+		},
+		{
+		"id": "vulnerable_road_user",
+		"src": "cc", 
+		"term": "vulnerable road user",
+		"defn": "road user other than an occupant of a road vehicle"
+		}
+	]
+		
+
+
+
+
+
