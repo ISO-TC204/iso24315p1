@@ -1,5 +1,18 @@
 	[
 		{
+		"id": "ADS",
+		"src": "ISO 14812", 
+		"term": "ADS",
+		"alt": "Automated Driving System",
+		"defn": "driving automation system (hardware and software system) that is able to perform the entire dynamic driving task on a sustained basis"
+		},
+		{
+		"id": "advisory",
+		"src": "cc", 
+		"term": "advisory",
+		"defn": "directive that cannot be directly enforced but can be used to assign legal liability"
+		},
+		{
 		"id": "advocate",
 		"src": "cc", 
 		"term": "advocate",
@@ -10,13 +23,6 @@
 		"src": "cc", 
 		"term": "authoritative information",
 		"defn": "trustworthy rule(s) from a jurisdictional entity"
-		},
-		{
-		"id": "ADS",
-		"src": "ISO 14812", 
-		"term": "ADS",
-		"alt": "Automated Driving System",
-		"defn": "driving automation system (hardware and software system) that is able to perform the entire dynamic driving task on a sustained basis"
 		},
 		{
 		"id": "campus",
@@ -61,6 +67,12 @@
 		"src": "cc", 
 		"term": "enforcement personnel",
 		"defn": "person involved in the application of laws <br>EXAMPLE: law enforcement officer, lawyer, insurance company representative"
+		},
+		{
+		"id": "guidance",
+		"src": "cc", 		
+		"term": "guidance",
+		"defn": "information that identifies entities of potential interest, provides directions, and/or provides alerts in a manner that cannot be used to assign legal liability"
 		},
 		{
 		"id": "information_support_personnel",
@@ -137,11 +149,17 @@
 		"defn": "set of operating conditions under which a given driving automation system or feature thereof is specifically designed to function"
 		},
 		{
+		"id": "regulation",
+		"src": "cc", 
+		"term": "regulation",
+		"defn": "law or directive that, when in effect, can be enforced and be associated with a penalty"
+		},
+		{
 		"id": "regulator",
 		"src": "cc", 
 		"term": "regulator",
 		"alt": "regulatory agency",
-		"defn": "agency (e.g., road authority, city council) appointed by a jurisdictional entity to issue rules for a jurisdictional area"
+		"defn": "agency appointed by a jurisdictional entity to issue rules for a jurisdictional area <br>EXAMPLE: city council, road authority, campus authority, parking facility owner, toll road operator, maintenance department, law enforcement officer"
 		},
 		{
 		"id": "rideshare_service",
@@ -174,6 +192,12 @@
 		"defn": "rule that does not change based on real-time operational decisions <br>NOTE: Static rules can be determined in advance and will be known to be valid for a defined period of time.<br>NOTE: Static rules can be complex and be associated with activation times or conditions.<br>NOTE: Static rules can be overridden by dymanic rules."
 		},
 		{
+		"id": "support_provider",
+		"src": "ISO 14812", 
+		"term": "support provider",
+		"defn": "entity that creates or provides tools or resources to enable the operation of the system <br>EXAMPLE: vehicle owner, delivery service, fleet manager, public transport provider, vehicle system manufacturer, map provider, navigation provider, traveller information provider"
+		},
+		{
 		"id": "surface_transport_system",
 		"src": "ISO 14812", 
 		"term": "surface transport system",
@@ -187,10 +211,16 @@
 		"defn": "person that specializes in a particular technology related to modern transport systems <br>EXAMPLE: automated vehicle expert, location perception expert, video image processing expert"
 		},
 		{
+		"id": "third_party",
+		"src": "cc", 
+		"term": "third party",
+		"defn": "entity that has an interest in the system, but is not directly involved in interacting with the system in primary use cases <br>EXAMPLE: lawyer, insurance company, technology specialist, issue advocates"
+		},
+		{
 		"id": "transport_entity_owner",
 		"src": "cc", 
 		"term": "transport entity owner",
-		"defn": "person representing an entity that owns transport infrastructure or vehicles <br>EXAMPLE: person representing a municipality, campus, or fleet manager,"
+		"defn": "person representing an entity that owns transport infrastructure or vehicles <br>EXAMPLE: person representing a municipality, campus, or fleet manager"
 		},
 		{
 		"id": "transport_infrastructure_operator",
