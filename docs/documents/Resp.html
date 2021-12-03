@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>24315-1 METR ConOps-Resp: Responsibilities</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <style>
+    /* Customization of standard HTML styles */
+    p {
+      margin-top: 0em;
+      margin-bottom: 0.5em;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 0em;
+      margin-bottom: 0.25em;
+    }
+    table {
+      border-spacing: 1em;
+    }
+    th {
+      text-align: center;
+    }
+    ul, ol {
+      margin-bottom: 0;
+    }
+
+    /* Customization of ReqView styles */
+    .heading {
+      margin: 1em;
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+    .filter {
+      text-align: right;
+      margin: 1em;
+    }
+    .reqviewTable {
+      margin: 1em;
+    }
+    .reqviewTable h1 {
+      font-size: 30px;
+    }
+    .reqviewTable h2 {
+      font-size: 24px;
+    }
+    .reqviewTable h3 {
+      font-size: 20px;
+    }
+    .reqviewTable h4 {
+      font-size: 18px;
+    }
+    .reqviewTable h5 {
+      font-size: 16px;
+    }
+    .reqviewTable h6 {
+      font-size: 14px;
+    }
+    .reqviewTable > table > thead > tr > th {
+      text-align: left;
+    }
+    /* Customization of our styles */
+    .id-col {
+      min-width: 5em;
+      vertical-align: top;
+    }
+    .description-col {
+      min-width: 30em;
+      vertical-align: top;
+    }
+    .discussion-col {
+      min-width: 15em;
+      vertical-align: top;
+    }
+    .links-col {
+      min-width: 15em;
+      vertical-align: top;
+    }
+    .attributes-col {
+      min-width: 15em;
+      vertical-align: top;
+    }
+    .attributes-col ul {
+      padding-left: 0px;
+    }
+    .attributes-col li {
+      list-style: none outside none;
+    }
+    .attributes-col .attribute-name {
+      font-style: italic;
+    }
+    .custom-col {
+      min-width: 10em;
+      vertical-align: top;
+    }
+    .comment-text {
+      padding-top: 5px;
+      padding-bottom: 10px;
+    }
+    .attachment {
+      font-style: italic;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+    }
+    .attachment img {
+      max-width: 90%;
+      height: auto;
+      display: block;
+    }
+    .links-type-name {
+      font-style: italic;
+    }
+    .link {
+      margin-left: 16px;
+    }
+    td.attributes-col div.htmlContent,
+    td.custom-col div.htmlContent {
+      min-width: 15em;
+    }
+    .deleted {
+      color: #666;
+    }
+    .deleted .id-col,
+    .deleted .description-col,
+    .link.deleted {
+      text-decoration: line-through;
+    }
+    .deleted a {
+      color: gray;
+    }
+    .htmlContent table {
+      border: 1px solid black;
+      border-collapse: collapse;
+      width: auto;
+    }
+    .htmlContent th, .htmlContent td {
+      border: 1px solid #b5bcc7;
+      vertical-align: top;
+      padding: 3px 7px 2px 7px;
+    }
+    .htmlContent th {
+      padding-top: 5px;
+      padding-bottom: 4px;
+      background: silver;
+      border-bottom: none !important;
+    }
+    /** Override Bootstrap print */
+    @media print {
+      @page {
+        size: initial;
+      }
+      body {
+        min-width: unset !important;
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="heading">
+    <h1 class="display-4">24315-1 METR ConOps-Resp: Responsibilities</h1>
+  </div>
+  <div class="reqviewTable table-responsive-md">
+    <table class="table table-sm">
+      <!-- Heading of the requirements table -->
+      <thead>
+        <tr>
+          <th class="id-col"><i class="fas fas fa-asterisk"></i> ID</th>
+          <th class="description-col"><i class="fas fa-align-left"></i> Description</th>
+          <th class="links-col"><i class="fas fa-link"></i> Links</th>
+          <th class="custom-col"><i class="fas fa-cog"></i> Role</th>
+          <th class="custom-col"><i class="fas fa-cog"></i> User Need</th>
+        </tr>
+      </thead>
+
+      <!-- Requirements table with list of requirements -->
+      <tbody>
+        <tr>
+          <td class="id-col"><a id="Resp-2"></a>Resp-2</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>User systems must update their rules such that they do not operate with rules that have expired</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-8'>SP-8</a></span>  Users have a need to indicate their pref…</div>
+          </td>
+          <td class="custom-col htmlContent">User</td>
+                      <td class="custom-col htmlContent">UN17</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="Resp-3"></a>Resp-3</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The specific examples of roles (e.g., national, regional, local for regulator) defined in the figure are only examples </p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-16'>SP-16</a></span>  We should emphasize that the types of re…</div>
+          </td>
+          <td class="custom-col htmlContent">General</td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="Resp-4"></a>Resp-4</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>User systems are responsible for contacting an appropriate disseminator system and pulling all available relevant rules as necessary to fulfill their operating parameters, including pulling rules when entering a new area and pulling rule refreshes prior to the previous rule sets expiring.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-28'>SP-28</a></span>  It should be the responsibility of the u…</div>
+                <div class="link"> <span><a href='SP.html#SP-73'>SP-73</a></span>  The user is responsible for requesting a…</div>
+                <div class="link"> <span><a href='SP.html#SP-85'>SP-85</a></span>  Clarify text of responsibilities (as sho…</div>
+          </td>
+          <td class="custom-col htmlContent">User</td>
+                      <td class="custom-col htmlContent">UN17</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="Resp-5"></a>Resp-5</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Each METR component is responsible for performing consistency checks on the rules which it uses or distributes.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-43'>SP-43</a></span>  The ConOps needs to assign the responsib…</div>
+                <div class="link"> <span><a href='SP.html#SP-45'>SP-45</a></span>  The preferred implementation is that a u…</div>
+                <div class="link"> <span><a href='SP.html#SP-74'>SP-74</a></span>  All roles are responsible for 1) identif…</div>
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> UN:</div>
+                <div class="link"> <span><a href='UN.html#UN-21'>UN-21</a></span>  Trustworthiness — Security — Access cont…</div>
+          </td>
+          <td class="custom-col htmlContent">All</td>
+                      <td class="custom-col htmlContent">UN6</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="Resp-6"></a>Resp-6</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Each METR component should report inconsistencies that it detects (or becomes aware of) in its rule set that it is unable to resolve on its own. This includes all the way back to the regulator, especially where the inconsistency is between the physical traffic control device and the electronic rule.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-43'>SP-43</a></span>  The ConOps needs to assign the responsib…</div>
+                <div class="link"> <span><a href='SP.html#SP-45'>SP-45</a></span>  The preferred implementation is that a u…</div>
+                <div class="link"> <span><a href='SP.html#SP-51'>SP-51</a></span>  The feedback loop needs to include the r…</div>
+                <div class="link"> <span><a href='SP.html#SP-74'>SP-74</a></span>  All roles are responsible for 1) identif…</div>
+          </td>
+          <td class="custom-col htmlContent">All</td>
+                      <td class="custom-col htmlContent">UN3</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="Resp-7"></a>Resp-7</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Each disseminator is responsible for reporting inconsistencies that it detects in its rule set that it is unable to resolve on its own.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-43'>SP-43</a></span>  The ConOps needs to assign the responsib…</div>
+                <div class="link"> <span><a href='SP.html#SP-74'>SP-74</a></span>  All roles are responsible for 1) identif…</div>
+          </td>
+          <td class="custom-col htmlContent">Disseminator</td>
+                      <td class="custom-col htmlContent">UN3</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="Resp-8"></a>Resp-8</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>User systems should report any inconsistency between physical traffic control devices and electronic rules.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-45'>SP-45</a></span>  The preferred implementation is that a u…</div>
+          </td>
+          <td class="custom-col htmlContent">User</td>
+                      <td class="custom-col htmlContent">UN3</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="Resp-9"></a>Resp-9</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Distributors should be able to share rules to promote data consistency and accuracy among providers</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-46'>SP-46</a></span>  Peer roles need the ability to coordinat…</div>
+                <div class="link"> <span><a href='SP.html#SP-48'>SP-48</a></span>  Disseminators need to be able to share c…</div>
+          </td>
+          <td class="custom-col htmlContent">Distributors</td>
+                      <td class="custom-col htmlContent">UN3, UN12</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="Resp-10"></a>Resp-10</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Add a mobile disseminator to the role diagram that has the additional responsibility of collecting rules from a disseminator to re-disseminate to one or more specific transport users</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-49'>SP-49</a></span>  A mobile refresh provider should be char…</div>
+          </td>
+          <td class="custom-col htmlContent">Disseminator</td>
+                      <td class="custom-col htmlContent">UN28</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="Resp-11"></a>Resp-11</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Each disseminator is responsible for providing all rules currently within its repository that meet the user's request criteria.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-61'>SP-61</a></span>  The disseminator is responsible for ensu…</div>
+          </td>
+          <td class="custom-col htmlContent">Disseminator</td>
+                      <td class="custom-col htmlContent">UN17</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="Resp-12"></a>Resp-12</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Each regulator that claims to support METR within a defined area is responsible for ensuring that all dynamic rules that apply to that area are electronically publicised to relevant transport user systems.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-61'>SP-61</a></span>  The disseminator is responsible for ensu…</div>
+          </td>
+          <td class="custom-col htmlContent">Regulator</td>
+                      <td class="custom-col htmlContent">UN18</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="Resp-13"></a>Resp-13</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The ITS Disseminator Discovery Service is responsible providing a service to allow transport user systems to discover trustworthy disseminators.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-62'>SP-62</a></span>  Users need a way to discover disseminato…</div>
+          </td>
+          <td class="custom-col htmlContent">ITS</td>
+                      <td class="custom-col htmlContent">UN26</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="Resp-14"></a>Resp-14</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Each disseminator is responsible for publicising the filters/categories of data that it has available and the expiry period for each rule set delivered</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-72'>SP-72</a></span>  The disseminator is responsible for publ…</div>
+          </td>
+          <td class="custom-col htmlContent">Disseminator</td>
+                      <td class="custom-col htmlContent">UN9, UN10</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="Resp-15"></a>Resp-15</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Each METR component is responsible for correcting each detected conflict/inconsistency, when the issue is due to an error on its part</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-74'>SP-74</a></span>  All roles are responsible for 1) identif…</div>
+          </td>
+          <td class="custom-col htmlContent">All</td>
+                      <td class="custom-col htmlContent">UN3</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="Resp-16"></a>Resp-16</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>User systems are responsible for ensuring that dynamic data are sufficiently trustworthy for the intended use</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-76'>SP-76</a></span>  The ConOps should describe why we are di…</div>
+          </td>
+          <td class="custom-col htmlContent">User</td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="Resp-17"></a>Resp-17</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The "when" responsibility should apply to all roles, not just users</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-83'>SP-83</a></span>  The &quot;when&quot; responsibility should apply t…</div>
+          </td>
+          <td class="custom-col htmlContent">All</td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="Resp-1"></a>Resp-1</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+      </tbody>
+    </table>
+    <hr>
+    <div class="float-right mr-4"><em>Last modified by <a href="mailto://kvaughn@trevilon.com">Kenneth Vaughn, Trevilon</a> on 2021-12-01 12:27</em></div>
+  </div>
+</body>
+</html>

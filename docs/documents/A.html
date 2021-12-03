@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>24315-1 METR ConOps-A: Assumptions</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <style>
+    /* Customization of standard HTML styles */
+    p {
+      margin-top: 0em;
+      margin-bottom: 0.5em;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 0em;
+      margin-bottom: 0.25em;
+    }
+    table {
+      border-spacing: 1em;
+    }
+    th {
+      text-align: center;
+    }
+    ul, ol {
+      margin-bottom: 0;
+    }
+
+    /* Customization of ReqView styles */
+    .heading {
+      margin: 1em;
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+    .filter {
+      text-align: right;
+      margin: 1em;
+    }
+    .reqviewTable {
+      margin: 1em;
+    }
+    .reqviewTable h1 {
+      font-size: 30px;
+    }
+    .reqviewTable h2 {
+      font-size: 24px;
+    }
+    .reqviewTable h3 {
+      font-size: 20px;
+    }
+    .reqviewTable h4 {
+      font-size: 18px;
+    }
+    .reqviewTable h5 {
+      font-size: 16px;
+    }
+    .reqviewTable h6 {
+      font-size: 14px;
+    }
+    .reqviewTable > table > thead > tr > th {
+      text-align: left;
+    }
+    /* Customization of our styles */
+    .id-col {
+      min-width: 5em;
+      vertical-align: top;
+    }
+    .description-col {
+      min-width: 30em;
+      vertical-align: top;
+    }
+    .discussion-col {
+      min-width: 15em;
+      vertical-align: top;
+    }
+    .links-col {
+      min-width: 15em;
+      vertical-align: top;
+    }
+    .attributes-col {
+      min-width: 15em;
+      vertical-align: top;
+    }
+    .attributes-col ul {
+      padding-left: 0px;
+    }
+    .attributes-col li {
+      list-style: none outside none;
+    }
+    .attributes-col .attribute-name {
+      font-style: italic;
+    }
+    .custom-col {
+      min-width: 10em;
+      vertical-align: top;
+    }
+    .comment-text {
+      padding-top: 5px;
+      padding-bottom: 10px;
+    }
+    .attachment {
+      font-style: italic;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+    }
+    .attachment img {
+      max-width: 90%;
+      height: auto;
+      display: block;
+    }
+    .links-type-name {
+      font-style: italic;
+    }
+    .link {
+      margin-left: 16px;
+    }
+    td.attributes-col div.htmlContent,
+    td.custom-col div.htmlContent {
+      min-width: 15em;
+    }
+    .deleted {
+      color: #666;
+    }
+    .deleted .id-col,
+    .deleted .description-col,
+    .link.deleted {
+      text-decoration: line-through;
+    }
+    .deleted a {
+      color: gray;
+    }
+    .htmlContent table {
+      border: 1px solid black;
+      border-collapse: collapse;
+      width: auto;
+    }
+    .htmlContent th, .htmlContent td {
+      border: 1px solid #b5bcc7;
+      vertical-align: top;
+      padding: 3px 7px 2px 7px;
+    }
+    .htmlContent th {
+      padding-top: 5px;
+      padding-bottom: 4px;
+      background: silver;
+      border-bottom: none !important;
+    }
+    /** Override Bootstrap print */
+    @media print {
+      @page {
+        size: initial;
+      }
+      body {
+        min-width: unset !important;
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="heading">
+    <h1 class="display-4">24315-1 METR ConOps-A: Assumptions</h1>
+  </div>
+  <div class="reqviewTable table-responsive-md">
+    <table class="table table-sm">
+      <!-- Heading of the requirements table -->
+      <thead>
+        <tr>
+          <th class="id-col"><i class="fas fas fa-asterisk"></i> ID</th>
+          <th class="description-col"><i class="fas fa-align-left"></i> Description</th>
+          <th class="links-col"><i class="fas fa-link"></i> Links</th>
+          <th class="custom-col"><i class="fas fa-cog"></i> Clause</th>
+        </tr>
+      </thead>
+
+      <!-- Requirements table with list of requirements -->
+      <tbody>
+        <tr>
+          <td class="id-col"><a id="A-2"></a>A-2</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Transport user systems that support METR need to be able to operate along side transport user systems that do not support or are not connected to METR</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-3'>SP-3</a></span>  Some users might not be connected to MET…</div>
+          </td>
+          <td class="custom-col htmlContent">6.6.1.6</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="A-3"></a>A-3</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Sufficient communication bandwidth will be available among the various back-office systems to support METR operations.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">6.6.1.1</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="A-4"></a>A-4</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>All road vehicle systems that support METR will support short-range wireless communications meeting local standards (e.g., DSRC, LTE-V2X)</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-2'>SP-2</a></span>  Road vehicles should support short-range…</div>
+                <div class="link"> <span><a href='SP.html#SP-45'>SP-45</a></span>  The preferred implementation is that a u…</div>
+          </td>
+          <td class="custom-col htmlContent">6.6.1.2</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="A-5"></a>A-5</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>All mobile transport user systems will support mobile wireless Internet with at least 3G speeds </p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-4'>SP-4</a></span>  All ~mobile~ METR-enabled transport user…</div>
+                <div class="link"> <span><a href='SP.html#SP-45'>SP-45</a></span>  The preferred implementation is that a u…</div>
+          </td>
+          <td class="custom-col htmlContent">6.6.1.3</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="A-6"></a>A-6</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Some transport user systems will not be mobile (e.g., PCs used for pre-trip planning)</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-7'>SP-7</a></span>  METR should support user systems that mi…</div>
+          </td>
+          <td class="custom-col htmlContent">6.6.1.7</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="A-7"></a>A-7</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Mobile wireless Internet access is not guaranteed for any location</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-5'>SP-5</a></span>  Mobile wireless internet is not guarante…</div>
+          </td>
+          <td class="custom-col htmlContent">6.6.1.4</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="A-8"></a>A-8</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Mobile wireless Internet might not be available at all in some locations</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-6'>SP-6</a></span>  Mobile wireless internet might not be av…</div>
+          </td>
+          <td class="custom-col htmlContent">6.6.1.5</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="A-9"></a>A-9</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The design of condition-based regulations should use existing structures defined within TN-ITS and TMDD, as appropriate.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">6.6.2.1</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="A-10"></a>A-10</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>METR should support ADS, driver support systems, and other user interface systems (e.g., trip planning software)</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-10'>SP-10</a></span>  METR should support ordinary traffic (i.…</div>
+          </td>
+          <td class="custom-col htmlContent">6.6.1.8</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="A-11"></a>A-11</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>METR should cover the modal scope of surface transport, as defined by TC 204 and ITS</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-11'>SP-11</a></span>  METR should cover the full scope of surf…</div>
+          </td>
+          <td class="custom-col htmlContent">6.6.1.9</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="A-12"></a>A-12</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Rules that are not expected to change during a journey will be pulled by the user to minimize data loading on the system</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-27'>SP-27</a></span>  METR should be based on a centralized pu…</div>
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="A-13"></a>A-13</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Rules that change without prior notice publicized in a pulled rule will have to be pushed to the user</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-27'>SP-27</a></span>  METR should be based on a centralized pu…</div>
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="A-14"></a>A-14</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>METR will rely upon existing standards as appropriate (e.g., for interface and data definitions).</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-31'>SP-31</a></span>  METR will rely upon existing standards w…</div>
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="A-15"></a>A-15</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>METR will rely upon existing data sources as appropriate.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="A-16"></a>A-16</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Short range wireless communication channels have limited data capacity, which must be respected while still delivering all applicable rules to transport users. (e.g., this might require the use of short range wiress messages to advertize more extensive data from central)</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-34'>SP-34</a></span>  Use of push should be minimized while st…</div>
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="A-17"></a>A-17</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>METR should enable efficient data exchanges that do not require frequent downloading of rules that seldom change.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-93'>SP-93</a></span>  A rule refresh should only provide the c…</div>
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="A-18"></a>A-18</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Regulators should ensure that defined rules promote safe operations</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="A-19"></a>A-19</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The dynamic driving task includes the responsibility to provide for the safe operation of the vehicle, even in the absence of METR information. For example, the DDT is responsible for detecting a lane closure and responding appropriately; the DDT is responsible for detecting that it is going well above the prevailing speed and slowing down as needed.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-163'>SP-163</a></span>  For the foreseeable future, METR should …</div>
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="A-20"></a>A-20</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Changes considered and not implemented: Attempting to translate the legal definition of a rule as defined within its native language (e.g., for a "STOP" sign, "The driver of any vehicle approaching a stop sign at the entrance to, or within, an intersection, shall stop at a limit line, if marked, otherwise before entering the crosswalk on the near side of the intersection. If there is no limit line or crosswalk, the driver shall stop at the entrance to the intersecting roadway or railroad grade crossing.") into an exact electronic structrue. The reason for this is multi-fold:<br>(1) The messaging structure to handle all known scenarios, let alone all possible scenarios, in a readily computer-interpretable format would be overly complex.<br>(2) The laws are likely often written to create ambiguities in meaning (e.g., one could argue that in the above example, ADS-equipped vehicles are not required to stop since they do not have a driver)<br>(3) The interpretation of the legal language within laws into practical meanings is often subjective and is within the realm of the judicial process rather than the executive process of a translator.<br>(4) The effort to define such details would likly require substantially more time to standardize.<br><br>Future efforts might address areas of known variability within meaning of signs so that systems can be aware of local meanings when significant issues are known. For example, what constitutes a "stopped" vehicle versus a "parked" vehicle; but the initial release of METR will concentrate on identifying the application of rules rather than the legal definition of the rules.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="A-21"></a>A-21</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>For the foreseeable future, METR should be considered as a supplement to existing traffic control devices rather than a replacement of those devices; however, this will likely change over time.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-163'>SP-163</a></span>  For the foreseeable future, METR should …</div>
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="A-1"></a>A-1</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+      </tbody>
+    </table>
+    <hr>
+    <div class="float-right mr-4"><em>Last modified by <a href="mailto://kvaughn@trevilon.com">Kenneth Vaughn, Trevilon</a> on 2021-12-02 10:55</em></div>
+  </div>
+</body>
+</html>

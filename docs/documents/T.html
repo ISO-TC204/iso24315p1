@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>24315-1 METR ConOps-T: Terminology</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <style>
+    /* Customization of standard HTML styles */
+    p {
+      margin-top: 0em;
+      margin-bottom: 0.5em;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 0em;
+      margin-bottom: 0.25em;
+    }
+    table {
+      border-spacing: 1em;
+    }
+    th {
+      text-align: center;
+    }
+    ul, ol {
+      margin-bottom: 0;
+    }
+
+    /* Customization of ReqView styles */
+    .heading {
+      margin: 1em;
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+    .filter {
+      text-align: right;
+      margin: 1em;
+    }
+    .reqviewTable {
+      margin: 1em;
+    }
+    .reqviewTable h1 {
+      font-size: 30px;
+    }
+    .reqviewTable h2 {
+      font-size: 24px;
+    }
+    .reqviewTable h3 {
+      font-size: 20px;
+    }
+    .reqviewTable h4 {
+      font-size: 18px;
+    }
+    .reqviewTable h5 {
+      font-size: 16px;
+    }
+    .reqviewTable h6 {
+      font-size: 14px;
+    }
+    .reqviewTable > table > thead > tr > th {
+      text-align: left;
+    }
+    /* Customization of our styles */
+    .id-col {
+      min-width: 5em;
+      vertical-align: top;
+    }
+    .description-col {
+      min-width: 30em;
+      vertical-align: top;
+    }
+    .discussion-col {
+      min-width: 15em;
+      vertical-align: top;
+    }
+    .links-col {
+      min-width: 15em;
+      vertical-align: top;
+    }
+    .attributes-col {
+      min-width: 15em;
+      vertical-align: top;
+    }
+    .attributes-col ul {
+      padding-left: 0px;
+    }
+    .attributes-col li {
+      list-style: none outside none;
+    }
+    .attributes-col .attribute-name {
+      font-style: italic;
+    }
+    .custom-col {
+      min-width: 10em;
+      vertical-align: top;
+    }
+    .comment-text {
+      padding-top: 5px;
+      padding-bottom: 10px;
+    }
+    .attachment {
+      font-style: italic;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+    }
+    .attachment img {
+      max-width: 90%;
+      height: auto;
+      display: block;
+    }
+    .links-type-name {
+      font-style: italic;
+    }
+    .link {
+      margin-left: 16px;
+    }
+    td.attributes-col div.htmlContent,
+    td.custom-col div.htmlContent {
+      min-width: 15em;
+    }
+    .deleted {
+      color: #666;
+    }
+    .deleted .id-col,
+    .deleted .description-col,
+    .link.deleted {
+      text-decoration: line-through;
+    }
+    .deleted a {
+      color: gray;
+    }
+    .htmlContent table {
+      border: 1px solid black;
+      border-collapse: collapse;
+      width: auto;
+    }
+    .htmlContent th, .htmlContent td {
+      border: 1px solid #b5bcc7;
+      vertical-align: top;
+      padding: 3px 7px 2px 7px;
+    }
+    .htmlContent th {
+      padding-top: 5px;
+      padding-bottom: 4px;
+      background: silver;
+      border-bottom: none !important;
+    }
+    /** Override Bootstrap print */
+    @media print {
+      @page {
+        size: initial;
+      }
+      body {
+        min-width: unset !important;
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="heading">
+    <h1 class="display-4">24315-1 METR ConOps-T: Terminology</h1>
+  </div>
+  <div class="reqviewTable table-responsive-md">
+    <table class="table table-sm">
+      <!-- Heading of the requirements table -->
+      <thead>
+        <tr>
+          <th class="id-col"><i class="fas fas fa-asterisk"></i> ID</th>
+          <th class="description-col"><i class="fas fa-align-left"></i> Description</th>
+          <th class="links-col"><i class="fas fa-link"></i> Links</th>
+          <th class="custom-col"><i class="fas fa-cog"></i> Notes</th>
+        </tr>
+      </thead>
+
+      <!-- Requirements table with list of requirements -->
+      <tbody>
+        <tr>
+          <td class="id-col"><a id="T-2"></a>T-2</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>1 METR distribution system</h1>
+            <div class="htmlContent"><p>Receipt of rules, processing by translator through the disseminator and provision to user systems</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="T-3"></a>T-3</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>2 METR network</h1>
+            <div class="htmlContent"><p>METR distribution system, METR transport user system, and dynamic data providers</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="T-4"></a>T-4</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>3 METR environment</h1>
+            <div class="htmlContent"><p>Includes regulatory aspects and user system aspects</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="T-5"></a>T-5</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>4 user system (et al)</h1>
+            <div class="htmlContent"><p>system that performs the user role (i.e., it may perform other roles as well)</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="T-6"></a>T-6</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>5 competent authority</h1>
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-19'>SP-19</a></span>  The role model should add a role between…</div>
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="T-7"></a>T-7</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>6 completeness</h1>
+            <div class="htmlContent"><p>degree to which an IT service supports all the specified goals, objectives and data specified by the user</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-23'>SP-23</a></span>  State of rules in force on the transport…</div>
+                <div class="link"> <span><a href='SP.html#SP-32'>SP-32</a></span>  User systems need high confidence that t…</div>
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="T-8"></a>T-8</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>7 METR receiver</h1>
+            <div class="htmlContent"><p>The portion of a user system that is responsible for processing METR information</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="T-9"></a>T-9</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>8 regulator</h1>
+            <div class="htmlContent"><p>definition should have a note that makes clear that a regulator might perform other roles as well</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-41'>SP-41</a></span>  The definition of a &quot;regulator&quot; needs to…</div>
+                <div class="link"> <span><a href='SP.html#SP-158'>SP-158</a></span>  We need to define &quot;regulator&quot;</div>
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="T-10"></a>T-10</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>9 dynamic data</h1>
+            <div class="htmlContent"><p>data that might change with little notice</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-54'>SP-54</a></span>  METR should distinguish between &quot;rules&quot; …</div>
+                <div class="link"> <span><a href='SP.html#SP-75'>SP-75</a></span>  The term &quot;C-ITS data source&quot; should perh…</div>
+                <div class="link"> <span><a href='SP.html#SP-133'>SP-133</a></span>  Define &quot;static rule&quot;, &quot;dynamic rule&quot; and…</div>
+          </td>
+          <td class="custom-col htmlContent">Dynamic data includes ad hoc rules as well as data that originates from C-ITS sources or on-board sources that might cause a state trigger for a rule. 
+EXAMPLE: A &quot;special vehicle alert&quot; from a remote vehicle might cause a state trigger that requires the host vehicle to pull over and give way to the emergency vehicle.</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="T-11"></a>T-11</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>10 rule</h1>
+            <div class="htmlContent"><p>regulation, advisory, or guidance established by a regulator or campus authority</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-54'>SP-54</a></span>  METR should distinguish between &quot;rules&quot; …</div>
+          </td>
+          <td class="custom-col htmlContent">Rules include static rules (including unposted and posted rules) and ad-hoc rules.</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="T-12"></a>T-12</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>11 validity</h1>
+            <div class="htmlContent"><p>applies to the status of the legality of rules</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-57'>SP-57</a></span>  Validity should apply to rules; we need …</div>
+                <div class="link"> <span><a href='SP.html#SP-94'>SP-94</a></span>  Each individual rule should have its own…</div>
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="T-13"></a>T-13</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>12 expiration</h1>
+            <div class="htmlContent"><p>applies to rule status of the electronic version of a rule that has been downloaded</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-57'>SP-57</a></span>  Validity should apply to rules; we need …</div>
+                <div class="link"> <span><a href='SP.html#SP-94'>SP-94</a></span>  Each individual rule should have its own…</div>
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="T-14"></a>T-14</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>13 distributor</h1>
+            <div class="htmlContent"><p>Translator, collector, or disseminator (including mobile disseminator?)</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-46'>SP-46</a></span>  Peer roles need the ability to coordinat…</div>
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="T-15"></a>T-15</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>14 unposted rule</h1>
+            <div class="htmlContent"><p>rule that does not require traffic control devices for enforcement</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-66'>SP-66</a></span>  When discussing rule types, we need to c…</div>
+                <div class="link"> <span><a href='SP.html#SP-133'>SP-133</a></span>  Define &quot;static rule&quot;, &quot;dynamic rule&quot; and…</div>
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="T-16"></a>T-16</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>15 posted rule</h1>
+            <div class="htmlContent"><p>rule that is publicized or implemented with one or more traffic control devices</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-133'>SP-133</a></span>  Define &quot;static rule&quot;, &quot;dynamic rule&quot; and…</div>
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="T-17"></a>T-17</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>16 persistent rule</h1>
+            <div class="htmlContent"><p>rule that is deployed without any expectation of a termination and publicized via pull</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-66'>SP-66</a></span>  When discussing rule types, we need to c…</div>
+                <div class="link"> <span><a href='SP.html#SP-133'>SP-133</a></span>  Define &quot;static rule&quot;, &quot;dynamic rule&quot; and…</div>
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="T-18"></a>T-18</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>17 temporary rule</h1>
+            <div class="htmlContent"><p>rule that is deployed with an expectation of a termination and publicized via pull</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-66'>SP-66</a></span>  When discussing rule types, we need to c…</div>
+                <div class="link"> <span><a href='SP.html#SP-133'>SP-133</a></span>  Define &quot;static rule&quot;, &quot;dynamic rule&quot; and…</div>
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="T-19"></a>T-19</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>18 ad-hoc rule</h1>
+            <div class="htmlContent"><p>rule that is created and deployed prior to the expiration period of previously downloaded rule sets</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-66'>SP-66</a></span>  When discussing rule types, we need to c…</div>
+                <div class="link"> <span><a href='SP.html#SP-133'>SP-133</a></span>  Define &quot;static rule&quot;, &quot;dynamic rule&quot; and…</div>
+          </td>
+          <td class="custom-col htmlContent">Ad-hoc rules must be distributed via push. 
+Example: Police officer on scene directing traffic or imposing a road closure</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="T-20"></a>T-20</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>19 state trigger</h1>
+            <div class="htmlContent"><p>Event that affects the practical impacts of a rule for a user (e.g., state of a traffic signal, current value of a variable speed limit, rain causing the activation of a slower speed limit rule, etc.) State triggers are usually based on values of real-time data.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-66'>SP-66</a></span>  When discussing rule types, we need to c…</div>
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="T-21"></a>T-21</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>20 dynamic data provider</h1>
+            <div class="htmlContent"><p>pushes dynamic data to transport user systems</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-75'>SP-75</a></span>  The term &quot;C-ITS data source&quot; should perh…</div>
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="T-22"></a>T-22</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Terminology should be consistent with ISO 14812, ISO 22736 (SAE J3016), and ISO 17426</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-113'>SP-113</a></span>  Conform to the terminology of ISO 22736 …</div>
+                <div class="link"> <span><a href='SP.html#SP-117'>SP-117</a></span>  Look at CEN ISO/TS 17426 Contextual spee…</div>
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="T-23"></a>T-23</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>21 low latency</h1>
+            <div class="htmlContent"><p>ability to provide data to all users who need the data within a very short time<br>Typically used for push data<br>Typically via short range wireless (SRW)<br>Typically requires latency of seconds or less</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-116'>SP-116</a></span>  We should use the terms &quot;low latency&quot; an…</div>
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="T-24"></a>T-24</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>22 high latency</h1>
+            <div class="htmlContent"><p>inability to provide data to all users who need the data within a very short time<br>Typically used for pull data; might provide supplementary source for push data<br>Can use various technologies (typically avoids SRW due to bandwidth limitations)<br>Typical provision times are minutes or more for last user to be notified</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-116'>SP-116</a></span>  We should use the terms &quot;low latency&quot; an…</div>
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="T-25"></a>T-25</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>23 C-ITS data</h1>
+            <div class="htmlContent"><p>dynamic data that is not a rule and is provided by source other than the on-board equipment </p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-133'>SP-133</a></span>  Define &quot;static rule&quot;, &quot;dynamic rule&quot; and…</div>
+          </td>
+          <td class="custom-col htmlContent">Example: special vehicle alert from nearby vehicle, current speed limit value for variable speed limit system</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="T-26"></a>T-26</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>24 on-board data</h1>
+            <div class="htmlContent"><p>dynamic data that is provided by on-board equipment </p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-133'>SP-133</a></span>  Define &quot;static rule&quot;, &quot;dynamic rule&quot; and…</div>
+          </td>
+          <td class="custom-col htmlContent">Example: current time, windshield wiper status</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="T-27"></a>T-27</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>25 private rule</h1>
+            <div class="htmlContent"><p>rule established by a campus owner that has not be approved by a governmental entity</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-134'>SP-134</a></span>  Distinguish between &quot;governmental&quot; and &quot;…</div>
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="T-28"></a>T-28</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>26 governmental rule</h1>
+            <div class="htmlContent"><p>rule approved by a governmental entity</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-134'>SP-134</a></span>  Distinguish between &quot;governmental&quot; and &quot;…</div>
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="T-29"></a>T-29</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>27 METR operator</h1>
+            <div class="htmlContent"><p>person that interfaces with a METR component to ensure its proper operation</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="T-30"></a>T-30</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>28 METR user</h1>
+            <div class="htmlContent"><p>regulator, transport user, lawyer, insurance company, etc</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="T-31"></a>T-31</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>29 primary regulator</h1>
+            <div class="htmlContent"><p>A regulator with administrative privileges for the regulator account</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">Example: A city might have the city council assigned as the primary regulator. The city council could then establish the police department and traffic department as additional regulators for the same jurisdiction. All of the regulators would have the authority to establish rules while only the city council would have the authority to designate additional regulators.</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="T-1"></a>T-1</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                    </tr>
+      </tbody>
+    </table>
+    <hr>
+    <div class="float-right mr-4"><em>Last modified by <a href="mailto://kvaughn@trevilon.com">Kenneth Vaughn, Trevilon</a> on 2021-12-01 12:20</em></div>
+  </div>
+</body>
+</html>

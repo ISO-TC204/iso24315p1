@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>24315-1 METR ConOps-N: Notes</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <style>
+    /* Customization of standard HTML styles */
+    p {
+      margin-top: 0em;
+      margin-bottom: 0.5em;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 0em;
+      margin-bottom: 0.25em;
+    }
+    table {
+      border-spacing: 1em;
+    }
+    th {
+      text-align: center;
+    }
+    ul, ol {
+      margin-bottom: 0;
+    }
+
+    /* Customization of ReqView styles */
+    .heading {
+      margin: 1em;
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+    .filter {
+      text-align: right;
+      margin: 1em;
+    }
+    .reqviewTable {
+      margin: 1em;
+    }
+    .reqviewTable h1 {
+      font-size: 30px;
+    }
+    .reqviewTable h2 {
+      font-size: 24px;
+    }
+    .reqviewTable h3 {
+      font-size: 20px;
+    }
+    .reqviewTable h4 {
+      font-size: 18px;
+    }
+    .reqviewTable h5 {
+      font-size: 16px;
+    }
+    .reqviewTable h6 {
+      font-size: 14px;
+    }
+    .reqviewTable > table > thead > tr > th {
+      text-align: left;
+    }
+    /* Customization of our styles */
+    .id-col {
+      min-width: 5em;
+      vertical-align: top;
+    }
+    .description-col {
+      min-width: 30em;
+      vertical-align: top;
+    }
+    .discussion-col {
+      min-width: 15em;
+      vertical-align: top;
+    }
+    .links-col {
+      min-width: 15em;
+      vertical-align: top;
+    }
+    .attributes-col {
+      min-width: 15em;
+      vertical-align: top;
+    }
+    .attributes-col ul {
+      padding-left: 0px;
+    }
+    .attributes-col li {
+      list-style: none outside none;
+    }
+    .attributes-col .attribute-name {
+      font-style: italic;
+    }
+    .custom-col {
+      min-width: 10em;
+      vertical-align: top;
+    }
+    .comment-text {
+      padding-top: 5px;
+      padding-bottom: 10px;
+    }
+    .attachment {
+      font-style: italic;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+    }
+    .attachment img {
+      max-width: 90%;
+      height: auto;
+      display: block;
+    }
+    .links-type-name {
+      font-style: italic;
+    }
+    .link {
+      margin-left: 16px;
+    }
+    td.attributes-col div.htmlContent,
+    td.custom-col div.htmlContent {
+      min-width: 15em;
+    }
+    .deleted {
+      color: #666;
+    }
+    .deleted .id-col,
+    .deleted .description-col,
+    .link.deleted {
+      text-decoration: line-through;
+    }
+    .deleted a {
+      color: gray;
+    }
+    .htmlContent table {
+      border: 1px solid black;
+      border-collapse: collapse;
+      width: auto;
+    }
+    .htmlContent th, .htmlContent td {
+      border: 1px solid #b5bcc7;
+      vertical-align: top;
+      padding: 3px 7px 2px 7px;
+    }
+    .htmlContent th {
+      padding-top: 5px;
+      padding-bottom: 4px;
+      background: silver;
+      border-bottom: none !important;
+    }
+    /** Override Bootstrap print */
+    @media print {
+      @page {
+        size: initial;
+      }
+      body {
+        min-width: unset !important;
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="heading">
+    <h1 class="display-4">24315-1 METR ConOps-N: Notes</h1>
+  </div>
+  <div class="reqviewTable table-responsive-md">
+    <table class="table table-sm">
+      <!-- Heading of the requirements table -->
+      <thead>
+        <tr>
+          <th class="id-col"><i class="fas fas fa-asterisk"></i> ID</th>
+          <th class="description-col"><i class="fas fa-align-left"></i> Description</th>
+          <th class="links-col"><i class="fas fa-link"></i> Links</th>
+        </tr>
+      </thead>
+
+      <!-- Requirements table with list of requirements -->
+      <tbody>
+        <tr>
+          <td class="id-col"><a id="N-2"></a>N-2</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Every role is implemented as a system or within a system that serves multiple roles</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="N-3"></a>N-3</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Each system needs a system manager</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-17'>SP-17</a></span>  Some regions might wish to have a system…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="N-4"></a>N-4</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Explain that the regulator role includes the duties of a competent authority where they exist</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-19'>SP-19</a></span>  The role model should add a role between…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="N-5"></a>N-5</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The concept of modes does not really apply to our type of system of systems; identify where we define the rule states and catalogue of rules</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-22'>SP-22</a></span>  The concept of modes does not seem to ap…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="N-6"></a>N-6</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The ConOps should reference ISO/IEC/IEEE 15288 and indicate which type of "system of systems" best describes METR</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-25'>SP-25</a></span>  The ConOps should reference ISO/IEC/IEEE…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="N-7"></a>N-7</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The preferred implementation is that the regulator also performs the role of translator because this allows the most timely digitization of the rule and the greatest opportunity to publicize the rule prior to its activation.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-44'>SP-44</a></span>  The preferred implementation is that the…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="N-8"></a>N-8</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The preferred implementation is that a user relies on a single disseminator; this will simplify processing and minimize the potential for conflicting rules being received by the user.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-45'>SP-45</a></span>  The preferred implementation is that a u…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="N-9"></a>N-9</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The use of mainstream data distribution technologies should be allowed as long as they meet all defined user needs.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-52'>SP-52</a></span>  The ConOps should be written to allow fo…</div>
+                <div class="link"> <span><a href='SP.html#SP-75'>SP-75</a></span>  The term &quot;C-ITS data source&quot; should perh…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="N-10"></a>N-10</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Automated discovery is a likely possibility but there is not a pressing need to standardize the interface or requirements.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-53'>SP-53</a></span>  The ConOps should mention that automated…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="N-11"></a>N-11</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The preferred implementation is that real-time data is exchanged in an open manner.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-55'>SP-55</a></span>  To the extent that C-ITS data is exchang…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="N-12"></a>N-12</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>When showing multiplicity in diagrams other than UML, use "n" rather than "*" to prevent confusion with the concept of "all"</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-63'>SP-63</a></span>  When showing multiplicity in diagrams ot…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="N-13"></a>N-13</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Remove the rule types from the state machine diagram; if the diagram needs to show specializations for the different types, break the diagram into a separate diagram for each specialization so that each conforms to UML rules.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-65'>SP-65</a></span>  Remove the rule types from the state mac…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="N-14"></a>N-14</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>When discussing planned rules, indicate that they may require authorization, which might be a period of months, even though the actual implementation of the rule may just be a for a few days</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-67'>SP-67</a></span>  When discussing planned rules, indicate …</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="N-15"></a>N-15</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Change "C-ITS data source" to "dynamic data provider"</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-75'>SP-75</a></span>  The term &quot;C-ITS data source&quot; should perh…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="N-16"></a>N-16</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>ConOps should explain that the disseminator is distinguished from the dynamic data provider due the additional responsibilities for a disseminator (whereas a dynamic data provider has virtualy no formal responsibilities). </p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-76'>SP-76</a></span>  The ConOps should describe why we are di…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="N-17"></a>N-17</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The ConOps should explain that proposed rules can have review periods as a part of the approval process and that new proposals can be initiated to refine existing rules; however, the details of this process is outside the scope of METR as it occurs separate from the electronification process.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-77'>SP-77</a></span>  The ConOps should provide a brief mentio…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="N-18"></a>N-18</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The ConOps should discuss the legal aspects of rules referring to dynamic data directly versus requiring the vehicle to make determinations. The approaches for this will likely vary by jurisdiction and METR needs to convey whether indicated providers of dynamic data accept any liability</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-79'>SP-79</a></span>  What is the legal standing of C-ITS data…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="N-19"></a>N-19</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The ConOps should explain that the rule types have their own aspect of hierarchy. In other words, all rules start with legislative action that enact laws. Some laws will empower road authorities to define persistent traffic rules using traffic control devices. Other rules empower road operators, police, etc to impose temporary rules (e.g., road work rules), ad-hoc rules (e.g., snow chain requirements), and to distribute C-ITS data (e.g., SPaT and variable speed limits) to activate/update state-triggered rules.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-80'>SP-80</a></span>  The ConOps should explain that the rule …</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="N-20"></a>N-20</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The ConOps should describe a process by which agencies can verify their electronic rules against as-built infrastructure, which might be a way to reduce liability.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-87'>SP-87</a></span>  The ConOps should describe a process by …</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="N-21"></a>N-21</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The ConOps should include a scenario that discusses a vehicle detecting a discrepancy and indicate that the ownership of the discrepancy data might be subject to OEM copyright depending on jurisdiction.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-92'>SP-92</a></span>  The ConOps should probably stay agnostic…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="N-22"></a>N-22</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The operational scenarios should provide an example of how a vehicle might have digital commentary to explain its actions. See https://www.bsigroup.com/en-GB/about-bsi/media-centre/press-releases/2021-press-releases/june/digital-commentary-driving-the-new-safety-technique-that-can-help-put-automated-vehicles-on-our-roads/</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-118'>SP-118</a></span>  The operational scenarios should provide…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="N-23"></a>N-23</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Identification and responding to dynamic ODD boundaries is outside the scope of METR</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-127'>SP-127</a></span>  Identification and responding to dynamic…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="N-1"></a>N-1</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>METR will result in some operational changes in the way that emergency responders and other field crew perform their jobs.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-163'>SP-163</a></span>  For the foreseeable future, METR should …</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>
+    <div class="float-right mr-4"><em>Last modified by <a href="mailto://kvaughn@trevilon.com">Kenneth Vaughn, Trevilon</a> on 2021-12-02 10:56</em></div>
+  </div>
+</body>
+</html>

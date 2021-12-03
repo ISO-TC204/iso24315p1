@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>24315-1 METR ConOps-S: Scenarios</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <style>
+    /* Customization of standard HTML styles */
+    p {
+      margin-top: 0em;
+      margin-bottom: 0.5em;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 0em;
+      margin-bottom: 0.25em;
+    }
+    table {
+      border-spacing: 1em;
+    }
+    th {
+      text-align: center;
+    }
+    ul, ol {
+      margin-bottom: 0;
+    }
+
+    /* Customization of ReqView styles */
+    .heading {
+      margin: 1em;
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+    .filter {
+      text-align: right;
+      margin: 1em;
+    }
+    .reqviewTable {
+      margin: 1em;
+    }
+    .reqviewTable h1 {
+      font-size: 30px;
+    }
+    .reqviewTable h2 {
+      font-size: 24px;
+    }
+    .reqviewTable h3 {
+      font-size: 20px;
+    }
+    .reqviewTable h4 {
+      font-size: 18px;
+    }
+    .reqviewTable h5 {
+      font-size: 16px;
+    }
+    .reqviewTable h6 {
+      font-size: 14px;
+    }
+    .reqviewTable > table > thead > tr > th {
+      text-align: left;
+    }
+    /* Customization of our styles */
+    .id-col {
+      min-width: 5em;
+      vertical-align: top;
+    }
+    .description-col {
+      min-width: 30em;
+      vertical-align: top;
+    }
+    .discussion-col {
+      min-width: 15em;
+      vertical-align: top;
+    }
+    .links-col {
+      min-width: 15em;
+      vertical-align: top;
+    }
+    .attributes-col {
+      min-width: 15em;
+      vertical-align: top;
+    }
+    .attributes-col ul {
+      padding-left: 0px;
+    }
+    .attributes-col li {
+      list-style: none outside none;
+    }
+    .attributes-col .attribute-name {
+      font-style: italic;
+    }
+    .custom-col {
+      min-width: 10em;
+      vertical-align: top;
+    }
+    .comment-text {
+      padding-top: 5px;
+      padding-bottom: 10px;
+    }
+    .attachment {
+      font-style: italic;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+    }
+    .attachment img {
+      max-width: 90%;
+      height: auto;
+      display: block;
+    }
+    .links-type-name {
+      font-style: italic;
+    }
+    .link {
+      margin-left: 16px;
+    }
+    td.attributes-col div.htmlContent,
+    td.custom-col div.htmlContent {
+      min-width: 15em;
+    }
+    .deleted {
+      color: #666;
+    }
+    .deleted .id-col,
+    .deleted .description-col,
+    .link.deleted {
+      text-decoration: line-through;
+    }
+    .deleted a {
+      color: gray;
+    }
+    .htmlContent table {
+      border: 1px solid black;
+      border-collapse: collapse;
+      width: auto;
+    }
+    .htmlContent th, .htmlContent td {
+      border: 1px solid #b5bcc7;
+      vertical-align: top;
+      padding: 3px 7px 2px 7px;
+    }
+    .htmlContent th {
+      padding-top: 5px;
+      padding-bottom: 4px;
+      background: silver;
+      border-bottom: none !important;
+    }
+    /** Override Bootstrap print */
+    @media print {
+      @page {
+        size: initial;
+      }
+      body {
+        min-width: unset !important;
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="heading">
+    <h1 class="display-4">24315-1 METR ConOps-S: Scenarios</h1>
+  </div>
+  <div class="reqviewTable table-responsive-md">
+    <table class="table table-sm">
+      <!-- Heading of the requirements table -->
+      <thead>
+        <tr>
+          <th class="id-col"><i class="fas fas fa-asterisk"></i> ID</th>
+          <th class="description-col"><i class="fas fa-align-left"></i> Description</th>
+          <th class="links-col"><i class="fas fa-link"></i> Links</th>
+        </tr>
+      </thead>
+
+      <!-- Requirements table with list of requirements -->
+      <tbody>
+        <tr>
+          <td class="id-col"><a id="S-2"></a>S-2</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Example system diagrams (perhaps 3) that depict implementations of the role based architecture and how roles are assigned to different systems</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-18'>SP-18</a></span>  Should provide sample diagrams showing i…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="S-3"></a>S-3</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The ConOps should provide practical use cases that explain the varied types of rules that might be disseminated and how the process would work</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-20'>SP-20</a></span>  The ConOps should provide practical use …</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="S-4"></a>S-4</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The ConOps should include a use case that explains the process for installing and removing a permanent traffic control device (e.g., a parking sign) and explain how the process needs to work in real time to ensure consistency in information, especially when a traffic control device installation does not occur on schedule and the system needs to flag the discrepancy. And also perhaps for what happens with a missing device (e.g., missing speed limit sign as approaching or leaving a town on a rural highway)</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-81'>SP-81</a></span>  The ConOps should include a use case tha…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="S-5"></a>S-5</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The ConOps should also include a use case for emergency response deploying traffic control device to make a crash site safe</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-82'>SP-82</a></span>  The ConOps should also include a use cas…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="S-6"></a>S-6</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The ConOps should provide an example of a mixture of types of communications (e.g., low-latency push and high-latency pull)</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-95'>SP-95</a></span>  The ConOps should provide an example of …</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="S-7"></a>S-7</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The ConOps should include an example where an ADS is required to fallback to manual mode when leaving METR-coverage. We should note that this is our assumption, but the exact rules are up to the jurisdiction and OEM to determine.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-97'>SP-97</a></span>  The ConOps should indicate that we assum…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="S-8"></a>S-8</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The ConOps should include a scenario where a vehicle starts in an area without any connectivity. This scenario should include a note that we assume that for the near future, every ADS-equipped vehicle will have a manual drive mode (or be small enough to easily transport). If not, care should be taken to ensure that the rules do not expire while the car is parked, because any remote refresh would have to be performed by a trusted source and it is not yet determined what the requirements are for such a trusted source.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-98'>SP-98</a></span>  The ConOps should provide an example use…</div>
+                <div class="link"> <span><a href='SP.html#SP-99'>SP-99</a></span>  The ConOps should indicate that for the …</div>
+                <div class="link"> <span><a href='SP.html#SP-100'>SP-100</a></span>  Any remote refresh would have to be prov…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="S-9"></a>S-9</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The ConOps should include a scenario of an ODD boundary where a ADS-equipped vehicle needs to navigate to an area where it can reach achieve a "minimal risk condition". The scenario should provide examples that the jurisdiction (or private campus) might have rules prohibiting temporary parking and the ADS-equipped vehicle will need to navigate to an appropriate location.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-124'>SP-124</a></span>  Between METR and the map data, ADS-equip…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="S-10"></a>S-10</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The ConOps should structure at least one of its operational scenarios using the terminology of "data" (e.g., sensors), "information" (processed data), and "delivery" (connections) to clearly indicate how it addresses these three key aspects of ITS deployments</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-130'>SP-130</a></span>  The ConOps should structure at least one…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="S-11"></a>S-11</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The ConOps might include a scenario with a variable speed limit system that has a fixed schedule that can be overridden by events.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-132'>SP-132</a></span>  The ConOps might include a scenario with…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="S-12"></a>S-12</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The ConOps should include a scenario that describes a graceful fallback when traffic control devices are not consistent with METR information (e.g., a private facility where METR data has not been updated)</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-135'>SP-135</a></span>  We need an example scenario that describ…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="S-13"></a>S-13</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>We should have an example of a OEM DDT constraint that says not to exceed 15mph inside of a parking lot</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="S-14"></a>S-14</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>METR ConOps should indicate support for proxy data entry services</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-145'>SP-145</a></span>  Within one of its scenarios, the METR Co…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="S-15"></a>S-15</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Include a scenario that shows that METR will be able to include rules that define areas reserved for accessibility purposes such as loading/unloading areas and curb cutouts; explain that this is a detail that might take a while to populate and that many areas might not provide such detailed information</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-146'>SP-146</a></span>  METR rules need to define areas reserved…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="S-16"></a>S-16</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Include an example that explains that the process for entering METR rules might include some type of validation per the requirements of the containing jurisdiction</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-147'>SP-147</a></span>  Within one of its scenarios, the METR Co…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="S-17"></a>S-17</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>A METR operational scenario should indicate that a vehicle might be aware of a permit (and apply associated rules) or might not (and provide warnings to the driver)</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-150'>SP-150</a></span>  A METR operational scenario should indic…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="S-18"></a>S-18</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Include a scenario that describes the process of reporting field discrepancies.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-91'>SP-91</a></span>  A disseminator should not publicize repo…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="S-19"></a>S-19</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>Include a scenario that details the process to deploy (static, temporary) rules that follows a flow of: publicizing first (pull; perhaps with expected date) followed by activation of rule (with deployment of traffic control device) and announcement that the rule is active (push)</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-152'>SP-152</a></span>  Process to deploy known rules includes p…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="S-20"></a>S-20</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"><p>The ConOps should provide a scenario that explains that detours might consist of (1) a simple shift lane, (2) an indication that a turn manouver is prohibited, (3) an indication that a road or lane link is closed, or (4) a complete alternative path. In the first three cases, it is up to the DDT to determine the revised path to follow.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-157'>SP-157</a></span>  Ad Hoc rules might provide detour inform…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="S-1"></a>S-1</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>
+    <div class="float-right mr-4"><em>Last modified by <a href="mailto://kvaughn@trevilon.com">Kenneth Vaughn, Trevilon</a> on 2021-12-01 12:03</em></div>
+  </div>
+</body>
+</html>

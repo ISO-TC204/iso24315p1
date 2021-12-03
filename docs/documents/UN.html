@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>24315-1 METR ConOps-UN: User Needs</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <style>
+    /* Customization of standard HTML styles */
+    p {
+      margin-top: 0em;
+      margin-bottom: 0.5em;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 0em;
+      margin-bottom: 0.25em;
+    }
+    table {
+      border-spacing: 1em;
+    }
+    th {
+      text-align: center;
+    }
+    ul, ol {
+      margin-bottom: 0;
+    }
+
+    /* Customization of ReqView styles */
+    .heading {
+      margin: 1em;
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+    .filter {
+      text-align: right;
+      margin: 1em;
+    }
+    .reqviewTable {
+      margin: 1em;
+    }
+    .reqviewTable h1 {
+      font-size: 30px;
+    }
+    .reqviewTable h2 {
+      font-size: 24px;
+    }
+    .reqviewTable h3 {
+      font-size: 20px;
+    }
+    .reqviewTable h4 {
+      font-size: 18px;
+    }
+    .reqviewTable h5 {
+      font-size: 16px;
+    }
+    .reqviewTable h6 {
+      font-size: 14px;
+    }
+    .reqviewTable > table > thead > tr > th {
+      text-align: left;
+    }
+    /* Customization of our styles */
+    .id-col {
+      min-width: 5em;
+      vertical-align: top;
+    }
+    .description-col {
+      min-width: 30em;
+      vertical-align: top;
+    }
+    .discussion-col {
+      min-width: 15em;
+      vertical-align: top;
+    }
+    .links-col {
+      min-width: 15em;
+      vertical-align: top;
+    }
+    .attributes-col {
+      min-width: 15em;
+      vertical-align: top;
+    }
+    .attributes-col ul {
+      padding-left: 0px;
+    }
+    .attributes-col li {
+      list-style: none outside none;
+    }
+    .attributes-col .attribute-name {
+      font-style: italic;
+    }
+    .custom-col {
+      min-width: 10em;
+      vertical-align: top;
+    }
+    .comment-text {
+      padding-top: 5px;
+      padding-bottom: 10px;
+    }
+    .attachment {
+      font-style: italic;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+    }
+    .attachment img {
+      max-width: 90%;
+      height: auto;
+      display: block;
+    }
+    .links-type-name {
+      font-style: italic;
+    }
+    .link {
+      margin-left: 16px;
+    }
+    td.attributes-col div.htmlContent,
+    td.custom-col div.htmlContent {
+      min-width: 15em;
+    }
+    .deleted {
+      color: #666;
+    }
+    .deleted .id-col,
+    .deleted .description-col,
+    .link.deleted {
+      text-decoration: line-through;
+    }
+    .deleted a {
+      color: gray;
+    }
+    .htmlContent table {
+      border: 1px solid black;
+      border-collapse: collapse;
+      width: auto;
+    }
+    .htmlContent th, .htmlContent td {
+      border: 1px solid #b5bcc7;
+      vertical-align: top;
+      padding: 3px 7px 2px 7px;
+    }
+    .htmlContent th {
+      padding-top: 5px;
+      padding-bottom: 4px;
+      background: silver;
+      border-bottom: none !important;
+    }
+    /** Override Bootstrap print */
+    @media print {
+      @page {
+        size: initial;
+      }
+      body {
+        min-width: unset !important;
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="heading">
+    <h1 class="display-4">24315-1 METR ConOps-UN: User Needs</h1>
+  </div>
+  <div class="reqviewTable table-responsive-md">
+    <table class="table table-sm">
+      <!-- Heading of the requirements table -->
+      <thead>
+        <tr>
+          <th class="id-col"><i class="fas fas fa-asterisk"></i> ID</th>
+          <th class="description-col"><i class="fas fa-align-left"></i> Description</th>
+          <th class="links-col"><i class="fas fa-link"></i> Links</th>
+          <th class="custom-col"><i class="fas fa-cog"></i> Clause</th>
+          <th class="custom-col"><i class="fas fa-cog"></i> Additional Details</th>
+          <th class="custom-col"><i class="fas fa-cog"></i> Justification</th>
+          <th class="custom-col"><i class="fas fa-cog"></i> Example</th>
+          <th class="custom-col"><i class="fas fa-cog"></i> To Do</th>
+          <th class="custom-col"><i class="fas fa-cog"></i> Conformance</th>
+        </tr>
+      </thead>
+
+      <!-- Requirements table with list of requirements -->
+      <tbody>
+        <tr>
+          <td class="id-col"><a id="UN-2"></a>UN-2</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>1 Trustworthiness — Reliability — Availability — Connectivity</h1>
+            <div class="htmlContent"><p>A METR user needs the METR distribution system to publicize locations that are known or suspected to have limited or no connectivity to wide area wireless communication services.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">1.01</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent">The goal here is to warn users before going into areas without coverage, but the assumption is that local push is still available. </td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-3"></a>UN-3</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>2 Trustworthiness — Reliability — Availability — Geographic coverage</h1>
+            <div class="htmlContent"><p>A METR user needs the METR distribution system to publicize the jurisdictional areas supported by the distribution system.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-24'>SP-24</a></span>  State of rule availability should be cap…</div>
+                <div class="link"> <span><a href='SP.html#SP-56'>SP-56</a></span>  There needs to be a fifth catalogue stat…</div>
+          </td>
+          <td class="custom-col htmlContent">1.02</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-4"></a>UN-4</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>3 Trustworthiness — Reliability — Availability — Information coverage</h1>
+            <div class="htmlContent"><p>A METR user needs the METR distribution system to publicize the availability of each rule set for each jurisdictional area of interest.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-24'>SP-24</a></span>  State of rule availability should be cap…</div>
+                <div class="link"> <span><a href='SP.html#SP-56'>SP-56</a></span>  There needs to be a fifth catalogue stat…</div>
+                <div class="link"> <span><a href='SP.html#SP-125'>SP-125</a></span>  METR needs to be able to indicate how co…</div>
+          </td>
+          <td class="custom-col htmlContent">1.03</td>
+                      <td class="custom-col htmlContent">State information for rules will likely be provided by grouping rules into categories/domains. Possible states for a rule category are likely to include:
+- all electronic rules available
+- electronic rules exist, but are not currently available (e.g., validity period has been exceeded for at least one source) or do not provide complete coverage (e.g., electronic stop sign information has not been fully entered)
+- electronic version does not define all exceptions, 
+- rules exist but not in electronic form (e.g., electronic transformation not implemented yet)
+- rules do not exist (i.e., all associated jurisdictional entities agree to notify METR if rules are created)
+- rules are not known to exist (e.g., at least one jurisdictional entity does not participate in METR)</td>
+                      <td class="custom-col htmlContent">Transport user systems will depend upon certain METR data to make safety-critical decisions. To ensure safe operations, a transport user system needs to be aware of what rule information is available electronically and to what extent it can rely upon the electronic information. ADS-equipped vehicles might require some categories of information as a part of their ODD definition.</td>
+                      <td class="custom-col htmlContent">An ADS-equipped automobile might have an ODD that requires the electronic speed limits. This ODD constraint would be met for any stretch of road where:
+- all electronic automobile speed limits are available for the jurisdictional area;
+- electronic automobile speed limits are available for the stretch of road, even if they are not available for the entire area; or
+- automobile speed limits are known to not be locally defined for the stretch of road (e.g., assuming that the default speed limit for the type of road is known)
+and either:
+- electronic dynamic rules are available (e.g., for speed limits related to road works, variable speed limits, or emergencies) or
+- dynamic rules are known not to exist</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-5"></a>UN-5</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>4 Trustworthiness — Reliability — Availability — Dynamic data</h1>
+            <div class="htmlContent"><p>A METR user needs to be aware of locations where it should expect to receive dynamic rules and/or C-ITS data. </p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-121'>SP-121</a></span>  Users need to be aware of when they shou…</div>
+          </td>
+          <td class="custom-col htmlContent">1.04</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent">The user system needs to be aware when data is missing; knowing the locations where it should be receiving dynamic data will facilitate the identification of missing data.</td>
+                      <td class="custom-col htmlContent">NOTE: Beacons could advertise the location of other nearby beacons - especially ad hoc</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-6"></a>UN-6</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>5 Trustworthiness — Reliability — Availability — Power</h1>
+            <div class="htmlContent"><p>A METR user needs the METR network to publicize power outages to the extent that they may impact METR services.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">1.05</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent">e.g., an RSU might send out a METR message indicating that it is running on backup power and that complete power loss might occur or might already be occuring downstream; central should send out known areas without power</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-7"></a>UN-7</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>6 Trustworthiness — Reliability — Quality — Clarity</h1>
+            <div class="htmlContent"><p>A METR user needs rule information to be unambiguous.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-46'>SP-46</a></span>  Peer roles need the ability to coordinat…</div>
+                <div class="link"> <span><a href='SP.html#SP-48'>SP-48</a></span>  Disseminators need to be able to share c…</div>
+          </td>
+          <td class="custom-col htmlContent">1.06</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent">The data provided by METR will be used by a variety of transport user systems, each with their own applications. The data provided by METR must be sufficiently unambiguous to allow for its use by different users for the varied expected purposes.
+
+Transport user systems must be able to interpret the rule information received to the context in which the system is operating.</td>
+                      <td class="custom-col htmlContent">If a road section has a different speed limit for different automobiles and lorries, METR must ensure that the data provided is sufficiently unambiguous to prevent misinterpretation. For example, METR could provide both speed limits or it could provide one while making it clear that the rule does not apply to the other classification of vehicles.
+
+A regulation might be defined such that it is in effect between midnight (0:00) and 06:00 when snow is present. For an ADS to comply with this regulation, there must be an agreement on 1) the meaning of midnight (e.g., local time or UTC), identifying which entity (e.g., METR disseminator or ADS) is responsible for determining when the snow present condition is met, 3) whether the regulation applies to the ADS (e.g., does the regulation apply to police vehicles when responding to an emergency).
+
+If a user is notified of a static rule for a lower speed limit &quot;when workers are present&quot;, it should be aware of whether it should expect to be electronically notified of workers being present and, if so, whether it can legally rely upon that notification.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-8"></a>UN-8</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>7 Trustworthiness — Reliability — Quality — Metrics</h1>
+            <div class="htmlContent"><p>A METR user needs indications of the quality of information being provided.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-136'>SP-136</a></span>  Transport user systems need insights int…</div>
+                <div class="link"> <span><a href='SP.html#SP-163'>SP-163</a></span>  For the foreseeable future, METR should …</div>
+          </td>
+          <td class="custom-col htmlContent">1.07</td>
+                      <td class="custom-col htmlContent">For example, is the data based on high-resolution mapping or manual entry from online image, is the system self-reported or independently verified, what is the probability that the rules have changed without an update to METR), is the electronic rule regulatory (e.g., enforceable) or informative (e.g., a supplement to the normative traffic control device in case it is obstructed). OEMs and/or jurisdictions might require certain levels of data quality for specific categories of data to operate in ADS-equipped mode.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-9"></a>UN-9</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>8 Trustworthiness — Reliability — Resilience</h1>
+            <div class="htmlContent"><p>A METR user needs the METR network to be resilient for all safety critical information.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-128'>SP-128</a></span>  METR cannot rely on just one path for da…</div>
+                <div class="link"> <span><a href='SP.html#SP-162'>SP-162</a></span>  METR needs to be resilient as possible i…</div>
+          </td>
+          <td class="custom-col htmlContent">1.08</td>
+                      <td class="custom-col htmlContent">As a part of the network, transport user systems need to be designed to provide safe operations even if the other components of the METR network become unavailable for some period.</td>
+                      <td class="custom-col htmlContent">METR must plan for and adapt to, resist or quickly recover from all failures related to safety critical information. For example, if a traffic signal stops transmitting SPaT messages, the transport user system needs to be able to recognize that the data is missing and take appropriate action. If an emergency crew deploys safety-critical, ad-hoc rules, they should ensure that every approach to the site is covered by redundant communications in case one source fails.</td>
+                      <td class="custom-col htmlContent">A natural disaster can cause system outages, but transport user systems, especially emergency responders, need reliable rule information in a timely manner.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-10"></a>UN-10</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>9 Trustworthiness — Reliability — Timeliness — Static rules</h1>
+            <div class="htmlContent"><p>A METR user needs to be able to obtain updated rule sets from the METR distribution system prior to the expiration of the current rule sets.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-94'>SP-94</a></span>  Each individual rule should have its own…</div>
+          </td>
+          <td class="custom-col htmlContent">1.09</td>
+                      <td class="custom-col htmlContent">Once rules have been downloaded, it needs to be assured that the rules will not change for an agreed upon period (unless there are push notices); a user system needs to know how often it is required to check for any updates.</td>
+                      <td class="custom-col htmlContent">There are many rules that have been defined by regulators. While many of these rules are relatively static, some can change in an instant. User systems need an accurate representation of rules at every point in time (e.g., on the scale of 0.1 second resolution) to make appropriate dynamic driving task (DDT) decisions. Since it is unreasonable to download all defined rules 10 times a second, user systems will need to store rules for some period. As a result, the user systems will need a way to determine when the previously downloaded information can no longer be assumed to be valid.</td>
+                      <td class="custom-col htmlContent">A user returns to his vehicle after a long hiatus. The vehicle system needs to determine if its previously downloaded rule set is still valid prior to engaging its ADS or presenting information through its driver support system.
+
+A parking restriction might be planned to go into effect two weeks from now and then be active from 06:00 to 17:00 Monday through Friday.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-11"></a>UN-11</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>10 Trustworthiness — Reliability — Timeliness — Dynamic rules</h1>
+            <div class="htmlContent"><p>A METR user needs to be notified of any changes to rule(s) that are not part of the rule sets that the METR user previously downloaded, prior to the rule(s) becoming relevant to the user.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-45'>SP-45</a></span>  The preferred implementation is that a u…</div>
+                <div class="link"> <span><a href='SP.html#SP-110'>SP-110</a></span>  METR needs to be able to advertise when …</div>
+                <div class="link"> <span><a href='SP.html#SP-156'>SP-156</a></span>  Locally implemented/activated rules need…</div>
+          </td>
+          <td class="custom-col htmlContent">1.1</td>
+                      <td class="custom-col htmlContent">This should include advertising when new rules become active due to the deployment of a traffic control device (e.g., push notification of when a new stop sign is installed rather than attempting to predict at what time of day it will be installed)</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent">A parking restriction might be implemented with short notice be active from 06:00 to 17:00 Monday through Friday.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-12"></a>UN-12</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>11 Trustworthiness — Reliability — Timeliness — Dynamic data</h1>
+            <div class="htmlContent"><p>A METR user needs to be aware of the current values of dynamic data that can impact the state of currently relevant defined rules.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-29'>SP-29</a></span>  Each METR rule (e.g., give way to emerge…</div>
+                <div class="link"> <span><a href='SP.html#SP-45'>SP-45</a></span>  The preferred implementation is that a u…</div>
+                <div class="link"> <span><a href='SP.html#SP-55'>SP-55</a></span>  To the extent that C-ITS data is exchang…</div>
+                <div class="link"> <span><a href='SP.html#SP-86'>SP-86</a></span>  Some conditions might require dynamic da…</div>
+          </td>
+          <td class="custom-col htmlContent">1.11</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent">For a transport user system to obey the rules currently in effect, it must have timely notice of any additions or changes to those rules, , even when new rules are posted shortly before the user system encounters a road segment. This includes near-real time notice of changes to known dynamic events, such as variable speed limits and signal operations, as well as real-time changes due to unexpected events.</td>
+                      <td class="custom-col htmlContent">A parking restriction might be active when a snow emergency event is active.
+
+The traffic management centre closes a lane on a motorway immediately downstream of the host vehicle due to a disabled automobile. The host vehicle needs to be informed of this operation prior to reaching the closed freeway lane.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-13"></a>UN-13</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>12 Trustworthiness — Reliability — Transparency</h1>
+            <div class="htmlContent"><p>A METR user needs rule information to be transparent.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">1.12</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent">Transport user systems might make safety-critical operational decisions based on the rule information received. If a collision or other liability situation occurs, forensics will likely need to be performed to ensure what information was available at what point in time. The system design needs to ensure that the rule information received by each user system is sufficiently captured to reliably recreate a meaningful picture of conditions immediately prior to, during, and immediately after the incident.</td>
+                      <td class="custom-col htmlContent">A collision occurs on a road section that has a variable speed limit where the vehicle is believed to have been exceeding the speed limit. To determine liability, investigators will need to determine 1) the speed limit in effect at the time (e.g., as posted on physical infrastructure), 2) the speed limit that the vehicle system was aware of (e.g., as received via METR), and 3) the speed of the vehicle.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-14"></a>UN-14</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>13 Trustworthiness — Reliability — Usability — Completeness</h1>
+            <div class="htmlContent"><p>A METR user needs the METR network to provide complete information within the defined geographic and rule set scope.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-23'>SP-23</a></span>  State of rules in force on the transport…</div>
+                <div class="link"> <span><a href='SP.html#SP-32'>SP-32</a></span>  User systems need high confidence that t…</div>
+                <div class="link"> <span><a href='SP.html#SP-51'>SP-51</a></span>  The feedback loop needs to include the r…</div>
+                <div class="link"> <span><a href='SP.html#SP-114'>SP-114</a></span>  Rules provided by METR should be complet…</div>
+                <div class="link"> <span><a href='SP.html#SP-119'>SP-119</a></span>  In order to be trustworthy and relied up…</div>
+                <div class="link"> <span><a href='SP.html#SP-120'>SP-120</a></span>  In order to claim support for any rule d…</div>
+          </td>
+          <td class="custom-col htmlContent">1.13</td>
+                      <td class="custom-col htmlContent">This includes the provision of all rules for the defined domains that the component is claiming to provide (e.g., based on filters) including any default, static, and dynamic rules as well as data that can change the state of rules. It also requires the provision of any foundational rules for the rules provided. For example, if the rule includes the provision of truck speed limits, the rule set must provide the jurisdictional definition of a &quot;truck&quot;.</td>
+                      <td class="custom-col htmlContent">Rules can override other rules; therefore, a transport user system must have a complete set of rules to ensure that it understands any exceptional conditions.</td>
+                      <td class="custom-col htmlContent">Normally, a vehicle might not be allowed to use a hard shoulder, but it might be required to when a responding emergency vehicle is approaching.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent">M</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-15"></a>UN-15</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>14 Trustworthiness — Reliability — Usability — Validity</h1>
+            <div class="htmlContent"><p>A METR user needs to know the times at which each rule is active (enforceable). </p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">1.14</td>
+                      <td class="custom-col htmlContent">The validity period information will need to will also need to indicate when the rule is expected to become active (i.e., enforceable).</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent">A parking restriction might be active from 06:00 to 17:00 Monday through Friday.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-16"></a>UN-16</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>15 Trustworthiness — Reliability — Usability — Veracity</h1>
+            <div class="htmlContent"><p>A METR user needs to understand the level of verification related to the rule information.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-79'>SP-79</a></span>  What is the legal standing of C-ITS data…</div>
+          </td>
+          <td class="custom-col htmlContent">1.15</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent">Rules and dynamic data might be transmitted in operational systems prior to formal certification or might contain data provided by authorities that are not regularly verified (e.g., rules on a small campus). The user needs to be able to understand to what extent the information being received should be used to affect operational decisions.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-17"></a>UN-17</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>16 Trustworthiness — Reliability — Usability — Language neutrality</h1>
+            <div class="htmlContent"><p>A METR user needs rules to be exchanged in a language-neutral format.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-26'>SP-26</a></span>  All rules should be defined in a languag…</div>
+          </td>
+          <td class="custom-col htmlContent">1.16</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent">Rules should be displayed to the driver in the driver&#x27;s native language; in order to ensure proper translation, rules should be distributed in a language-neutral format to the extent possible to minimize potential for translation errors among human languages.
+
+NOTE: It is likely that some details might have to remain in native language of the regulator within the initial release of METR; the goal is to eventually eliminate such issues.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-18"></a>UN-18</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>17 Trustworthiness — Reliability — Usability — Features</h1>
+            <div class="htmlContent"><p>A METR user needs to be aware of what capabilities are currently supported by the METR distribution system.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">1.17</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-19"></a>UN-19</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>18 Trustworthiness — Reliability — Usability — Facility Classification</h1>
+            <div class="htmlContent"><p>A METR user needs to understand the classification of facilities within a specified jurisdictional area.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-104'>SP-104</a></span>  Road types regulated by a jurisdiction n…</div>
+          </td>
+          <td class="custom-col htmlContent">1.18</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-20"></a>UN-20</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>19 Trustworthiness — Reliability — Usability — Vehicle classification</h1>
+            <div class="htmlContent"><p>A METR user needs to understand the classification of vehicles within a specified jurisdictional area.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-64'>SP-64</a></span>  METR filtering needs to accommodate the …</div>
+                <div class="link"> <span><a href='SP.html#SP-102'>SP-102</a></span>  Vehicle types regulated by a jurisdictio…</div>
+          </td>
+          <td class="custom-col htmlContent">1.19</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-21"></a>UN-21</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>20 Trustworthiness — Security — Access control</h1>
+            <div class="htmlContent"><p>A METR user needs each METR component to maintain access control.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> is assigned to:</div>
+                <div class="link"> <span><a href='Resp.html#Resp-5'>Resp-5</a></span>  Each METR component is responsible for p…</div>
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-42'>SP-42</a></span>  ConOps should explain that all component…</div>
+          </td>
+          <td class="custom-col htmlContent">1.2</td>
+                      <td class="custom-col htmlContent">A METR user needs to be able to access data and services for which they are authorized and need assurance that data and services are not provided to unauthorized parties.</td>
+                      <td class="custom-col htmlContent">While most rule information will be defined to be publicly available, the ability to add, modify, and delete rules as well as other services must be restricted.</td>
+                      <td class="custom-col htmlContent">Translators will need to have permissions to create electronic rules.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent">M</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-22"></a>UN-22</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>21 Trustworthiness — Security — Communications confidentiality</h1>
+            <div class="htmlContent"><p>A METR user needs each METR component to keep user information confidential.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-68'>SP-68</a></span>  User requests should be confidential and…</div>
+                <div class="link"> <span><a href='SP.html#SP-96'>SP-96</a></span>  Unless otherwise indicated, the ConOps s…</div>
+          </td>
+          <td class="custom-col htmlContent">1.21</td>
+                      <td class="custom-col htmlContent">Except when explicitly stated otherwise, all rules are considered public information.</td>
+                      <td class="custom-col htmlContent">Information conveyed by METR is assumed to be publicly available and as such, confidentiality of the information is not important; however, information about what information a specific transport user is accessing could potentially be used to determine information about the user, as such the information requested and obtained by a user should be kept confidential.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent">M</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-23"></a>UN-23</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>22 Trustworthiness — Security — Integrity — Accountability</h1>
+            <div class="htmlContent"><p>A METR user needs each METR component to provide evidence of what actions it has taken, including what data it exchanged and when. </p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-13'>SP-13</a></span>  Trustworthiness should include non-repud…</div>
+                <div class="link"> <span><a href='SP.html#SP-21'>SP-21</a></span>  The ConOps needs to identify accountabil…</div>
+                <div class="link"> <span><a href='SP.html#SP-47'>SP-47</a></span>  METR must provide accountability such th…</div>
+                <div class="link"> <span><a href='SP.html#SP-84'>SP-84</a></span>  We need to indicate that each system nee…</div>
+                <div class="link"> <span><a href='SP.html#SP-112'>SP-112</a></span>  All rules should be signed by the transl…</div>
+          </td>
+          <td class="custom-col htmlContent">1.22</td>
+                      <td class="custom-col htmlContent">This is important for all rules but especially critical for regulations. It must also record not only what rules were sent but demonstration that all of the system&#x27;s responsibilities have been fulfilled at each point in time. The accountability information needs to be retained for a period long enough to meet local jurisdictional requirements. When receiving rules, users should be able to directly determine the translator and the disseminator associated with the rule.
+
+The user should be able to determine the level of liability borne by the source for any misinformation or missing information.</td>
+                      <td class="custom-col htmlContent">Because the transport user system might make or assist in making safety-of-life decisions, it is critical that the system supports non-repudiation so that forensics are able to demonstrate what information was known when.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent">Define auditor; define METR subsystem (to not include DDT actions but only rules processing)</td>
+                      <td class="custom-col htmlContent">M</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-24"></a>UN-24</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>23 Trustworthiness — Security — Integrity — Accuracy</h1>
+            <div class="htmlContent"><p>A METR user needs the METR distribution system to provide accurate information.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-46'>SP-46</a></span>  Peer roles need the ability to coordinat…</div>
+                <div class="link"> <span><a href='SP.html#SP-48'>SP-48</a></span>  Disseminators need to be able to share c…</div>
+                <div class="link"> <span><a href='SP.html#SP-51'>SP-51</a></span>  The feedback loop needs to include the r…</div>
+                <div class="link"> <span><a href='SP.html#SP-109'>SP-109</a></span>  The METR ConOps will be written so that …</div>
+                <div class="link"> <span><a href='SP.html#SP-114'>SP-114</a></span>  Rules provided by METR should be complet…</div>
+                <div class="link"> <span><a href='SP.html#SP-131'>SP-131</a></span>  The ConOps should indicate the importanc…</div>
+          </td>
+          <td class="custom-col htmlContent">1.23</td>
+                      <td class="custom-col htmlContent">The electronic rules should be presented in a manner that mirrors the written rules as closely as possible to minimize the addition of any ambiguity. 
+The rules also need to be accurate in the sense of providing an accurate description of the rule and accuracy as far as location (e.g., the start and end points for a stretch of roadway with a parking restriction).
+The rules should also be unambiguous; for example, they should be able to distinguish between a planned change to a rule (e.g., changing the speed limit next week) and a plan for a new rule (e.g., implementation of a new parking restriction next week). </td>
+                      <td class="custom-col htmlContent">The information received by METR is used to make operational, and often safety-critical, decisions and enforcement actions can be taken against transport user systems that violate posted regulations. As a result, the information provided by METR must be accurate.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent">M</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-25"></a>UN-25</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>24 Trustworthiness — Security — Integrity — Authenticity</h1>
+            <div class="htmlContent"><p>A METR user needs each METR component to ensure the authenticity of the information received.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-42'>SP-42</a></span>  ConOps should explain that all component…</div>
+                <div class="link"> <span><a href='SP.html#SP-138'>SP-138</a></span>  Users need all rules to be digitally sig…</div>
+          </td>
+          <td class="custom-col htmlContent">1.24</td>
+                      <td class="custom-col htmlContent">The user needs to ensure that the rules are being received from an authorized translator.
+</td>
+                      <td class="custom-col htmlContent">Transport user systems rely upon the accuracy of METR information and need to ensure that it is from an authentic source.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent">M</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-26"></a>UN-26</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>25 Trustworthiness — Security — Integrity — Privacy</h1>
+            <div class="htmlContent"><p>A METR user needs each METR component to keep user information private.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-58'>SP-58</a></span>  User privacy needs to be protected, espe…</div>
+                <div class="link"> <span><a href='SP.html#SP-68'>SP-68</a></span>  User requests should be confidential and…</div>
+          </td>
+          <td class="custom-col htmlContent">1.25</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent">A distributor of METR information could potentially keep track of the requests made by a transport user system and thereby deduce personal information about its users. Users should be aware of the policies of the distributor with an opt-in for any external data use and there needs to be mechanisms to enforce the privacy policies adopted by the distributor.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent">O</td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-27"></a>UN-27</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>26 User — Disseminator — Discovery</h1>
+            <div class="htmlContent"><p>A transport user needs to discover where to obtain all relevant rules from the METR distribution system.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-62'>SP-62</a></span>  Users need a way to discover disseminato…</div>
+                <div class="link"> <span><a href='SP.html#SP-126'>SP-126</a></span>  METR providers might need to be certifie…</div>
+                <div class="link"> <span><a href='SP.html#SP-129'>SP-129</a></span>  Identification of the disseminator is ou…</div>
+          </td>
+          <td class="custom-col htmlContent">2.01</td>
+                      <td class="custom-col htmlContent">NOTE: Some jurisdictions might require each distribution point (e.g., disseminator) to be certified. 
+NOTE: The provision of this service will likely rely upon an ITS service external to METR.</td>
+                      <td class="custom-col htmlContent">Transport users, who might be subject to rules, and their user systems (e.g., ADS-equipped vehicle, smartphone) need be to be able to identify where rules can be obtained. This need often occurs due to an initialization of a transport user system or due to a user entering, or planning to enter, a new jurisdiction. </td>
+                      <td class="custom-col htmlContent">The different sources might specialize in different types of regulations (e.g., general motor vehicles, commercial vehicles, micromobility) and/or have different geographic domains (e.g., supporting regulations from specific jurisdictions). In some cases (e.g., a typical passenger car), a single source might provide all relevant regulations for a large geographic area; in other cases, multiple sources might be required to obtain all relevant regulations (e.g., a commercial vehicle might collect generic motor vehicle regulations from one source, and supplemental commercial vehicle regulations from multiple different regional sources).</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-28"></a>UN-28</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>27 User — Disseminator — Terms of service</h1>
+            <div class="htmlContent"><p>A transport user needs to discover the terms of service for accessing rules from the METR distribution system.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">2.02</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-29"></a>UN-29</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>28 User — Connectivity — Coverage</h1>
+            <div class="htmlContent"><p>A transport user needs to be aware of areas without or with limited connectivity</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">2.03</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-30"></a>UN-30</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>29 User — Connectivity — Preferences</h1>
+            <div class="htmlContent"><p>A transport user needs to be able to identify their preferences for usage of various communications channels</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-8'>SP-8</a></span>  Users have a need to indicate their pref…</div>
+          </td>
+          <td class="custom-col htmlContent">2.04</td>
+                      <td class="custom-col htmlContent">Preferences should include the costs involved with each communications technology.</td>
+                      <td class="custom-col htmlContent">Transport user systems typically support multiple radios for wireless communication radios. For example, a passenger car might support
+- an ISO/IEC/IEEE 8802.11 radio (i.e., WiFi)
+- a 3GPP radio (e.g., 3G, 4G, 5G)
+- a short-range communications radio (e.g., DSRC or LTE-V2X)
+Use of each radio will involve different restrictions and implications (e.g., costs). Users need to be able to identify their preferences so that their interaction with the METR system can be achieved in an efficient manner.</td>
+                      <td class="custom-col htmlContent">A transport user might wish to take a journey spanning 5,000 km. Such a journey would entail crossing many jurisdictional areas, each with its own rules (both location-specific rules, such as stop sign information, as well as general rules, such as rules on the use of headlights). While a transport user system could likely download the rules as needed using a 3GPP radio, it might be less expensive to download many of these rules in advance via a WiFi link.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-31"></a>UN-31</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>30 User — Conflicts — Observed</h1>
+            <div class="htmlContent"><p>A transport user needs to be aware of confirmed discrepancies between electronic regulations and observed traffic control devices</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-88'>SP-88</a></span>  The ConOps should allow flexibility for …</div>
+                <div class="link"> <span><a href='SP.html#SP-89'>SP-89</a></span>  The ConOps should allow any vehicle (tha…</div>
+                <div class="link"> <span><a href='SP.html#SP-90'>SP-90</a></span>  A vehicle reporting a conflict should ha…</div>
+                <div class="link"> <span><a href='SP.html#SP-91'>SP-91</a></span>  A disseminator should not publicize repo…</div>
+          </td>
+          <td class="custom-col htmlContent">2.05</td>
+                      <td class="custom-col htmlContent">Such discrepancies should be rectified quickly, but might require some time. Some METR deployments might choose not to provide this information.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-32"></a>UN-32</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>31 User — Facility — Jurisdiction</h1>
+            <div class="htmlContent"><p>A transport user needs to be aware of the entity that has jurisdiction over each transport facility that it might use.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-139'>SP-139</a></span>  METR needs to be able to accommodate hig…</div>
+                <div class="link"> <span><a href='SP.html#SP-140'>SP-140</a></span>  METR needs to be able to accommodate roa…</div>
+          </td>
+          <td class="custom-col htmlContent">2.06</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent">Different rules might apply to similar transport facilities depending on its jurisdiction.</td>
+                      <td class="custom-col htmlContent">Users should be aware that city rules apply to a city road that traverses a private campus. </td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-33"></a>UN-33</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>32 User — Rules — Access</h1>
+            <div class="htmlContent"><p>A transport user needs to be aware of all relevant rules in time to comply with them.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-30'>SP-30</a></span>  Withdrawn/rescinded rules need to be pub…</div>
+                <div class="link"> <span><a href='SP.html#SP-49'>SP-49</a></span>  A mobile refresh provider should be char…</div>
+                <div class="link"> <span><a href='SP.html#SP-154'>SP-154</a></span>  METR should include pavement markings, i…</div>
+          </td>
+          <td class="custom-col htmlContent">2.07</td>
+                      <td class="custom-col htmlContent">The need covers unposted, posted (including lane markings), permanent, temporary, and ad hoc rules, as well as dynamic data that can impact the status of rules. It covers notification of expected, active, and withdrawn rules. It also covers instances where the transport user system is not within a mobile internet coverage area (e.g., and requires a mobile disseminator)</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-34"></a>UN-34</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>33 User — Rules — Efficient data transfer</h1>
+            <div class="htmlContent"><p>A transport user system needs to obtain relevant rules in an efficient manner.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-37'>SP-37</a></span>  Pull process must support filtering</div>
+                <div class="link"> <span><a href='SP.html#SP-38'>SP-38</a></span>  Centralized dynamic rules either need tr…</div>
+                <div class="link"> <span><a href='SP.html#SP-39'>SP-39</a></span>  Filtering should include almost all para…</div>
+                <div class="link"> <span><a href='SP.html#SP-50'>SP-50</a></span>  Need to be able to filter rules based on…</div>
+                <div class="link"> <span><a href='SP.html#SP-64'>SP-64</a></span>  METR filtering needs to accommodate the …</div>
+                <div class="link"> <span><a href='SP.html#SP-101'>SP-101</a></span>  The ConOps should allow the definition o…</div>
+                <div class="link"> <span><a href='SP.html#SP-107'>SP-107</a></span>  METR users need to be able to identify w…</div>
+          </td>
+          <td class="custom-col htmlContent">2.08</td>
+                      <td class="custom-col htmlContent">The various competing needs might result in a hybrid design where some rules, such as speed limits, are placed into a single package covering a large geographic area and other rules, such as parking restrictions, are placed into packages covering a much smaller geographic area.</td>
+                      <td class="custom-col htmlContent">User systems rely upon wireless communication media that often have limited bandwidth. Processing and storing data increases hardware requirements. Preventing unnecessary the downloads allows a more efficient system; however, the need to obtain complete rule sets with proper accountability remains. To enhance the system efficiency, users should be able to subset rules based on: 
+(1) the classification of the vehicle within the target jurisdiction (i.e., passenger vehicles do not need rules for commercial vehicles or sidewalk robots), 
+(2) location and intent (e.g., a vehicle might wish to store all rules related to its home location but only to retrieve rules along a narrow corridor for a long trip),
+(3) type of rule (e.g., some vehicles might not use parking rules in any way so it would be pointless to download them), 
+(4) temporal constraints (lawyers and insurance companies might wish to discover rules that were in effect on a past date),
+(5) other characteristics that might relate to special rules (e.g., emergency response, delivery, dangerous goods, permitted, heavy, and other vehicles might be subject to special regulations of which only they need to be aware).
+
+The filtering parameters need to be standardized so that users can have condfidence that they are requesting all rules that are needed. For example, disseminators should allow a user to indicate a request for all rules for a standard profile, such as a passenger car.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-35"></a>UN-35</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>34 User — Rule — Activation status</h1>
+            <div class="htmlContent"><p>A transport user needs to be notified of the activation and de-activation of relevant regulations in a timely manner</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-35'>SP-35</a></span>  Push is probably needed for coordination…</div>
+                <div class="link"> <span><a href='SP.html#SP-144'>SP-144</a></span>  It might be worth including an optional …</div>
+          </td>
+          <td class="custom-col htmlContent">2.09</td>
+                      <td class="custom-col htmlContent">The activation/deactivation might be due to any number of reasons, including: (1) a defined schedule, (2) external events (e.g., rain), (3) installation of a sign
+
+Some vehicle systems or jurisdictions might want to flag new rules.
+</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent">Daily parking restrictions
+A new regulatory sign being installed</td>
+                      <td class="custom-col htmlContent">Might note that this will likely require the use of Push</td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-36"></a>UN-36</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>35 User — Rule — Legal standing</h1>
+            <div class="htmlContent"><p>A transport user needs to be aware of the legal standing of each electronic rule received.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">2.1</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent">Users need to be aware if the electronic rules can be legally relied upon to perform the dynamic driving task or if they should be treated as supplementary (informative) or if they are only intended for testing purposes.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-37"></a>UN-37</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>36 User — Rule — Source authority</h1>
+            <div class="htmlContent"><p>A transport user needs to be aware of the type of authority that has imposed each rule</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-137'>SP-137</a></span>  Need to support (and convey to users) th…</div>
+          </td>
+          <td class="custom-col htmlContent">2.11</td>
+                      <td class="custom-col htmlContent">The type of authority implies a level of trustworthiness. For example, a governmental rule is more likely to be accurate than a private rule and might relate to the type of enforcement that can be applied. Types might include: governmental rule, private rule enforced by government, private rule verified by a third party, and private rule independently asserted.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-38"></a>UN-38</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>37 User — Rule — Overrides</h1>
+            <div class="htmlContent"><p>A transport user needs to be aware when a rule overrides another rule.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-161'>SP-161</a></span>  Overrides of normal traffic control is a…</div>
+          </td>
+          <td class="custom-col htmlContent">2.12</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-39"></a>UN-39</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>38 User — Rule — Precedence</h1>
+            <div class="htmlContent"><p>A transport user needs to be aware of the precedence of each electronic rule received.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-14'>SP-14</a></span>  METR should indicate the level of legal …</div>
+          </td>
+          <td class="custom-col htmlContent">2.13</td>
+                      <td class="custom-col htmlContent">The precedence is used to determine if the rule has a higher or lower priority than another rule (whether physically posted or electronic).</td>
+                      <td class="custom-col htmlContent">Multiple conflicting rules may apply to a single road section (e.g., a normal speed limit, a speed limit when raining, and a speed limit for road works) and transport users need to know the rules for unambiguously resolving the apparent conflicts.</td>
+                      <td class="custom-col htmlContent">A transport user system might encounter a stretch of motorway that has a posted speed limit, a posted speed limit for road works, and a speed limit related to moving maintenance operations, along with a different speed limit being publicized by METR. The transport user system needs to be able to determine which speed limit takes priority given the current conditions.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-40"></a>UN-40</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>39 User — Rule — Applicability — Permits</h1>
+            <div class="htmlContent"><p>A transport user needs to be aware of the permissions to which it is currently granted.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-12'>SP-12</a></span>  Need to support rules related to specifi…</div>
+                <div class="link"> <span><a href='SP.html#SP-149'>SP-149</a></span>  METR needs to provide a way for the vehi…</div>
+                <div class="link"> <span><a href='SP.html#SP-153'>SP-153</a></span>  METR needs to support both permits that …</div>
+          </td>
+          <td class="custom-col htmlContent">2.14</td>
+                      <td class="custom-col htmlContent">Permits might be granted to transport users (e.g., an accessible parking permit) or a transport user system (e.g., an emergency vehicle designation). 
+
+Permits might be related to transport facility usage, radio frequency usage, transport operations, etc. </td>
+                      <td class="custom-col htmlContent">Many rules are based on conditions specific to particular types of user permissions. The transport user system needs to be aware of the current permissions so that it can apply the rules properly.</td>
+                      <td class="custom-col htmlContent">A user with disabilities might be permitted to use accessible parking spaces through the use of a special permit. The user&#x27;s vehicle needs to be aware of the permissions when determining where to park the vehicle.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-41"></a>UN-41</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>40 User — Rules — Download journey</h1>
+            <div class="htmlContent"><p>A transport user needs to be aware of all relevant regulations for a journey in a timely manner</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-9'>SP-9</a></span>  User systems might support the ability t…</div>
+          </td>
+          <td class="custom-col htmlContent">2.15</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-42"></a>UN-42</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>41 User — Rule — Obsolescence</h1>
+            <div class="htmlContent"><p>A transport user needs to be able to make a vehicle operational even if it has been unable to establish a connection to the METR distribution system for a prolonged period.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">2.16</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent">For the foreseeable future, it is likely that there will be areas that do not have wireless Internet coverage. As a result, there is a real possibility that ADS-equipped vehicles will be stored in areas where their rule set becomes out of date. Users should be able to make these vehicles operational again without requiring a towing service. For example, such a vehicle might allow for (1) manual operation (with no or degraded driver support), (2) remote update capability, or (3) local rules allowing for a degraded ADS operation on roadways (e.g., driving with flashers on).</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-43"></a>UN-43</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>42 Regulator — Jurisdictions — Sub-areas</h1>
+            <div class="htmlContent"><p>A jurisdictional entity needs to publicize the existence of sub-areas within its jurisdictional boundary.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-141'>SP-141</a></span>  METR needs to be able to accommodate jur…</div>
+                <div class="link"> <span><a href='SP.html#SP-143'>SP-143</a></span>  METR needs to be able to accommodate ind…</div>
+          </td>
+          <td class="custom-col htmlContent">3.01</td>
+                      <td class="custom-col htmlContent">A sub-area might consist of multiple non-contiguous areas. A regulator needs to be able to indicate if a sub-area is subjected to its rules. </td>
+                      <td class="custom-col htmlContent">In practice, most locations are subjected to multiple levels of hierarchical jurisdictions. For example, a location might be within a private campus, which is located within a city, which is located within a national subdivision (e.g., a province, state, prefecture), which is located within a country. At such a location, the rules of all of the higher levels typically apply. However, if the private campus happens to be an embassy, the higher level rules would not apply. </td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-44"></a>UN-44</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>43 Regulator — Jurisdictions — Assign sub-jurisdiction</h1>
+            <div class="htmlContent"><p>A jurisdictional entity needs to designate another jurisdictional entity to be the responsible authority for each contained sub-area.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">3.02</td>
+                      <td class="custom-col htmlContent">This includes the ability to change a previously assigned primary regulator (e.g., for a private campus that is sold).</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-45"></a>UN-45</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>44 Regulator — Jurisdictions — Regulator</h1>
+            <div class="htmlContent"><p>A jurisdictional entity needs to authorize one or more regulators for its jurisdiction.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">3.03</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-46"></a>UN-46</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>45 Regulator — Jurisdictions — Agents</h1>
+            <div class="htmlContent"><p>A regulator needs to be able to designate regulatory agent(s) as needed.<br></p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">3.04</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-47"></a>UN-47</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>46 Regulator — Rules — Definition</h1>
+            <div class="htmlContent"><p>A regulator needs to be able to publicize the details associated with each rule through METR.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-40'>SP-40</a></span>  There is a lack of consistent terminolog…</div>
+                <div class="link"> <span><a href='SP.html#SP-86'>SP-86</a></span>  Some conditions might require dynamic da…</div>
+          </td>
+          <td class="custom-col htmlContent">3.05</td>
+                      <td class="custom-col htmlContent">The definition of a rule might refer to a specific dynamic data source to determine the state of the rule (e.g., a rule might indicate that an intersection is controlled by a traffic signal and provide a reference to the SPaT data source for the state of the traffic signal).
+
+METR needs to be able to support the rule types defined in Rule Types.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent">While stop signs are standardized around the world, the exact meaning of coming to a complete stop varies (e.g., some jurisdictions require a complete stop while others require a complete stop for a minimum amount of time). ADS-equipped vehicles need to be able to know the local meaning of each rule so that the rules can be properly followed.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-48"></a>UN-48</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>47 Regulator — Rules — Conditions</h1>
+            <div class="htmlContent"><p>A regulator needs to be able to publicize the conditions under which a rule applies through METR. </p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-29'>SP-29</a></span>  Each METR rule (e.g., give way to emerge…</div>
+                <div class="link"> <span><a href='SP.html#SP-40'>SP-40</a></span>  There is a lack of consistent terminolog…</div>
+                <div class="link"> <span><a href='SP.html#SP-69'>SP-69</a></span>  See slide for examples of rule character…</div>
+                <div class="link"> <span><a href='SP.html#SP-70'>SP-70</a></span>  METR should allow rule characteristcis t…</div>
+                <div class="link"> <span><a href='SP.html#SP-94'>SP-94</a></span>  Each individual rule should have its own…</div>
+                <div class="link"> <span><a href='SP.html#SP-103'>SP-103</a></span>  The characteristics used by a jurisdicti…</div>
+                <div class="link"> <span><a href='SP.html#SP-105'>SP-105</a></span>  METR needs to convey the location for ev…</div>
+                <div class="link"> <span><a href='SP.html#SP-106'>SP-106</a></span>  METR needs to support rules that charact…</div>
+                <div class="link"> <span><a href='SP.html#SP-111'>SP-111</a></span>  Characteristics should include permits, …</div>
+          </td>
+          <td class="custom-col htmlContent">3.06</td>
+                      <td class="custom-col htmlContent">The conditions might include combination of conditions, such as those defined under Rule Characteristics.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-49"></a>UN-49</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>48 Regulator — Rules —Supersedence</h1>
+            <div class="htmlContent"><p>A regulator needs to be able to indicate if other (e.g., subordinate) jurisdictions can supersede defined rules, and if so, in what manner.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-36'>SP-36</a></span>  Hierarchy of rules should support the co…</div>
+          </td>
+          <td class="custom-col htmlContent">3.07</td>
+                      <td class="custom-col htmlContent">A jurisdiction might allow replacement of a general rule; might only allow more stringent rules; or might prohibit modification of the rules.</td>
+                      <td class="custom-col htmlContent">Typically, jurisdictions establish a default speed limit for specific types of roads, which apply unless a different speed limit is posted.</td>
+                      <td class="custom-col htmlContent">Example 1: A regional jurisdiction might set a default speed limit while a local jurisdiction might be allowed to set higher or lower speed limits for roads under its authority.
+Example 2: A local authority might impose limits on emissions followed by a regional authority imposing stricter emission requirements.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-50"></a>UN-50</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>49 Regulator — Rules — Enforcement information</h1>
+            <div class="htmlContent"><p>A regulator may wish to publicise who is authorized to enforce the rule and/or the penalties that might apply for violating the rule.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-142'>SP-142</a></span>  METR needs to be able to accommodate enf…</div>
+          </td>
+          <td class="custom-col htmlContent">3.08</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent">Identifying the enforcement agency and/or the penalties involved might promote adherance to the rule.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-51"></a>UN-51</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>50 Regulator — Publicize — Persistent rules</h1>
+            <div class="htmlContent"><p>A regulator needs to be able to publicize persistent rules it has established.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-38'>SP-38</a></span>  Centralized dynamic rules either need tr…</div>
+          </td>
+          <td class="custom-col htmlContent">3.09</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-52"></a>UN-52</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>51 Regulator — Publicize — Temporary rules</h1>
+            <div class="htmlContent"><p>A regulator needs to be able to publicize temporary rules it has established.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-39'>SP-39</a></span>  Filtering should include almost all para…</div>
+          </td>
+          <td class="custom-col htmlContent">3.10</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-53"></a>UN-53</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>52 Regulator — Publicize — Ad hoc rules</h1>
+            <div class="htmlContent"><p>A regulator needs to be able to publicize ad-hoc rules through METR in the vicinity where they apply.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-38'>SP-38</a></span>  Centralized dynamic rules either need tr…</div>
+                <div class="link"> <span><a href='SP.html#SP-71'>SP-71</a></span>  Evacuation plans should be distributed i…</div>
+                <div class="link"> <span><a href='SP.html#SP-123'>SP-123</a></span>  Responders and field crews often have ne…</div>
+                <div class="link"> <span><a href='SP.html#SP-156'>SP-156</a></span>  Locally implemented/activated rules need…</div>
+          </td>
+          <td class="custom-col htmlContent">3.11</td>
+                      <td class="custom-col htmlContent">This includes the need to advise users that the normal rules (e.g., static/variable rules) are currently being overridden. An ad hoc rule might be a simple electronic notice that ad hoc rules are in effect in a defined geofenced area without providing any details (i.e., notice that non-electronic rules are in force). </td>
+                      <td class="custom-col htmlContent">Responders and field crews often impose ad hoc rules. Sometimes, these rules will fit into well defined patterns (e.g., work zone speed limit); in other cases, the rules are more difficult to codify on the fly (e.g., a person directing traffic at the scene of an crash). In the latter case, the field crew needs to be able to advise users that the normal rules (e.g., static/variable rules) are currently being overridden even though it may not be feasible to provide details electronically. By notifying users that there is a change in the normal rules, ADS-equipped vehicles will be able to determine if the section of road still remains within its ODD.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-54"></a>UN-54</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>53 Regulator — Publicize — Rule activation</h1>
+            <div class="htmlContent"><p>A regulator needs to be able to publicize the activation of a rule through the METR network.<br></p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-38'>SP-38</a></span>  Centralized dynamic rules either need tr…</div>
+                <div class="link"> <span><a href='SP.html#SP-71'>SP-71</a></span>  Evacuation plans should be distributed i…</div>
+          </td>
+          <td class="custom-col htmlContent">3.12</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent">New rules are often activated when field crews complete the installation of a traffic control device.
+
+Evacuation plans might be publicized well in advance but activated on short notice.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-55"></a>UN-55</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>54 Regulator — Publicize — Prioritization</h1>
+            <div class="htmlContent"><p>A regulator needs rules to be distributed in a prioritized manner.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">3.13</td>
+                      <td class="custom-col htmlContent">The distribution network should be designed to improve the probability that each METR user system will receive the highest priority rules early in case there is any instability in communications.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-56"></a>UN-56</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>55 Regulator — Publicize — Rules at a distance</h1>
+            <div class="htmlContent"><p>A regulator might need to publicize ad hoc rules and dynamically activated rules to a large geographic area.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-155'>SP-155</a></span>  Locally implemented/activated rules migh…</div>
+          </td>
+          <td class="custom-col htmlContent">3.14</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent">The activation of some rules (e.g., road closures) can have significant effect on the transport network and regulators might wish to minimize demand for those routes in order to provide a more safe, sustainable, and efficient transport network.</td>
+                      <td class="custom-col htmlContent">A regulator might close a mountain pass during a snow storm. The regulator would likely want to ensure that travelers are aware of this closure to minimize the number of travelers attempting to travel on the roads leading to the mountain pass during inclement weather.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-57"></a>UN-57</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>56 Regulator — Conflicts — Electronic</h1>
+            <div class="htmlContent"><p>A regulator needs to be informed when a METR component detects any conflict among two or more electronic rules.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">3.15</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-58"></a>UN-58</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>57 Regulator — Conflicts — Physical</h1>
+            <div class="htmlContent"><p>A regulator needs to be informed when a METR user system detects any discrepancies between rules being electronically distributed and physically observed traffic control devices.<br></p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-15'>SP-15</a></span>  Users should have a way to report discre…</div>
+                <div class="link"> <span><a href='SP.html#SP-88'>SP-88</a></span>  The ConOps should allow flexibility for …</div>
+                <div class="link"> <span><a href='SP.html#SP-89'>SP-89</a></span>  The ConOps should allow any vehicle (tha…</div>
+                <div class="link"> <span><a href='SP.html#SP-90'>SP-90</a></span>  A vehicle reporting a conflict should ha…</div>
+                <div class="link"> <span><a href='SP.html#SP-115'>SP-115</a></span>  When any conflict is discovered, it shou…</div>
+          </td>
+          <td class="custom-col htmlContent">3.16</td>
+                      <td class="custom-col htmlContent">User systems should report such discrepancies when they are discovered; it is up to the user system to determine how to respond to the discrepancy in real-time.
+
+Some jurisdictions might require reporting while others allow it as an option and others do not have a public feedback mechanism. The observations might include images to assist in resolution of the conflict, but this might not always be provided due to vehicle and/or bandwidth limitations.
+
+The ConOps should allow flexibility for a user system to report any conflicts in rules to the trusted source of its choice, who can then forward to the appropriate disseminator. For example, it may report to an OEM, who provides data to the disseminator.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-59"></a>UN-59</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>58 Regulator — Discovery</h1>
+            <div class="htmlContent"><p>A regulator needs to discover and validate rules detected and reported by vehicle sensor observations.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">3.17</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-60"></a>UN-60</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>59 Third party — Verify accuracy</h1>
+            <div class="htmlContent"><p>An authorized third party needs to be able to verify that rules currently being electronically distributed are consistent with traffic control devices</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-51'>SP-51</a></span>  The feedback loop needs to include the r…</div>
+          </td>
+          <td class="custom-col htmlContent">4.01</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-61"></a>UN-61</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>60 Third party — Provide accountability</h1>
+            <div class="htmlContent"><p>An authorized third party needs to be able to verify which regulations a METR user system has received and at what time.<br></p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">4.02</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-62"></a>UN-62</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>61 Third party — Regulator history</h1>
+            <div class="htmlContent"><p>An authorized third party needs to be able to verify the history of rule availability for any defined area.</p></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent">4.03</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-63"></a>UN-63</td>
+          <td class="description-col" style="padding-left:10px">
+            <h1>62 Third party — Permit Verification</h1>
+            <div class="htmlContent"><p>An authorized third party needs to be able to verify whether a vehicle has a valid permit.</p></div>
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-151'>SP-151</a></span>  METR should provide a way for an entity …</div>
+          </td>
+          <td class="custom-col htmlContent">4.04</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent">For enforcement, opening gates, etc.</td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+        <tr>
+          <td class="id-col"><a id="UN-1"></a>UN-1</td>
+          <td class="description-col" style="padding-left:10px">
+            
+            <div class="htmlContent"></div>
+          </td>
+          <td class="links-col">
+          </td>
+          <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                      <td class="custom-col htmlContent"></td>
+                    </tr>
+      </tbody>
+    </table>
+    <hr>
+    <div class="float-right mr-4"><em>Last modified by <a href="mailto://kvaughn@trevilon.com">Kenneth Vaughn, Trevilon</a> on 2021-12-02 10:51</em></div>
+  </div>
+</body>
+</html>
