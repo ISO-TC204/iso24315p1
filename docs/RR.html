@@ -2,163 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>24315-1 METR ConOps-Resp: Responsibilities</title>
+  <title>24315-1 METR ConOps-RR: Responsibilities</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-  <style>
-    /* Customization of standard HTML styles */
-    p {
-      margin-top: 0em;
-      margin-bottom: 0.5em;
-    }
-    h1, h2, h3, h4, h5, h6 {
-      margin-top: 0em;
-      margin-bottom: 0.25em;
-    }
-    table {
-      border-spacing: 1em;
-    }
-    th {
-      text-align: center;
-    }
-    ul, ol {
-      margin-bottom: 0;
-    }
-
-    /* Customization of ReqView styles */
-    .heading {
-      margin: 1em;
-      margin-top: 2em;
-      margin-bottom: 2em;
-    }
-    .filter {
-      text-align: right;
-      margin: 1em;
-    }
-    .reqviewTable {
-      margin: 1em;
-    }
-    .reqviewTable h1 {
-      font-size: 30px;
-    }
-    .reqviewTable h2 {
-      font-size: 24px;
-    }
-    .reqviewTable h3 {
-      font-size: 20px;
-    }
-    .reqviewTable h4 {
-      font-size: 18px;
-    }
-    .reqviewTable h5 {
-      font-size: 16px;
-    }
-    .reqviewTable h6 {
-      font-size: 14px;
-    }
-    .reqviewTable > table > thead > tr > th {
-      text-align: left;
-    }
-    /* Customization of our styles */
-    .id-col {
-      min-width: 5em;
-      vertical-align: top;
-    }
-    .description-col {
-      min-width: 30em;
-      vertical-align: top;
-    }
-    .discussion-col {
-      min-width: 15em;
-      vertical-align: top;
-    }
-    .links-col {
-      min-width: 15em;
-      vertical-align: top;
-    }
-    .attributes-col {
-      min-width: 15em;
-      vertical-align: top;
-    }
-    .attributes-col ul {
-      padding-left: 0px;
-    }
-    .attributes-col li {
-      list-style: none outside none;
-    }
-    .attributes-col .attribute-name {
-      font-style: italic;
-    }
-    .custom-col {
-      min-width: 10em;
-      vertical-align: top;
-    }
-    .comment-text {
-      padding-top: 5px;
-      padding-bottom: 10px;
-    }
-    .attachment {
-      font-style: italic;
-      margin-top: 0.5em;
-      margin-bottom: 0.5em;
-    }
-    .attachment img {
-      max-width: 90%;
-      height: auto;
-      display: block;
-    }
-    .links-type-name {
-      font-style: italic;
-    }
-    .link {
-      margin-left: 16px;
-    }
-    td.attributes-col div.htmlContent,
-    td.custom-col div.htmlContent {
-      min-width: 15em;
-    }
-    .deleted {
-      color: #666;
-    }
-    .deleted .id-col,
-    .deleted .description-col,
-    .link.deleted {
-      text-decoration: line-through;
-    }
-    .deleted a {
-      color: gray;
-    }
-    .htmlContent table {
-      border: 1px solid black;
-      border-collapse: collapse;
-      width: auto;
-    }
-    .htmlContent th, .htmlContent td {
-      border: 1px solid #b5bcc7;
-      vertical-align: top;
-      padding: 3px 7px 2px 7px;
-    }
-    .htmlContent th {
-      padding-top: 5px;
-      padding-bottom: 4px;
-      background: silver;
-      border-bottom: none !important;
-    }
-    /** Override Bootstrap print */
-    @media print {
-      @page {
-        size: initial;
-      }
-      body {
-        min-width: unset !important;
-        font-size: 12px;
-      }
-    }
-  </style>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link href="jq/jquery-ui.css" rel="stylesheet">
+	<script src="external/jquery/jquery.js"></script>
+	<script src="jq/jquery-ui.js"></script>
+	<script src="glossary.js"></script>
+	<script>
+			$( document ).tooltip({
+				content: function() {
+					return $(this).attr('title');
+				}
+			});
+	</script>
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
-<body>
-  <div class="heading">
-    <h1 class="display-4">24315-1 METR ConOps-Resp: Responsibilities</h1>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" style="position: static;">
+						<h2><a href="index.html">METR</a><img src="images/car_wifi.png" style="width: 2em;" /></h2>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="metr_overview.html">Overview</a></li>
+								<li><a href="workshop_overview.html">Workshops</a></li>
+								<li><a href="glossary.html">Glossary</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<div class="inner">
+						<table>
+							<tr>
+								<td><h1>24315-1 METR ConOps<br />RR: Responsibilities</h1></td>
+								<td width="390px">Traceability Tables: <div class="tab">
+									<button onclick="location.href='SP.html'" title="Summary Points">SP</button>
+									<button onclick="location.href='A.html'" title="Assumptions/Constraints">A</button>
+									<button onclick="location.href='N.html'" title="Notes">N</button>
+									<button onclick="location.href='RC.html'" title="Rule Characteristics">RC</button>
+									<button onclick="location.href='RR.html'" title="Role Responsibilities">RR</button>
+									<button onclick="location.href='RT.html'" title="Rule Types">RT</button>
+									<button onclick="location.href='S.html'" title="Scenarios">S</button>
+									<button onclick="location.href='T.html'" title="Terminology">T</button>
+									<button onclick="location.href='UN.html'" title="User Needs">UN</button>
+								</div></td>
+							</tr>
+						</table>
+							
+  <div class="filter">
+    <i class="fas fa-filter"></i> [Display: 1]
   </div>
   <div class="reqviewTable table-responsive-md">
     <table class="table table-sm">
@@ -174,62 +83,8 @@
       <!-- Requirements table with list of requirements -->
       <tbody>
         <tr>
-          <td class="id-col"><a id="Resp-19"></a>Resp-19</td>
-          <td class="description-col" style="padding-left:10px">
-            <h1>1 Scope</h1>
-            <div class="htmlContent"></div>
-          </td>
-          <td class="links-col">
-          </td>
-        </tr>
-        <tr>
-          <td class="id-col"><a id="Resp-20"></a>Resp-20</td>
-          <td class="description-col" style="padding-left:10px">
-            <h1>2 Normative references</h1>
-            <div class="htmlContent"></div>
-          </td>
-          <td class="links-col">
-          </td>
-        </tr>
-        <tr>
-          <td class="id-col"><a id="Resp-21"></a>Resp-21</td>
-          <td class="description-col" style="padding-left:10px">
-            <h1>3 Terms and definitions</h1>
-            <div class="htmlContent"></div>
-          </td>
-          <td class="links-col">
-          </td>
-        </tr>
-        <tr>
-          <td class="id-col"><a id="Resp-22"></a>Resp-22</td>
-          <td class="description-col" style="padding-left:10px">
-            <h1>4 Symbols and abbreviated terms</h1>
-            <div class="htmlContent"></div>
-          </td>
-          <td class="links-col">
-          </td>
-        </tr>
-        <tr>
-          <td class="id-col"><a id="Resp-23"></a>Resp-23</td>
-          <td class="description-col" style="padding-left:10px">
-            <h1>5 Current situation</h1>
-            <div class="htmlContent"></div>
-          </td>
-          <td class="links-col">
-          </td>
-        </tr>
-        <tr>
-          <td class="id-col"><a id="Resp-24"></a>Resp-24</td>
-          <td class="description-col" style="padding-left:10px">
-            <h1>6 Justification for and nature of changes</h1>
-            <div class="htmlContent"></div>
-          </td>
-          <td class="links-col">
-          </td>
-        </tr>
-        <tr>
-          <td class="id-col"><a id="Resp-25"></a>Resp-25</td>
-          <td class="description-col" style="padding-left:10px">
+          <td class="id-col"><a id="RR-25"></a>RR-25</td>
+          <td class="description-col" style="padding-left:0px">
             <h1>7 Concepts for the proposed system</h1>
             <div class="htmlContent"></div>
           </td>
@@ -237,35 +92,8 @@
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-26"></a>Resp-26</td>
-          <td class="description-col" style="padding-left:20px">
-            <h2>7.1 General</h2>
-            <div class="htmlContent"></div>
-          </td>
-          <td class="links-col">
-          </td>
-        </tr>
-        <tr>
-          <td class="id-col"><a id="Resp-27"></a>Resp-27</td>
-          <td class="description-col" style="padding-left:20px">
-            <h2>7.2 Background, objectives, and scope</h2>
-            <div class="htmlContent"></div>
-          </td>
-          <td class="links-col">
-          </td>
-        </tr>
-        <tr>
-          <td class="id-col"><a id="Resp-28"></a>Resp-28</td>
-          <td class="description-col" style="padding-left:20px">
-            <h2>7.3 Operational policies and constraints</h2>
-            <div class="htmlContent"></div>
-          </td>
-          <td class="links-col">
-          </td>
-        </tr>
-        <tr>
-          <td class="id-col"><a id="Resp-29"></a>Resp-29</td>
-          <td class="description-col" style="padding-left:20px">
+          <td class="id-col"><a id="RR-29"></a>RR-29</td>
+          <td class="description-col" style="padding-left:0px">
             <h2>7.4 Description of the proposed system</h2>
             <div class="htmlContent"></div>
           </td>
@@ -273,8 +101,8 @@
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-30"></a>Resp-30</td>
-          <td class="description-col" style="padding-left:30px">
+          <td class="id-col"><a id="RR-30"></a>RR-30</td>
+          <td class="description-col" style="padding-left:0px">
             <h3>7.4.1 Roles</h3>
             <div class="htmlContent"></div>
           </td>
@@ -282,8 +110,8 @@
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-37"></a>Resp-37</td>
-          <td class="description-col" style="padding-left:40px">
+          <td class="id-col"><a id="RR-37"></a>RR-37</td>
+          <td class="description-col" style="padding-left:0px">
             <h4>7.4.1.1 General</h4>
             <div class="htmlContent"></div>
           </td>
@@ -291,8 +119,8 @@
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-3"></a>Resp-3</td>
-          <td class="description-col" style="padding-left:50px">
+          <td class="id-col"><a id="RR-3"></a>RR-3</td>
+          <td class="description-col" style="padding-left:0px">
             
             <div class="htmlContent"><p>Provide figure; explain that the specific examples of roles (e.g., national, regional, local for regulator) defined in the figure are only examples</p><p>Each METR component is responsible for the following:</p></div>
           </td>
@@ -302,8 +130,8 @@
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-47"></a>Resp-47</td>
-          <td class="description-col" style="padding-left:50px">
+          <td class="id-col"><a id="RR-47"></a>RR-47</td>
+          <td class="description-col" style="padding-left:0px">
             
             <div class="htmlContent"><ul><li>non-repudiation</li></ul></div>
           </td>
@@ -313,67 +141,67 @@
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-9"></a>Resp-9</td>
-          <td class="description-col" style="padding-left:50px">
+          <td class="id-col"><a id="RR-9"></a>RR-9</td>
+          <td class="description-col" style="padding-left:0px">
             
             <div class="htmlContent"><ul><li>Sharing rules with peer entities to promote data consistency and accuracy</li></ul></div>
           </td>
           <td class="links-col">
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
-                <div class="link"> <span><a href='SP.html#SP-46'>SP-46</a></span>  Peer roles need the ability to coordinat…</div>
-                <div class="link"> <span><a href='SP.html#SP-48'>SP-48</a></span>  Disseminators need to be able to share c…</div>
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> UN:</div>
                 <div class="link"> <span><a href='UN.html#UN-7'>UN-7</a></span>  Trustworthiness — Reliability — Quality …</div>
                 <div class="link"> <span><a href='UN.html#UN-24'>UN-24</a></span>  Trustworthiness — Security — Integrity —…</div>
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-46'>SP-46</a></span>  Peer roles need the ability to coordinat…</div>
+                <div class="link"> <span><a href='SP.html#SP-48'>SP-48</a></span>  Disseminators need to be able to share c…</div>
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-5"></a>Resp-5</td>
-          <td class="description-col" style="padding-left:50px">
+          <td class="id-col"><a id="RR-5"></a>RR-5</td>
+          <td class="description-col" style="padding-left:0px">
             
             <div class="htmlContent"><ul><li>Performing consistency checks on rules</li></ul></div>
           </td>
           <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> UN:</div>
+                <div class="link"> <span><a href='UN.html#UN-21'>UN-21</a></span>  Trustworthiness — Security — Access cont…</div>
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
                 <div class="link"> <span><a href='SP.html#SP-43'>SP-43</a></span>  The ConOps needs to assign the responsib…</div>
                 <div class="link"> <span><a href='SP.html#SP-45'>SP-45</a></span>  The preferred implementation is that a u…</div>
                 <div class="link"> <span><a href='SP.html#SP-74'>SP-74</a></span>  All roles are responsible for 1) identif…</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> UN:</div>
-                <div class="link"> <span><a href='UN.html#UN-21'>UN-21</a></span>  Trustworthiness — Security — Access cont…</div>
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-15"></a>Resp-15</td>
-          <td class="description-col" style="padding-left:50px">
+          <td class="id-col"><a id="RR-15"></a>RR-15</td>
+          <td class="description-col" style="padding-left:0px">
             
             <div class="htmlContent"><ul><li>Correcting each detected conflict/inconsistency, when possible</li></ul></div>
           </td>
           <td class="links-col">
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
-                <div class="link"> <span><a href='SP.html#SP-74'>SP-74</a></span>  All roles are responsible for 1) identif…</div>
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> UN:</div>
                 <div class="link"> <span><a href='UN.html#UN-24'>UN-24</a></span>  Trustworthiness — Security — Integrity —…</div>
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-74'>SP-74</a></span>  All roles are responsible for 1) identif…</div>
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-6"></a>Resp-6</td>
-          <td class="description-col" style="padding-left:50px">
+          <td class="id-col"><a id="RR-6"></a>RR-6</td>
+          <td class="description-col" style="padding-left:0px">
             
             <div class="htmlContent"><ul><li>Reporting inconsistencies, when the component is unable to correct the inconsistency.</li></ul></div>
           </td>
           <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> UN:</div>
+                <div class="link"> <span><a href='UN.html#UN-24'>UN-24</a></span>  Trustworthiness — Security — Integrity —…</div>
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
                 <div class="link"> <span><a href='SP.html#SP-43'>SP-43</a></span>  The ConOps needs to assign the responsib…</div>
                 <div class="link"> <span><a href='SP.html#SP-45'>SP-45</a></span>  The preferred implementation is that a u…</div>
                 <div class="link"> <span><a href='SP.html#SP-51'>SP-51</a></span>  The feedback loop needs to include the r…</div>
                 <div class="link"> <span><a href='SP.html#SP-74'>SP-74</a></span>  All roles are responsible for 1) identif…</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> UN:</div>
-                <div class="link"> <span><a href='UN.html#UN-24'>UN-24</a></span>  Trustworthiness — Security — Integrity —…</div>
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-31"></a>Resp-31</td>
-          <td class="description-col" style="padding-left:40px">
+          <td class="id-col"><a id="RR-31"></a>RR-31</td>
+          <td class="description-col" style="padding-left:0px">
             <h4>7.4.1.2 Regulator</h4>
             <div class="htmlContent"></div>
           </td>
@@ -381,8 +209,8 @@
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-40"></a>Resp-40</td>
-          <td class="description-col" style="padding-left:50px">
+          <td class="id-col"><a id="RR-40"></a>RR-40</td>
+          <td class="description-col" style="padding-left:0px">
             <h5>7.4.1.2.1 Rule creation</h5>
             <div class="htmlContent"><p>Creates, manages, and posts rules through the use of traffic control devices</p></div>
           </td>
@@ -390,8 +218,8 @@
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-45"></a>Resp-45</td>
-          <td class="description-col" style="padding-left:50px">
+          <td class="id-col"><a id="RR-45"></a>RR-45</td>
+          <td class="description-col" style="padding-left:0px">
             <h5>7.4.1.2.2 Make rules available</h5>
             <div class="htmlContent"><p>The collector is responsible for making all of its rules available to translators as needed for digitization.</p></div>
           </td>
@@ -399,21 +227,21 @@
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-12"></a>Resp-12</td>
-          <td class="description-col" style="padding-left:50px">
+          <td class="id-col"><a id="RR-12"></a>RR-12</td>
+          <td class="description-col" style="padding-left:0px">
             <h5>7.4.1.2.3 Assure conformance</h5>
             <div class="htmlContent"><p>Each regulator that claims to support METR within a defined area is responsible for ensuring that all dynamic rules that apply to that area are electronically publicised to relevant transport user systems.</p></div>
           </td>
           <td class="links-col">
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
-                <div class="link"> <span><a href='SP.html#SP-61'>SP-61</a></span>  The disseminator is responsible for ensu…</div>
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> UN:</div>
                 <div class="link"> <span><a href='UN.html#UN-11'>UN-11</a></span>  Trustworthiness — Reliability — Timeline…</div>
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-61'>SP-61</a></span>  The disseminator is responsible for ensu…</div>
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-32"></a>Resp-32</td>
-          <td class="description-col" style="padding-left:40px">
+          <td class="id-col"><a id="RR-32"></a>RR-32</td>
+          <td class="description-col" style="padding-left:0px">
             <h4>7.4.1.3 Translator</h4>
             <div class="htmlContent"></div>
           </td>
@@ -421,8 +249,8 @@
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-46"></a>Resp-46</td>
-          <td class="description-col" style="padding-left:50px">
+          <td class="id-col"><a id="RR-46"></a>RR-46</td>
+          <td class="description-col" style="padding-left:0px">
             <h5>7.4.1.3.1 Obtain rules</h5>
             <div class="htmlContent"><p>Obtain rules from regulators</p></div>
           </td>
@@ -430,8 +258,8 @@
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-41"></a>Resp-41</td>
-          <td class="description-col" style="padding-left:50px">
+          <td class="id-col"><a id="RR-41"></a>RR-41</td>
+          <td class="description-col" style="padding-left:0px">
             <h5>7.4.1.3.2 Rule digitization</h5>
             <div class="htmlContent"><p>Converts rules for a defined scope into a trustworthy electronic format.</p></div>
           </td>
@@ -439,8 +267,8 @@
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-33"></a>Resp-33</td>
-          <td class="description-col" style="padding-left:40px">
+          <td class="id-col"><a id="RR-33"></a>RR-33</td>
+          <td class="description-col" style="padding-left:0px">
             <h4>7.4.1.4 Collector</h4>
             <div class="htmlContent"></div>
           </td>
@@ -448,8 +276,8 @@
           </td>
         </tr>
         <tr class="deleted">
-          <td class="id-col"><a id="Resp-42"></a>Resp-42 <i class="fas fa-trash-alt"></i></td>
-          <td class="description-col" style="padding-left:50px">
+          <td class="id-col"><a id="RR-42"></a>RR-42 <i class="fas fa-trash-alt"></i></td>
+          <td class="description-col" style="padding-left:0px">
             
             <div class="htmlContent"><p>Collects rules from all relevant translators for a defined scope</p></div>
           </td>
@@ -457,8 +285,8 @@
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-1"></a>Resp-1</td>
-          <td class="description-col" style="padding-left:50px">
+          <td class="id-col"><a id="RR-1"></a>RR-1</td>
+          <td class="description-col" style="padding-left:0px">
             <h5>7.4.1.4.1 Collect rules</h5>
             <div class="htmlContent"><p>Collectors are responsible for collecting rules from all relevant translators for a defined scope (category and location) and providing these rules to one or more disseminators.</p></div>
           </td>
@@ -468,8 +296,8 @@
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-34"></a>Resp-34</td>
-          <td class="description-col" style="padding-left:40px">
+          <td class="id-col"><a id="RR-34"></a>RR-34</td>
+          <td class="description-col" style="padding-left:0px">
             <h4>7.4.1.5 Disseminator</h4>
             <div class="htmlContent"></div>
           </td>
@@ -477,8 +305,8 @@
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-43"></a>Resp-43</td>
-          <td class="description-col" style="padding-left:50px">
+          <td class="id-col"><a id="RR-43"></a>RR-43</td>
+          <td class="description-col" style="padding-left:0px">
             <h5>7.4.1.5.1 Collect and package rules</h5>
             <div class="htmlContent"><p>Collects rules from one or more collectors; ensure that they are packaged for efficient transmission</p></div>
           </td>
@@ -486,22 +314,22 @@
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-14"></a>Resp-14</td>
-          <td class="description-col" style="padding-left:50px">
+          <td class="id-col"><a id="RR-14"></a>RR-14</td>
+          <td class="description-col" style="padding-left:0px">
             <h5>7.4.1.5.2 Publicise capabilities</h5>
             <div class="htmlContent"><p>Each disseminator is responsible for publicising the filters/categories of data that it has available and the expiry period for each rule set delivered</p></div>
           </td>
           <td class="links-col">
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
-                <div class="link"> <span><a href='SP.html#SP-72'>SP-72</a></span>  The disseminator is responsible for publ…</div>
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> UN:</div>
                 <div class="link"> <span><a href='UN.html#UN-4'>UN-4</a></span>  Trustworthiness — Reliability — Availabi…</div>
                 <div class="link"> <span><a href='UN.html#UN-18'>UN-18</a></span>  Trustworthiness — Reliability — Usabilit…</div>
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-72'>SP-72</a></span>  The disseminator is responsible for publ…</div>
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-11"></a>Resp-11</td>
-          <td class="description-col" style="padding-left:50px">
+          <td class="id-col"><a id="RR-11"></a>RR-11</td>
+          <td class="description-col" style="padding-left:0px">
             <h5>7.4.1.5.3 Rule dissemination</h5>
             <div class="htmlContent"><p>Each disseminator is responsible for providing all rules currently within its repository that meet the user's request criteria.</p></div>
           </td>
@@ -511,22 +339,22 @@
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-7"></a>Resp-7</td>
-          <td class="description-col" style="padding-left:50px">
+          <td class="id-col"><a id="RR-7"></a>RR-7</td>
+          <td class="description-col" style="padding-left:0px">
             <h5>7.4.1.5.4 Report inconsistencies</h5>
             <div class="htmlContent"><p>Each disseminator is responsible for reporting inconsistencies that it detects in its rule set that it is unable to resolve on its own.</p><p>NOTE: The disseminator has primary responsibility to report inconsistencies.</p></div>
           </td>
           <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> UN:</div>
+                <div class="link"> <span><a href='UN.html#UN-24'>UN-24</a></span>  Trustworthiness — Security — Integrity —…</div>
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
                 <div class="link"> <span><a href='SP.html#SP-43'>SP-43</a></span>  The ConOps needs to assign the responsib…</div>
                 <div class="link"> <span><a href='SP.html#SP-74'>SP-74</a></span>  All roles are responsible for 1) identif…</div>
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> UN:</div>
-                <div class="link"> <span><a href='UN.html#UN-24'>UN-24</a></span>  Trustworthiness — Security — Integrity —…</div>
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-48"></a>Resp-48</td>
-          <td class="description-col" style="padding-left:50px">
+          <td class="id-col"><a id="RR-48"></a>RR-48</td>
+          <td class="description-col" style="padding-left:0px">
             <h5>7.4.1.5.5 Confirm dissemination</h5>
             <div class="htmlContent"><p>A disseminator is responsible for confirming that a user has received all updated rules</p></div>
           </td>
@@ -534,21 +362,21 @@
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-10"></a>Resp-10</td>
-          <td class="description-col" style="padding-left:50px">
+          <td class="id-col"><a id="RR-10"></a>RR-10</td>
+          <td class="description-col" style="padding-left:0px">
             <h5>7.4.1.5.6 Mobile disseminator</h5>
             <div class="htmlContent"><p>Add a mobile disseminator to the role diagram that has the additional responsibility of collecting rules from a disseminator to re-disseminate to one or more specific transport users</p></div>
           </td>
           <td class="links-col">
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
-                <div class="link"> <span><a href='SP.html#SP-49'>SP-49</a></span>  A mobile refresh provider should be char…</div>
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> UN:</div>
                 <div class="link"> <span><a href='UN.html#UN-33'>UN-33</a></span>  User — Rules — Access</div>
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-49'>SP-49</a></span>  A mobile refresh provider should be char…</div>
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-35"></a>Resp-35</td>
-          <td class="description-col" style="padding-left:40px">
+          <td class="id-col"><a id="RR-35"></a>RR-35</td>
+          <td class="description-col" style="padding-left:0px">
             <h4>7.4.1.6 Transport user</h4>
             <div class="htmlContent"></div>
           </td>
@@ -556,8 +384,8 @@
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-4"></a>Resp-4</td>
-          <td class="description-col" style="padding-left:50px">
+          <td class="id-col"><a id="RR-4"></a>RR-4</td>
+          <td class="description-col" style="padding-left:0px">
             <h5>7.4.1.6.1 Obtain rules</h5>
             <div class="htmlContent"><p>User systems are responsible for contacting an appropriate disseminator system and pulling all available relevant rules as necessary to fulfill their operating parameters, including pulling rules when entering a new area and pulling rule refreshes prior to the previous rule sets expiring.</p></div>
           </td>
@@ -569,8 +397,8 @@
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-2"></a>Resp-2</td>
-          <td class="description-col" style="padding-left:50px">
+          <td class="id-col"><a id="RR-2"></a>RR-2</td>
+          <td class="description-col" style="padding-left:0px">
             <h5>7.4.1.6.2 Refresh rules</h5>
             <div class="htmlContent"><p>User systems must update their rules such that they do not operate with rules that have expired</p></div>
           </td>
@@ -580,8 +408,8 @@
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-16"></a>Resp-16</td>
-          <td class="description-col" style="padding-left:50px">
+          <td class="id-col"><a id="RR-16"></a>RR-16</td>
+          <td class="description-col" style="padding-left:0px">
             <h5>7.4.1.6.3 Check trustworthiness</h5>
             <div class="htmlContent"><p>User systems are responsible for ensuring that dynamic data are sufficiently trustworthy for the intended use</p></div>
           </td>
@@ -591,8 +419,8 @@
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-44"></a>Resp-44</td>
-          <td class="description-col" style="padding-left:50px">
+          <td class="id-col"><a id="RR-44"></a>RR-44</td>
+          <td class="description-col" style="padding-left:0px">
             <h5>7.4.1.6.4 Follow rules</h5>
             <div class="htmlContent"><p>Follow the information contained in the rules</p></div>
           </td>
@@ -600,21 +428,21 @@
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-8"></a>Resp-8</td>
-          <td class="description-col" style="padding-left:50px">
+          <td class="id-col"><a id="RR-8"></a>RR-8</td>
+          <td class="description-col" style="padding-left:0px">
             <h5>7.4.1.6.5 Report inconsistencies</h5>
             <div class="htmlContent"><p>User systems should report any inconsistency between physical traffic control devices and electronic rules.</p></div>
           </td>
           <td class="links-col">
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
-                <div class="link"> <span><a href='SP.html#SP-45'>SP-45</a></span>  The preferred implementation is that a u…</div>
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> UN:</div>
                 <div class="link"> <span><a href='UN.html#UN-24'>UN-24</a></span>  Trustworthiness — Security — Integrity —…</div>
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-45'>SP-45</a></span>  The preferred implementation is that a u…</div>
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-49"></a>Resp-49</td>
-          <td class="description-col" style="padding-left:50px">
+          <td class="id-col"><a id="RR-49"></a>RR-49</td>
+          <td class="description-col" style="padding-left:0px">
             <h5>7.4.1.6.6 Pseudo-anonymity</h5>
             <div class="htmlContent"><p>Users should remain pseudo-anonymous in all situations.</p></div>
           </td>
@@ -622,8 +450,8 @@
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-36"></a>Resp-36</td>
-          <td class="description-col" style="padding-left:40px">
+          <td class="id-col"><a id="RR-36"></a>RR-36</td>
+          <td class="description-col" style="padding-left:0px">
             <h4>7.4.1.7 METR service management </h4>
             <div class="htmlContent"></div>
           </td>
@@ -631,8 +459,8 @@
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-18"></a>Resp-18</td>
-          <td class="description-col" style="padding-left:50px">
+          <td class="id-col"><a id="RR-18"></a>RR-18</td>
+          <td class="description-col" style="padding-left:0px">
             <h5>7.4.1.7.1 Certify components</h5>
             <div class="htmlContent"><p>The METR Certification Manager (envisioned as one for any given jurisdiction) is responsible for ensuring that each METR component performs its responsibilities correctly both initially and while in operation.</p></div>
           </td>
@@ -642,8 +470,8 @@
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-39"></a>Resp-39</td>
-          <td class="description-col" style="padding-left:40px">
+          <td class="id-col"><a id="RR-39"></a>RR-39</td>
+          <td class="description-col" style="padding-left:0px">
             <h4>7.4.1.8 Disseminator discovery service</h4>
             <div class="htmlContent"></div>
           </td>
@@ -651,21 +479,21 @@
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-13"></a>Resp-13</td>
-          <td class="description-col" style="padding-left:50px">
+          <td class="id-col"><a id="RR-13"></a>RR-13</td>
+          <td class="description-col" style="padding-left:0px">
             <h5>7.4.1.8.1 Publicise disseminators</h5>
             <div class="htmlContent"><p>The ITS Disseminator Discovery Service is responsible providing a service to allow transport user systems to discover trustworthy disseminators.</p></div>
           </td>
           <td class="links-col">
-              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
-                <div class="link"> <span><a href='SP.html#SP-62'>SP-62</a></span>  Users need a way to discover disseminato…</div>
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> UN:</div>
                 <div class="link"> <span><a href='UN.html#UN-27'>UN-27</a></span>  User — Disseminator — Discovery</div>
+              <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
+                <div class="link"> <span><a href='SP.html#SP-62'>SP-62</a></span>  Users need a way to discover disseminato…</div>
           </td>
         </tr>
         <tr class="deleted">
-          <td class="id-col"><a id="Resp-17"></a>Resp-17 <i class="fas fa-trash-alt"></i></td>
-          <td class="description-col" style="padding-left:10px">
+          <td class="id-col"><a id="RR-17"></a>RR-17 <i class="fas fa-trash-alt"></i></td>
+          <td class="description-col" style="padding-left:0px">
             
             <div class="htmlContent"><p>The "when" responsibility should apply to all roles, not just users</p></div>
           </td>
@@ -673,8 +501,8 @@
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="Resp-38"></a>Resp-38</td>
-          <td class="description-col" style="padding-left:10px">
+          <td class="id-col"><a id="RR-38"></a>RR-38</td>
+          <td class="description-col" style="padding-left:0px">
             
             <div class="htmlContent"></div>
           </td>
@@ -684,7 +512,27 @@
       </tbody>
     </table>
     <hr>
-    <div class="float-right mr-4"><em>Last modified by <a href="mailto://kvaughn@trevilon.com">Kenneth Vaughn, Trevilon</a> on 2021-12-13 15:37</em></div>
+    <div class="float-right mr-4"><em>Last modified by <a href="mailto://kvaughn@trevilon.com">Kenneth Vaughn, Trevilon</a> on 2021-12-15 13:08</em></div>
   </div>
-</body>
+							</div>
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://iso-tc204.github.io/iso24315p1/">Website Content:</a> <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p></li>
+								<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>ISO terms: &copy; ISO. All rights reserved.</li>
+							</ul>
+						</div>
+					</section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+</body>
 </html>

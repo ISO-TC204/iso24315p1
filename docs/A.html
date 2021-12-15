@@ -5,160 +5,69 @@
   <title>24315-1 METR ConOps-A: Assumptions</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-  <style>
-    /* Customization of standard HTML styles */
-    p {
-      margin-top: 0em;
-      margin-bottom: 0.5em;
-    }
-    h1, h2, h3, h4, h5, h6 {
-      margin-top: 0em;
-      margin-bottom: 0.25em;
-    }
-    table {
-      border-spacing: 1em;
-    }
-    th {
-      text-align: center;
-    }
-    ul, ol {
-      margin-bottom: 0;
-    }
-
-    /* Customization of ReqView styles */
-    .heading {
-      margin: 1em;
-      margin-top: 2em;
-      margin-bottom: 2em;
-    }
-    .filter {
-      text-align: right;
-      margin: 1em;
-    }
-    .reqviewTable {
-      margin: 1em;
-    }
-    .reqviewTable h1 {
-      font-size: 30px;
-    }
-    .reqviewTable h2 {
-      font-size: 24px;
-    }
-    .reqviewTable h3 {
-      font-size: 20px;
-    }
-    .reqviewTable h4 {
-      font-size: 18px;
-    }
-    .reqviewTable h5 {
-      font-size: 16px;
-    }
-    .reqviewTable h6 {
-      font-size: 14px;
-    }
-    .reqviewTable > table > thead > tr > th {
-      text-align: left;
-    }
-    /* Customization of our styles */
-    .id-col {
-      min-width: 5em;
-      vertical-align: top;
-    }
-    .description-col {
-      min-width: 30em;
-      vertical-align: top;
-    }
-    .discussion-col {
-      min-width: 15em;
-      vertical-align: top;
-    }
-    .links-col {
-      min-width: 15em;
-      vertical-align: top;
-    }
-    .attributes-col {
-      min-width: 15em;
-      vertical-align: top;
-    }
-    .attributes-col ul {
-      padding-left: 0px;
-    }
-    .attributes-col li {
-      list-style: none outside none;
-    }
-    .attributes-col .attribute-name {
-      font-style: italic;
-    }
-    .custom-col {
-      min-width: 10em;
-      vertical-align: top;
-    }
-    .comment-text {
-      padding-top: 5px;
-      padding-bottom: 10px;
-    }
-    .attachment {
-      font-style: italic;
-      margin-top: 0.5em;
-      margin-bottom: 0.5em;
-    }
-    .attachment img {
-      max-width: 90%;
-      height: auto;
-      display: block;
-    }
-    .links-type-name {
-      font-style: italic;
-    }
-    .link {
-      margin-left: 16px;
-    }
-    td.attributes-col div.htmlContent,
-    td.custom-col div.htmlContent {
-      min-width: 15em;
-    }
-    .deleted {
-      color: #666;
-    }
-    .deleted .id-col,
-    .deleted .description-col,
-    .link.deleted {
-      text-decoration: line-through;
-    }
-    .deleted a {
-      color: gray;
-    }
-    .htmlContent table {
-      border: 1px solid black;
-      border-collapse: collapse;
-      width: auto;
-    }
-    .htmlContent th, .htmlContent td {
-      border: 1px solid #b5bcc7;
-      vertical-align: top;
-      padding: 3px 7px 2px 7px;
-    }
-    .htmlContent th {
-      padding-top: 5px;
-      padding-bottom: 4px;
-      background: silver;
-      border-bottom: none !important;
-    }
-    /** Override Bootstrap print */
-    @media print {
-      @page {
-        size: initial;
-      }
-      body {
-        min-width: unset !important;
-        font-size: 12px;
-      }
-    }
-  </style>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link href="jq/jquery-ui.css" rel="stylesheet">
+	<script src="external/jquery/jquery.js"></script>
+	<script src="jq/jquery-ui.js"></script>
+	<script src="glossary.js"></script>
+	<script>
+			$( document ).tooltip({
+				content: function() {
+					return $(this).attr('title');
+				}
+			});
+	</script>
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
-<body>
-  <div class="heading">
-    <h1 class="display-4">24315-1 METR ConOps-A: Assumptions</h1>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" style="position: static;">
+						<h2><a href="index.html">METR</a><img src="images/car_wifi.png" style="width: 2em;" /></h2>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="metr_overview.html">Overview</a></li>
+								<li><a href="workshop_overview.html">Workshops</a></li>
+								<li><a href="glossary.html">Glossary</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<div class="inner">
+						<table>
+							<tr>
+								<td><h1>24315-1 METR ConOps<br />A: Assumptions</h1></td>
+								<td width="390px">Traceability Tables: <div class="tab">
+									<button onclick="location.href='SP.html'" title="Summary Points">SP</button>
+									<button onclick="location.href='A.html'" title="Assumptions/Constraints">A</button>
+									<button onclick="location.href='N.html'" title="Notes">N</button>
+									<button onclick="location.href='RC.html'" title="Rule Characteristics">RC</button>
+									<button onclick="location.href='RR.html'" title="Role Responsibilities">RR</button>
+									<button onclick="location.href='RT.html'" title="Rule Types">RT</button>
+									<button onclick="location.href='S.html'" title="Scenarios">S</button>
+									<button onclick="location.href='T.html'" title="Terminology">T</button>
+									<button onclick="location.href='UN.html'" title="User Needs">UN</button>
+								</div></td>
+							</tr>
+						</table>
+							
+  <div class="filter">
+    <i class="fas fa-filter"></i> [Display: 1]
   </div>
   <div class="reqviewTable table-responsive-md">
     <table class="table table-sm">
@@ -174,53 +83,8 @@
       <!-- Requirements table with list of requirements -->
       <tbody>
         <tr>
-          <td class="id-col"><a id="A-22"></a>A-22</td>
-          <td class="description-col" style="padding-left:10px">
-            <h1>1 Scope</h1>
-            <div class="htmlContent"></div>
-          </td>
-          <td class="links-col">
-          </td>
-        </tr>
-        <tr>
-          <td class="id-col"><a id="A-23"></a>A-23</td>
-          <td class="description-col" style="padding-left:10px">
-            <h1>2 Normative references</h1>
-            <div class="htmlContent"></div>
-          </td>
-          <td class="links-col">
-          </td>
-        </tr>
-        <tr>
-          <td class="id-col"><a id="A-24"></a>A-24</td>
-          <td class="description-col" style="padding-left:10px">
-            <h1>3 Terms and definitions</h1>
-            <div class="htmlContent"></div>
-          </td>
-          <td class="links-col">
-          </td>
-        </tr>
-        <tr>
-          <td class="id-col"><a id="A-25"></a>A-25</td>
-          <td class="description-col" style="padding-left:10px">
-            <h1>4 Symbols and abbreviated terms</h1>
-            <div class="htmlContent"></div>
-          </td>
-          <td class="links-col">
-          </td>
-        </tr>
-        <tr>
-          <td class="id-col"><a id="A-26"></a>A-26</td>
-          <td class="description-col" style="padding-left:10px">
-            <h1>5 Current situation</h1>
-            <div class="htmlContent"></div>
-          </td>
-          <td class="links-col">
-          </td>
-        </tr>
-        <tr>
           <td class="id-col"><a id="A-27"></a>A-27</td>
-          <td class="description-col" style="padding-left:10px">
+          <td class="description-col" style="padding-left:0px">
             <h1>6 Justification for and nature of changes</h1>
             <div class="htmlContent"></div>
           </td>
@@ -228,44 +92,8 @@
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="A-28"></a>A-28</td>
-          <td class="description-col" style="padding-left:20px">
-            <h2>6.1 General</h2>
-            <div class="htmlContent"></div>
-          </td>
-          <td class="links-col">
-          </td>
-        </tr>
-        <tr>
-          <td class="id-col"><a id="A-29"></a>A-29</td>
-          <td class="description-col" style="padding-left:20px">
-            <h2>6.2 Justification of changes</h2>
-            <div class="htmlContent"></div>
-          </td>
-          <td class="links-col">
-          </td>
-        </tr>
-        <tr>
-          <td class="id-col"><a id="A-30"></a>A-30</td>
-          <td class="description-col" style="padding-left:20px">
-            <h2>6.3 User need statements</h2>
-            <div class="htmlContent"></div>
-          </td>
-          <td class="links-col">
-          </td>
-        </tr>
-        <tr>
-          <td class="id-col"><a id="A-31"></a>A-31</td>
-          <td class="description-col" style="padding-left:20px">
-            <h2>6.4 Conformance statement</h2>
-            <div class="htmlContent"></div>
-          </td>
-          <td class="links-col">
-          </td>
-        </tr>
-        <tr>
           <td class="id-col"><a id="A-32"></a>A-32</td>
-          <td class="description-col" style="padding-left:20px">
+          <td class="description-col" style="padding-left:0px">
             <h2>6.5 Deferred user needs</h2>
             <div class="htmlContent"></div>
           </td>
@@ -274,7 +102,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-20"></a>A-20</td>
-          <td class="description-col" style="padding-left:30px">
+          <td class="description-col" style="padding-left:0px">
             <h3>6.5.1 Detailed rule definition</h3>
             <div class="htmlContent"><p>Changes considered and not implemented: Attempting to translate the legal definition of a rule as defined within its native language (e.g., for a "STOP" sign, "The driver of any vehicle approaching a stop sign at the entrance to, or within, an intersection, shall stop at a limit line, if marked, otherwise before entering the crosswalk on the near side of the intersection. If there is no limit line or crosswalk, the driver shall stop at the entrance to the intersecting roadway or railroad grade crossing.") into an exact electronic structrue. The reason for this is multi-fold:<br>(1) The messaging structure to handle all known scenarios, let alone all possible scenarios, in a readily computer-interpretable format would be overly complex.<br>(2) The laws are likely often written to create ambiguities in meaning (e.g., one could argue that in the above example, ADS-equipped vehicles are not required to stop since they do not have a driver)<br>(3) The interpretation of the legal language within laws into practical meanings is often subjective and is within the realm of the judicial process rather than the executive process of a translator.<br>(4) The effort to define such details would likly require substantially more time to standardize.<br><br>Future efforts might address areas of known variability within meaning of signs so that systems can be aware of local meanings when significant issues are known. For example, what constitutes a "stopped" vehicle versus a "parked" vehicle; but the initial release of METR will concentrate on identifying the application of rules rather than the legal definition of the rules.</p></div>
           </td>
@@ -283,7 +111,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-36"></a>A-36</td>
-          <td class="description-col" style="padding-left:30px">
+          <td class="description-col" style="padding-left:0px">
             <h3>6.5.2 Aerial drones</h3>
             <div class="htmlContent"><p>The initial edition of METR will not attempt to address any specific needs related to aerial drones.</p></div>
           </td>
@@ -294,7 +122,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-33"></a>A-33</td>
-          <td class="description-col" style="padding-left:20px">
+          <td class="description-col" style="padding-left:0px">
             <h2>6.6 Assumptions and constraints</h2>
             <div class="htmlContent"></div>
           </td>
@@ -303,7 +131,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-34"></a>A-34</td>
-          <td class="description-col" style="padding-left:30px">
+          <td class="description-col" style="padding-left:0px">
             <h3>6.6.1 Assumptions</h3>
             <div class="htmlContent"></div>
           </td>
@@ -312,7 +140,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-11"></a>A-11</td>
-          <td class="description-col" style="padding-left:40px">
+          <td class="description-col" style="padding-left:0px">
             <h4>6.6.1.1 Users — Modes</h4>
             <div class="htmlContent"><p>METR should cover the modal scope of surface transport, as defined by TC 204 and ITS</p></div>
           </td>
@@ -323,7 +151,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-10"></a>A-10</td>
-          <td class="description-col" style="padding-left:40px">
+          <td class="description-col" style="padding-left:0px">
             <h4>6.6.1.2 Users — Variety</h4>
             <div class="htmlContent"><p>METR should support ADS, driver support systems, and other user interface systems (e.g., trip planning software)</p></div>
           </td>
@@ -334,7 +162,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-2"></a>A-2</td>
-          <td class="description-col" style="padding-left:40px">
+          <td class="description-col" style="padding-left:0px">
             <h4>6.6.1.3 Users — Mixed environment</h4>
             <div class="htmlContent"><p>Transport user systems that support METR need to be able to operate along side transport user systems that do not support or are not connected to METR</p></div>
           </td>
@@ -345,7 +173,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-6"></a>A-6</td>
-          <td class="description-col" style="padding-left:40px">
+          <td class="description-col" style="padding-left:0px">
             <h4>6.6.1.4 Users — Stationary users</h4>
             <div class="htmlContent"><p>Some transport user systems will not be mobile (e.g., PCs used for pre-trip planning)</p></div>
           </td>
@@ -356,7 +184,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-3"></a>A-3</td>
-          <td class="description-col" style="padding-left:40px">
+          <td class="description-col" style="padding-left:0px">
             <h4>6.6.1.5 Communications — Stationary components — Sufficient bandwidth</h4>
             <div class="htmlContent"><p>Sufficient communication bandwidth will be available among the various stationary system (a.k.a., back-office) components to support METR operations.</p></div>
           </td>
@@ -365,7 +193,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-5"></a>A-5</td>
-          <td class="description-col" style="padding-left:40px">
+          <td class="description-col" style="padding-left:0px">
             <h4>6.6.1.6 Communications — Mobile users — Mobile wireless internet</h4>
             <div class="htmlContent"><p>All mobile transport user systems will support mobile wireless Internet with at least 3G speeds</p></div>
           </td>
@@ -377,7 +205,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-7"></a>A-7</td>
-          <td class="description-col" style="padding-left:40px">
+          <td class="description-col" style="padding-left:0px">
             <h4>6.6.1.7 Communications — Mobile users — Instability of internet access</h4>
             <div class="htmlContent"><p>Mobile wireless Internet access is not guaranteed for any location</p></div>
           </td>
@@ -388,7 +216,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-8"></a>A-8</td>
-          <td class="description-col" style="padding-left:40px">
+          <td class="description-col" style="padding-left:0px">
             <h4>6.6.1.8 Communications — Mobile users — Areas without internet coverage</h4>
             <div class="htmlContent"><p>Mobile wireless Internet might not be available at all in some locations</p></div>
           </td>
@@ -399,7 +227,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-4"></a>A-4</td>
-          <td class="description-col" style="padding-left:40px">
+          <td class="description-col" style="padding-left:0px">
             <h4>6.6.1.9 Communications — Mobile users — Short-range wireless</h4>
             <div class="htmlContent"><p>All motor vehicles that support METR will support short-range wireless communications meeting local standards (e.g., DSRC, LTE-V2X)</p></div>
           </td>
@@ -411,7 +239,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-12"></a>A-12</td>
-          <td class="description-col" style="padding-left:40px">
+          <td class="description-col" style="padding-left:0px">
             <h4>6.6.1.10 Communications — Delivery — Static Rules</h4>
             <div class="htmlContent"><p>Rules that are not expected to change during a journey will be pulled by the user to minimize data loading on the system</p></div>
           </td>
@@ -422,7 +250,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-13"></a>A-13</td>
-          <td class="description-col" style="padding-left:40px">
+          <td class="description-col" style="padding-left:0px">
             <h4>6.6.1.11 Communications — Delivery — Dynamic rules</h4>
             <div class="htmlContent"><p>Rules that change without prior notice publicized in a pulled rule will have to be pushed to the user</p></div>
           </td>
@@ -433,7 +261,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-17"></a>A-17</td>
-          <td class="description-col" style="padding-left:40px">
+          <td class="description-col" style="padding-left:0px">
             <h4>6.6.1.12 Communications — Delivery — Efficiency</h4>
             <div class="htmlContent"><p>METR should enable efficient data exchanges that do not require frequent downloading of rules that seldom change.</p></div>
           </td>
@@ -444,7 +272,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-18"></a>A-18</td>
-          <td class="description-col" style="padding-left:40px">
+          <td class="description-col" style="padding-left:0px">
             <h4>6.6.1.13 Safety — Regulators</h4>
             <div class="htmlContent"><p>Regulators should ensure that defined rules promote safe operations</p></div>
           </td>
@@ -453,7 +281,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-19"></a>A-19</td>
-          <td class="description-col" style="padding-left:40px">
+          <td class="description-col" style="padding-left:0px">
             <h4>6.6.1.14 Safety — Users</h4>
             <div class="htmlContent"><p>The dynamic driving task includes the responsibility to provide for the safe operation of the vehicle, even in the absence of METR information. For example, the DDT is responsible for detecting a lane closure and responding appropriately; the DDT is responsible for detecting that it is going well above the prevailing speed and slowing down as needed.</p></div>
           </td>
@@ -465,7 +293,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-21"></a>A-21</td>
-          <td class="description-col" style="padding-left:40px">
+          <td class="description-col" style="padding-left:0px">
             <h4>6.6.1.15 Safety — Reliance</h4>
             <div class="htmlContent"><p>For the foreseeable future, METR should be considered as a supplement to existing traffic control devices rather than a replacement of those devices; however, this will likely change over time.</p></div>
           </td>
@@ -476,7 +304,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-35"></a>A-35</td>
-          <td class="description-col" style="padding-left:30px">
+          <td class="description-col" style="padding-left:0px">
             <h3>6.6.2 Constraints</h3>
             <div class="htmlContent"></div>
           </td>
@@ -485,7 +313,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-14"></a>A-14</td>
-          <td class="description-col" style="padding-left:40px">
+          <td class="description-col" style="padding-left:0px">
             <h4>6.6.2.1 Existing standards</h4>
             <div class="htmlContent"><p>The design of METR will rely upon existing standards as appropriate (e.g., for interface and data definitions). This should include reuse of existing structures, such as those defined within TN-ITS and TMDD.</p></div>
           </td>
@@ -496,7 +324,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-15"></a>A-15</td>
-          <td class="description-col" style="padding-left:40px">
+          <td class="description-col" style="padding-left:0px">
             <h4>6.6.2.2 Cooperative ITS</h4>
             <div class="htmlContent"><p>METR will rely upon existing data sources as appropriate. For example, an emergency vehicle announcing its presence via C-ITS can be used to activate rules rather than requiring METR-specific transmissions.</p></div>
           </td>
@@ -507,7 +335,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-16"></a>A-16</td>
-          <td class="description-col" style="padding-left:40px">
+          <td class="description-col" style="padding-left:0px">
             <h4>6.6.2.3 Limitations of short-range wireless communications</h4>
             <div class="htmlContent"><p>Short range wireless communication channels have limited data capacity, which must be respected while still delivering all applicable rules to transport users. (e.g., this might require the use of short range wireless messages to advertise more extensive data from central)</p></div>
           </td>
@@ -518,7 +346,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-1"></a>A-1</td>
-          <td class="description-col" style="padding-left:40px">
+          <td class="description-col" style="padding-left:0px">
             <h4>6.6.2.4 Aerial drones</h4>
             <div class="htmlContent"><p>The design of METR should be flexible enough to support rules for low-altitude aerial drones, although these devices are not directly included in the first edition of this standard.</p></div>
           </td>
@@ -530,7 +358,27 @@
       </tbody>
     </table>
     <hr>
-    <div class="float-right mr-4"><em>Last modified by <a href="mailto://kvaughn@trevilon.com">Kenneth Vaughn, Trevilon</a> on 2021-12-10 14:11</em></div>
+    <div class="float-right mr-4"><em>Last modified by <a href="mailto://kvaughn@trevilon.com">Kenneth Vaughn, Trevilon</a> on 2021-12-15 13:11</em></div>
   </div>
-</body>
+							</div>
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://iso-tc204.github.io/iso24315p1/">Website Content:</a> <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p></li>
+								<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>ISO terms: &copy; ISO. All rights reserved.</li>
+							</ul>
+						</div>
+					</section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+</body>
 </html>

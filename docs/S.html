@@ -5,160 +5,69 @@
   <title>24315-1 METR ConOps-S: Scenarios</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-  <style>
-    /* Customization of standard HTML styles */
-    p {
-      margin-top: 0em;
-      margin-bottom: 0.5em;
-    }
-    h1, h2, h3, h4, h5, h6 {
-      margin-top: 0em;
-      margin-bottom: 0.25em;
-    }
-    table {
-      border-spacing: 1em;
-    }
-    th {
-      text-align: center;
-    }
-    ul, ol {
-      margin-bottom: 0;
-    }
-
-    /* Customization of ReqView styles */
-    .heading {
-      margin: 1em;
-      margin-top: 2em;
-      margin-bottom: 2em;
-    }
-    .filter {
-      text-align: right;
-      margin: 1em;
-    }
-    .reqviewTable {
-      margin: 1em;
-    }
-    .reqviewTable h1 {
-      font-size: 30px;
-    }
-    .reqviewTable h2 {
-      font-size: 24px;
-    }
-    .reqviewTable h3 {
-      font-size: 20px;
-    }
-    .reqviewTable h4 {
-      font-size: 18px;
-    }
-    .reqviewTable h5 {
-      font-size: 16px;
-    }
-    .reqviewTable h6 {
-      font-size: 14px;
-    }
-    .reqviewTable > table > thead > tr > th {
-      text-align: left;
-    }
-    /* Customization of our styles */
-    .id-col {
-      min-width: 5em;
-      vertical-align: top;
-    }
-    .description-col {
-      min-width: 30em;
-      vertical-align: top;
-    }
-    .discussion-col {
-      min-width: 15em;
-      vertical-align: top;
-    }
-    .links-col {
-      min-width: 15em;
-      vertical-align: top;
-    }
-    .attributes-col {
-      min-width: 15em;
-      vertical-align: top;
-    }
-    .attributes-col ul {
-      padding-left: 0px;
-    }
-    .attributes-col li {
-      list-style: none outside none;
-    }
-    .attributes-col .attribute-name {
-      font-style: italic;
-    }
-    .custom-col {
-      min-width: 10em;
-      vertical-align: top;
-    }
-    .comment-text {
-      padding-top: 5px;
-      padding-bottom: 10px;
-    }
-    .attachment {
-      font-style: italic;
-      margin-top: 0.5em;
-      margin-bottom: 0.5em;
-    }
-    .attachment img {
-      max-width: 90%;
-      height: auto;
-      display: block;
-    }
-    .links-type-name {
-      font-style: italic;
-    }
-    .link {
-      margin-left: 16px;
-    }
-    td.attributes-col div.htmlContent,
-    td.custom-col div.htmlContent {
-      min-width: 15em;
-    }
-    .deleted {
-      color: #666;
-    }
-    .deleted .id-col,
-    .deleted .description-col,
-    .link.deleted {
-      text-decoration: line-through;
-    }
-    .deleted a {
-      color: gray;
-    }
-    .htmlContent table {
-      border: 1px solid black;
-      border-collapse: collapse;
-      width: auto;
-    }
-    .htmlContent th, .htmlContent td {
-      border: 1px solid #b5bcc7;
-      vertical-align: top;
-      padding: 3px 7px 2px 7px;
-    }
-    .htmlContent th {
-      padding-top: 5px;
-      padding-bottom: 4px;
-      background: silver;
-      border-bottom: none !important;
-    }
-    /** Override Bootstrap print */
-    @media print {
-      @page {
-        size: initial;
-      }
-      body {
-        min-width: unset !important;
-        font-size: 12px;
-      }
-    }
-  </style>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link href="jq/jquery-ui.css" rel="stylesheet">
+	<script src="external/jquery/jquery.js"></script>
+	<script src="jq/jquery-ui.js"></script>
+	<script src="glossary.js"></script>
+	<script>
+			$( document ).tooltip({
+				content: function() {
+					return $(this).attr('title');
+				}
+			});
+	</script>
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
-<body>
-  <div class="heading">
-    <h1 class="display-4">24315-1 METR ConOps-S: Scenarios</h1>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" style="position: static;">
+						<h2><a href="index.html">METR</a><img src="images/car_wifi.png" style="width: 2em;" /></h2>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="metr_overview.html">Overview</a></li>
+								<li><a href="workshop_overview.html">Workshops</a></li>
+								<li><a href="glossary.html">Glossary</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<div class="inner">
+						<table>
+							<tr>
+								<td><h1>24315-1 METR ConOps<br />S: Scenarios</h1></td>
+								<td width="390px">Traceability Tables: <div class="tab">
+									<button onclick="location.href='SP.html'" title="Summary Points">SP</button>
+									<button onclick="location.href='A.html'" title="Assumptions/Constraints">A</button>
+									<button onclick="location.href='N.html'" title="Notes">N</button>
+									<button onclick="location.href='RC.html'" title="Rule Characteristics">RC</button>
+									<button onclick="location.href='RR.html'" title="Role Responsibilities">RR</button>
+									<button onclick="location.href='RT.html'" title="Rule Types">RT</button>
+									<button onclick="location.href='S.html'" title="Scenarios">S</button>
+									<button onclick="location.href='T.html'" title="Terminology">T</button>
+									<button onclick="location.href='UN.html'" title="User Needs">UN</button>
+								</div></td>
+							</tr>
+						</table>
+							
+  <div class="filter">
+    <i class="fas fa-filter"></i> [Display: 1]
   </div>
   <div class="reqviewTable table-responsive-md">
     <table class="table table-sm">
@@ -174,71 +83,8 @@
       <!-- Requirements table with list of requirements -->
       <tbody>
         <tr>
-          <td class="id-col"><a id="S-21"></a>S-21</td>
-          <td class="description-col" style="padding-left:10px">
-            <h1>1 Scope</h1>
-            <div class="htmlContent"></div>
-          </td>
-          <td class="links-col">
-          </td>
-        </tr>
-        <tr>
-          <td class="id-col"><a id="S-22"></a>S-22</td>
-          <td class="description-col" style="padding-left:10px">
-            <h1>2 Normative references</h1>
-            <div class="htmlContent"></div>
-          </td>
-          <td class="links-col">
-          </td>
-        </tr>
-        <tr>
-          <td class="id-col"><a id="S-23"></a>S-23</td>
-          <td class="description-col" style="padding-left:10px">
-            <h1>3 Terms and definitions</h1>
-            <div class="htmlContent"></div>
-          </td>
-          <td class="links-col">
-          </td>
-        </tr>
-        <tr>
-          <td class="id-col"><a id="S-24"></a>S-24</td>
-          <td class="description-col" style="padding-left:10px">
-            <h1>4 Symbols and abbreviated terms</h1>
-            <div class="htmlContent"></div>
-          </td>
-          <td class="links-col">
-          </td>
-        </tr>
-        <tr>
-          <td class="id-col"><a id="S-25"></a>S-25</td>
-          <td class="description-col" style="padding-left:10px">
-            <h1>5 Current situation</h1>
-            <div class="htmlContent"></div>
-          </td>
-          <td class="links-col">
-          </td>
-        </tr>
-        <tr>
-          <td class="id-col"><a id="S-26"></a>S-26</td>
-          <td class="description-col" style="padding-left:10px">
-            <h1>6 Justification for and nature of changes</h1>
-            <div class="htmlContent"></div>
-          </td>
-          <td class="links-col">
-          </td>
-        </tr>
-        <tr>
-          <td class="id-col"><a id="S-27"></a>S-27</td>
-          <td class="description-col" style="padding-left:10px">
-            <h1>7 Concepts for the proposed system</h1>
-            <div class="htmlContent"></div>
-          </td>
-          <td class="links-col">
-          </td>
-        </tr>
-        <tr>
           <td class="id-col"><a id="S-28"></a>S-28</td>
-          <td class="description-col" style="padding-left:10px">
+          <td class="description-col" style="padding-left:0px">
             <h1>8 Operational scenarios</h1>
             <div class="htmlContent"></div>
           </td>
@@ -247,7 +93,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-4"></a>S-4</td>
-          <td class="description-col" style="padding-left:20px">
+          <td class="description-col" style="padding-left:0px">
             <h2>8.1 Installation of permanent traffic control devices</h2>
             <div class="htmlContent"><p>The ConOps should include a use case that explains the process for installing and removing a permanent traffic control device (e.g., a parking sign) and explain how the process needs to work in real time to ensure consistency in information, especially when a traffic control device installation does not occur on schedule and the system needs to flag the discrepancy. And also perhaps for what happens with a missing device (e.g., missing speed limit sign as approaching or leaving a town on a rural highway) This should include a discussion of the update cycle of static rules, the activation of rules with dynamic data as signs are installed, and the provisioning of dynamic data when the status of rules are condition specific.</p><p>Include a scenario that details the process to deploy (static, temporary) rules that follows a flow of: publicizing first (pull; perhaps with expected date) followed by activation of rule (with deployment of traffic control device) and announcement that the rule is active (push)</p></div>
           </td>
@@ -261,7 +107,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-5"></a>S-5</td>
-          <td class="description-col" style="padding-left:20px">
+          <td class="description-col" style="padding-left:0px">
             <h2>8.2 Deployment of temporary traffic control devices</h2>
             <div class="htmlContent"><p>The ConOps should also include a use case for emergency response deploying traffic control device to make a crash site safe</p><p>The ConOps should provide a scenario that explains that detours might consist of (1) a simple shift lane, (2) an indication that a turn manouver is prohibited, (3) an indication that a road or lane link is closed, or (4) a complete alternative path. In the first three cases, it is up to the DDT to determine the revised path to follow.</p></div>
           </td>
@@ -274,7 +120,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-11"></a>S-11</td>
-          <td class="description-col" style="padding-left:20px">
+          <td class="description-col" style="padding-left:0px">
             <h2>8.3 Operation of rules dependent upon dynamic data</h2>
             <div class="htmlContent"><p>The ConOps might include a scenario with a variable speed limit system that has a fixed schedule that can be overridden by events.</p><p>The scenario should use the terminology of "data" (e.g., sensors), "information" (processed data), and "delivery" (connections) to clearly indicate how it addresses these three key aspects of ITS deployments.</p><p>This example will provide a mixture of types of communications (e.g., low-latency push and high-latency pull)</p></div>
           </td>
@@ -288,7 +134,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-41"></a>S-41</td>
-          <td class="description-col" style="padding-left:20px">
+          <td class="description-col" style="padding-left:0px">
             <h2>8.4 Non-electronic activities</h2>
             <div class="htmlContent"><p>E.g., police on-scene directing traffic or deploying signs</p></div>
           </td>
@@ -297,7 +143,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-14"></a>S-14</td>
-          <td class="description-col" style="padding-left:20px">
+          <td class="description-col" style="padding-left:0px">
             <h2>8.5 Private parking lot</h2>
             <div class="htmlContent"><p>METR ConOps should indicate support for proxy data entry services</p><p>Include an example that explains that the process for entering METR rules might include some type of validation per the requirements of the containing jurisdiction</p><p>We should have an example of a OEM DDT constraint that says not to exceed 15mph inside of a parking lot</p></div>
           </td>
@@ -310,7 +156,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-15"></a>S-15</td>
-          <td class="description-col" style="padding-left:20px">
+          <td class="description-col" style="padding-left:0px">
             <h2>8.6 Rules that require permits</h2>
             <div class="htmlContent"><p>A METR operational scenario should indicate that a vehicle might be aware of a permit (and apply associated rules) or might not (and provide warnings to the driver)</p><p>Include a scenario that shows that METR will be able to include rules that define areas reserved for accessibility purposes such as loading/unloading areas and curb cutouts; explain that this is a detail that might take a while to populate and that many areas might not provide such detailed information</p></div>
           </td>
@@ -323,7 +169,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-1"></a>S-1</td>
-          <td class="description-col" style="padding-left:20px">
+          <td class="description-col" style="padding-left:0px">
             <h2>8.7 Evacuation orders</h2>
             <div class="htmlContent"><p>METR should include an evacuation scenario that emphasize the importance of METR remaining operational and providing updates on the status of specific transport facilities (especially road closures).</p><p>&nbsp;</p></div>
           </td>
@@ -336,7 +182,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-12"></a>S-12</td>
-          <td class="description-col" style="padding-left:20px">
+          <td class="description-col" style="padding-left:0px">
             <h2>8.8 Handling inconsistent data</h2>
             <div class="htmlContent"><p>The ConOps should include a scenario that describes a graceful fallback when traffic control devices are not consistent with METR information (e.g., a private facility where METR data has not been updated)</p><p>Include a scenario that describes the process of reporting field discrepancies.</p></div>
           </td>
@@ -349,7 +195,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-7"></a>S-7</td>
-          <td class="description-col" style="padding-left:20px">
+          <td class="description-col" style="padding-left:0px">
             <h2>8.9 ADS fallback based on METR information</h2>
             <div class="htmlContent"><p>The ConOps should include an example where an ADS is required to fallback to manual mode when leaving METR-coverage. We should note that this is our assumption, but the exact rules are up to the jurisdiction and OEM to determine.</p><p>The ConOps should include a scenario of an ODD boundary where a ADS-equipped vehicle needs to navigate to an area where it can reach achieve a "minimal risk condition". The scenario should provide examples that the jurisdiction (or private campus) might have rules prohibiting temporary parking and the ADS-equipped vehicle will need to navigate to an appropriate location.</p></div>
           </td>
@@ -362,7 +208,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-8"></a>S-8</td>
-          <td class="description-col" style="padding-left:20px">
+          <td class="description-col" style="padding-left:0px">
             <h2>8.10 Starting outside of METR coverage</h2>
             <div class="htmlContent"><p>The ConOps should include a scenario where a vehicle starts in an area without any connectivity. This scenario should include a note that we assume that for the near future, every ADS-equipped vehicle will have a manual drive mode (or be small enough to easily transport). If not, care should be taken to ensure that the rules do not expire while the car is parked, because any remote refresh would have to be performed by a trusted source and it is not yet determined what the requirements are for such a trusted source.</p></div>
           </td>
@@ -375,7 +221,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-31"></a>S-31</td>
-          <td class="description-col" style="padding-left:20px">
+          <td class="description-col" style="padding-left:0px">
             <h2>8.11 Discovery of rules</h2>
             <div class="htmlContent"></div>
           </td>
@@ -384,7 +230,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-38"></a>S-38</td>
-          <td class="description-col" style="padding-left:20px">
+          <td class="description-col" style="padding-left:0px">
             <h2>8.12 Kerbside</h2>
             <div class="htmlContent"></div>
           </td>
@@ -393,7 +239,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-39"></a>S-39</td>
-          <td class="description-col" style="padding-left:20px">
+          <td class="description-col" style="padding-left:0px">
             <h2>8.13 Micromobility and VRUs</h2>
             <div class="htmlContent"><p>Should include mention of blocked sidewalk for construction</p></div>
           </td>
@@ -402,7 +248,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-40"></a>S-40</td>
-          <td class="description-col" style="padding-left:20px">
+          <td class="description-col" style="padding-left:0px">
             <h2>8.14 Sidewalk robots</h2>
             <div class="htmlContent"></div>
           </td>
@@ -410,35 +256,8 @@
           </td>
         </tr>
         <tr>
-          <td class="id-col"><a id="S-29"></a>S-29</td>
-          <td class="description-col" style="padding-left:10px">
-            <h1>9 Summary of impacts</h1>
-            <div class="htmlContent"></div>
-          </td>
-          <td class="links-col">
-          </td>
-        </tr>
-        <tr>
-          <td class="id-col"><a id="S-30"></a>S-30</td>
-          <td class="description-col" style="padding-left:10px">
-            <h1>10 Analysis of the proposed system</h1>
-            <div class="htmlContent"></div>
-          </td>
-          <td class="links-col">
-          </td>
-        </tr>
-        <tr>
-          <td class="id-col"><a id="S-32"></a>S-32</td>
-          <td class="description-col" style="padding-left:10px">
-            <h1>11 Annex A: Conformance statement</h1>
-            <div class="htmlContent"></div>
-          </td>
-          <td class="links-col">
-          </td>
-        </tr>
-        <tr>
           <td class="id-col"><a id="S-2"></a>S-2</td>
-          <td class="description-col" style="padding-left:10px">
+          <td class="description-col" style="padding-left:0px">
             <h1>12 Annex B: Sample implementations of role-based architecture</h1>
             <div class="htmlContent"><p>Example system diagrams (perhaps 3) that depict implementations of the role based architecture and how roles are assigned to different systems</p></div>
           </td>
@@ -450,7 +269,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-35"></a>S-35</td>
-          <td class="description-col" style="padding-left:20px">
+          <td class="description-col" style="padding-left:0px">
             <h2>12.1 Europe</h2>
             <div class="htmlContent"><p>Describe the envisioned European model using national access points</p></div>
           </td>
@@ -459,7 +278,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-36"></a>S-36</td>
-          <td class="description-col" style="padding-left:20px">
+          <td class="description-col" style="padding-left:0px">
             <h2>12.2 Japan</h2>
             <div class="htmlContent"><p>Describe the prototype work developed in Japan</p></div>
           </td>
@@ -468,36 +287,9 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-37"></a>S-37</td>
-          <td class="description-col" style="padding-left:20px">
+          <td class="description-col" style="padding-left:0px">
             <h2>12.3 OEM-based</h2>
             <div class="htmlContent"><p>Describe how a privatized model might work in areas where governments have implemented an official source.</p></div>
-          </td>
-          <td class="links-col">
-          </td>
-        </tr>
-        <tr>
-          <td class="id-col"><a id="S-33"></a>S-33</td>
-          <td class="description-col" style="padding-left:10px">
-            <h1>13 Annex C: Scope of transport rules considered</h1>
-            <div class="htmlContent"></div>
-          </td>
-          <td class="links-col">
-          </td>
-        </tr>
-        <tr>
-          <td class="id-col"><a id="S-34"></a>S-34</td>
-          <td class="description-col" style="padding-left:10px">
-            <h1>14 Annex D: Tentative rule categories</h1>
-            <div class="htmlContent"></div>
-          </td>
-          <td class="links-col">
-          </td>
-        </tr>
-        <tr>
-          <td class="id-col"><a id="S-42"></a>S-42</td>
-          <td class="description-col" style="padding-left:10px">
-            <h1>15 Annex E: Tentative rule characteristics</h1>
-            <div class="htmlContent"></div>
           </td>
           <td class="links-col">
           </td>
@@ -505,7 +297,27 @@
       </tbody>
     </table>
     <hr>
-    <div class="float-right mr-4"><em>Last modified by <a href="mailto://kvaughn@trevilon.com">Kenneth Vaughn, Trevilon</a> on 2021-12-10 15:01</em></div>
+    <div class="float-right mr-4"><em>Last modified by <a href="mailto://kvaughn@trevilon.com">Kenneth Vaughn, Trevilon</a> on 2021-12-15 13:11</em></div>
   </div>
-</body>
+							</div>
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://iso-tc204.github.io/iso24315p1/">Website Content:</a> <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p></li>
+								<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>ISO terms: &copy; ISO. All rights reserved.</li>
+							</ul>
+						</div>
+					</section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+</body>
 </html>
