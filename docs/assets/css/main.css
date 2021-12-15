@@ -270,6 +270,9 @@ input, select, textarea {
 			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
 		}
 
+	h1 {
+		font-size: 1.4em;
+	}
 	h2 {
 		font-size: 1.2em;
 	}
@@ -3229,6 +3232,9 @@ input, select, textarea {
 		-webkit-transition: -webkit-filter 0.25s ease;
 		-ms-transition: -ms-filter 0.25s ease;
 		transition: filter 0.25s ease;
+		display: flex;
+		flex-flow: column;
+		height: 100%;
 	}
 
 	#menu {
@@ -4141,3 +4147,174 @@ input, select, textarea {
 		}
 
 	}
+	
+    /* Customization of our styles */
+    .id-col {
+      min-width: 5em;
+      vertical-align: top;
+	  color: white;
+    }
+    .description-col {
+      min-width: 30em;
+      vertical-align: top;
+	  color: white;
+    }
+    .discussion-col {
+      min-width: 15em;
+      vertical-align: top;
+	  color: white;
+    }
+    .links-col {
+      min-width: 15em;
+      vertical-align: top;
+	  color: white;
+    }
+    .attributes-col {
+      min-width: 15em;
+      vertical-align: top;
+	  color: white;
+    }
+    .attributes-col ul {
+      padding-left: 0px;
+	  color: white;
+    }
+    .attributes-col li {
+      list-style: none outside none;
+	  color: white;
+    }
+    .attributes-col .attribute-name {
+      font-style: italic;
+	  color: white;
+    }
+    .custom-col {
+      min-width: 10em;
+      vertical-align: top;
+	  color: white;
+    }
+    .comment-text {
+      padding-top: 5px;
+      padding-bottom: 10px;
+	  color: white;
+    }
+    .attachment {
+      font-style: italic;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+	  color: white;
+    }
+    .attachment img {
+      max-width: 90%;
+      height: auto;
+      display: block;
+	  color: white;
+    }
+    .links-type-name {
+      font-style: italic;
+	  color: white;
+    }
+    .link {
+      margin-left: 16px;
+	  color: white;
+    }
+    td.attributes-col div.htmlContent,
+    td.custom-col div.htmlContent {
+      min-width: 15em;
+	  color: white;
+    }
+    .deleted {
+      color: #666;
+    }
+    .deleted .id-col,
+    .deleted .description-col,
+    .link.deleted {
+      text-decoration: line-through;
+    }
+    .deleted a {
+      color: gray;
+    }
+    .htmlContent table {
+      border: 1px solid black;
+      border-collapse: collapse;
+      width: auto;
+	  color: white;
+	}
+    .htmlContent th, .htmlContent td {
+      border: 1px solid #b5bcc7;
+      vertical-align: top;
+      padding: 3px 7px 2px 7px;
+	  color: white;
+    }
+    .htmlContent th {
+      padding-top: 5px;
+      padding-bottom: 4px;
+      background: silver;
+      border-bottom: none !important;
+	  color: white;
+    }
+    #reqviewTable {
+	  flex-grow: 1;
+    }
+    .reqviewTable {
+      margin: 1em;
+    }
+    .reqviewTable h1 {
+      font-size: 30px;
+    }
+    .reqviewTable h2 {
+      font-size: 24px;
+    }
+    .reqviewTable h3 {
+      font-size: 20px;
+    }
+    .reqviewTable h4 {
+      font-size: 18px;
+    }
+    .reqviewTable h5 {
+      font-size: 16px;
+    }
+    .reqviewTable h6 {
+      font-size: 14px;
+    }
+    .reqviewTable > table > thead > tr > th {
+      text-align: left;
+    }
+    .reqviewTable thead th {
+        position: sticky;
+        top: 0;
+		background: #353849 url('../images/bg.jpg') no-repeat left top;
+    }
+	.reqviewTable td {
+		background: #353849;
+		opacity: 0.7;
+	}
+	/* Style the tab */
+.tab {
+  overflow: hidden;
+  text-align: center;
+  border-radius: 6px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: #353849;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0px 2px;
+  width: 40px;
+  transition: 0.3s;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  opacity: 0.5;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
