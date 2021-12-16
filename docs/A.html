@@ -40,8 +40,10 @@
 							<ul class="links">
 								<li><a href="index.html">Home</a></li>
 								<li><a href="metr_overview.html">Overview</a></li>
-								<li><a href="workshop_overview.html">Workshops</a></li>
-								<li><a href="glossary.html">Glossary</a></li>
+								<li><a href="workshop_overview.html">Workshop Results</a></li>
+								<li><a href="SP.html">Summary Points</a></li>
+								<li><a href="UN.html">User Needs</a></li>
+								<li><a href="T.html">Terminology</a></li>
 							</ul>
 							<a href="#" class="close">Close</a>
 						</div>
@@ -52,7 +54,8 @@
 						<table>
 							<tr>
 								<td><h1>24315-1 METR ConOps<br />A: Assumptions</h1></td>
-								<td width="390px">Traceability Tables: <div class="tab">
+								<td><!-- DDG search widget,@author Juri Wornowitski,@version 3.0,@link https://www.plainlight.com/ddg --><div id="widdget" style="width:230px;margin:10px 0;"><style type="text/css">#widdget input {display:block;height:30px;padding:4px;outline:none;border:1px solid #8d8d8d;border-right:0;box-sizing:border-box;border-radius:3px 0 0 3px;width:calc(100% - 41px);font-size:15px;} #widdget button {float:left;cursor:pointer;width:43px;height:30px;color:#fff;background-image:linear-gradient(#cacaca,#929292);border:0;border-radius:0 3px 3px 0;padding:0;} #widdget button:active {background-image:linear-gradient(#909090,#585858);} #widdget button:focus {outline:none;}</style><form style="position:relative" method="get" action="https://duckduckgo.com/" target="_top"><div style="float:right;position:absolute;top:0;right:-2px;z-index:3"><button type="submit">&#128269;</button></div><input type="text" name="q" placeholder="Search METR Website" /><input type="hidden" name="sites" value="https://iso-tc204.github.io/iso24315p1/" /></form></div></td>
+								<td width="390px"><span class="actions"><a href="https://github.com/ISO-TC204/iso24315p1/discussions" class="button primary">Submit Comment</a></span>Traceability Tables: <div class="tab">
 									<button onclick="location.href='SP.html'" title="Summary Points">SP</button>
 									<button onclick="location.href='A.html'" title="Assumptions/Constraints">A</button>
 									<button onclick="location.href='N.html'" title="Notes">N</button>
@@ -66,9 +69,6 @@
 							</tr>
 						</table>
 							
-  <div class="filter">
-    <i class="fas fa-filter"></i> [Display: 1]
-  </div>
   <div class="reqviewTable table-responsive-md">
     <table class="table table-sm">
       <!-- Heading of the requirements table -->
@@ -84,7 +84,7 @@
       <tbody>
         <tr>
           <td class="id-col"><a id="A-27"></a>A-27</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:10px">
             <h1>6 Justification for and nature of changes</h1>
             <div class="htmlContent"></div>
           </td>
@@ -93,7 +93,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-32"></a>A-32</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:20px">
             <h2>6.5 Deferred user needs</h2>
             <div class="htmlContent"></div>
           </td>
@@ -102,7 +102,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-20"></a>A-20</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:30px">
             <h3>6.5.1 Detailed rule definition</h3>
             <div class="htmlContent"><p>Changes considered and not implemented: Attempting to translate the legal definition of a rule as defined within its native language (e.g., for a "STOP" sign, "The driver of any vehicle approaching a stop sign at the entrance to, or within, an intersection, shall stop at a limit line, if marked, otherwise before entering the crosswalk on the near side of the intersection. If there is no limit line or crosswalk, the driver shall stop at the entrance to the intersecting roadway or railroad grade crossing.") into an exact electronic structrue. The reason for this is multi-fold:<br>(1) The messaging structure to handle all known scenarios, let alone all possible scenarios, in a readily computer-interpretable format would be overly complex.<br>(2) The laws are likely often written to create ambiguities in meaning (e.g., one could argue that in the above example, ADS-equipped vehicles are not required to stop since they do not have a driver)<br>(3) The interpretation of the legal language within laws into practical meanings is often subjective and is within the realm of the judicial process rather than the executive process of a translator.<br>(4) The effort to define such details would likly require substantially more time to standardize.<br><br>Future efforts might address areas of known variability within meaning of signs so that systems can be aware of local meanings when significant issues are known. For example, what constitutes a "stopped" vehicle versus a "parked" vehicle; but the initial release of METR will concentrate on identifying the application of rules rather than the legal definition of the rules.</p></div>
           </td>
@@ -111,7 +111,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-36"></a>A-36</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:30px">
             <h3>6.5.2 Aerial drones</h3>
             <div class="htmlContent"><p>The initial edition of METR will not attempt to address any specific needs related to aerial drones.</p></div>
           </td>
@@ -122,7 +122,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-33"></a>A-33</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:20px">
             <h2>6.6 Assumptions and constraints</h2>
             <div class="htmlContent"></div>
           </td>
@@ -131,7 +131,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-34"></a>A-34</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:30px">
             <h3>6.6.1 Assumptions</h3>
             <div class="htmlContent"></div>
           </td>
@@ -140,7 +140,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-11"></a>A-11</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:40px">
             <h4>6.6.1.1 Users — Modes</h4>
             <div class="htmlContent"><p>METR should cover the modal scope of surface transport, as defined by TC 204 and ITS</p></div>
           </td>
@@ -151,7 +151,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-10"></a>A-10</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:40px">
             <h4>6.6.1.2 Users — Variety</h4>
             <div class="htmlContent"><p>METR should support ADS, driver support systems, and other user interface systems (e.g., trip planning software)</p></div>
           </td>
@@ -162,7 +162,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-2"></a>A-2</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:40px">
             <h4>6.6.1.3 Users — Mixed environment</h4>
             <div class="htmlContent"><p>Transport user systems that support METR need to be able to operate along side transport user systems that do not support or are not connected to METR</p></div>
           </td>
@@ -173,7 +173,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-6"></a>A-6</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:40px">
             <h4>6.6.1.4 Users — Stationary users</h4>
             <div class="htmlContent"><p>Some transport user systems will not be mobile (e.g., PCs used for pre-trip planning)</p></div>
           </td>
@@ -184,7 +184,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-3"></a>A-3</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:40px">
             <h4>6.6.1.5 Communications — Stationary components — Sufficient bandwidth</h4>
             <div class="htmlContent"><p>Sufficient communication bandwidth will be available among the various stationary system (a.k.a., back-office) components to support METR operations.</p></div>
           </td>
@@ -193,7 +193,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-5"></a>A-5</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:40px">
             <h4>6.6.1.6 Communications — Mobile users — Mobile wireless internet</h4>
             <div class="htmlContent"><p>All mobile transport user systems will support mobile wireless Internet with at least 3G speeds</p></div>
           </td>
@@ -205,7 +205,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-7"></a>A-7</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:40px">
             <h4>6.6.1.7 Communications — Mobile users — Instability of internet access</h4>
             <div class="htmlContent"><p>Mobile wireless Internet access is not guaranteed for any location</p></div>
           </td>
@@ -216,7 +216,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-8"></a>A-8</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:40px">
             <h4>6.6.1.8 Communications — Mobile users — Areas without internet coverage</h4>
             <div class="htmlContent"><p>Mobile wireless Internet might not be available at all in some locations</p></div>
           </td>
@@ -227,7 +227,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-4"></a>A-4</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:40px">
             <h4>6.6.1.9 Communications — Mobile users — Short-range wireless</h4>
             <div class="htmlContent"><p>All motor vehicles that support METR will support short-range wireless communications meeting local standards (e.g., DSRC, LTE-V2X)</p></div>
           </td>
@@ -239,7 +239,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-12"></a>A-12</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:40px">
             <h4>6.6.1.10 Communications — Delivery — Static Rules</h4>
             <div class="htmlContent"><p>Rules that are not expected to change during a journey will be pulled by the user to minimize data loading on the system</p></div>
           </td>
@@ -250,7 +250,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-13"></a>A-13</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:40px">
             <h4>6.6.1.11 Communications — Delivery — Dynamic rules</h4>
             <div class="htmlContent"><p>Rules that change without prior notice publicized in a pulled rule will have to be pushed to the user</p></div>
           </td>
@@ -261,7 +261,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-17"></a>A-17</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:40px">
             <h4>6.6.1.12 Communications — Delivery — Efficiency</h4>
             <div class="htmlContent"><p>METR should enable efficient data exchanges that do not require frequent downloading of rules that seldom change.</p></div>
           </td>
@@ -272,7 +272,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-18"></a>A-18</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:40px">
             <h4>6.6.1.13 Safety — Regulators</h4>
             <div class="htmlContent"><p>Regulators should ensure that defined rules promote safe operations</p></div>
           </td>
@@ -281,7 +281,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-19"></a>A-19</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:40px">
             <h4>6.6.1.14 Safety — Users</h4>
             <div class="htmlContent"><p>The dynamic driving task includes the responsibility to provide for the safe operation of the vehicle, even in the absence of METR information. For example, the DDT is responsible for detecting a lane closure and responding appropriately; the DDT is responsible for detecting that it is going well above the prevailing speed and slowing down as needed.</p></div>
           </td>
@@ -293,7 +293,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-21"></a>A-21</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:40px">
             <h4>6.6.1.15 Safety — Reliance</h4>
             <div class="htmlContent"><p>For the foreseeable future, METR should be considered as a supplement to existing traffic control devices rather than a replacement of those devices; however, this will likely change over time.</p></div>
           </td>
@@ -304,7 +304,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-35"></a>A-35</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:30px">
             <h3>6.6.2 Constraints</h3>
             <div class="htmlContent"></div>
           </td>
@@ -313,7 +313,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-14"></a>A-14</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:40px">
             <h4>6.6.2.1 Existing standards</h4>
             <div class="htmlContent"><p>The design of METR will rely upon existing standards as appropriate (e.g., for interface and data definitions). This should include reuse of existing structures, such as those defined within TN-ITS and TMDD.</p></div>
           </td>
@@ -324,7 +324,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-15"></a>A-15</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:40px">
             <h4>6.6.2.2 Cooperative ITS</h4>
             <div class="htmlContent"><p>METR will rely upon existing data sources as appropriate. For example, an emergency vehicle announcing its presence via C-ITS can be used to activate rules rather than requiring METR-specific transmissions.</p></div>
           </td>
@@ -335,7 +335,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-16"></a>A-16</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:40px">
             <h4>6.6.2.3 Limitations of short-range wireless communications</h4>
             <div class="htmlContent"><p>Short range wireless communication channels have limited data capacity, which must be respected while still delivering all applicable rules to transport users. (e.g., this might require the use of short range wireless messages to advertise more extensive data from central)</p></div>
           </td>
@@ -346,7 +346,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="A-1"></a>A-1</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:40px">
             <h4>6.6.2.4 Aerial drones</h4>
             <div class="htmlContent"><p>The design of METR should be flexible enough to support rules for low-altitude aerial drones, although these devices are not directly included in the first edition of this standard.</p></div>
           </td>

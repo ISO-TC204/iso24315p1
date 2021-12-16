@@ -40,8 +40,10 @@
 							<ul class="links">
 								<li><a href="index.html">Home</a></li>
 								<li><a href="metr_overview.html">Overview</a></li>
-								<li><a href="workshop_overview.html">Workshops</a></li>
-								<li><a href="glossary.html">Glossary</a></li>
+								<li><a href="workshop_overview.html">Workshop Results</a></li>
+								<li><a href="SP.html">Summary Points</a></li>
+								<li><a href="UN.html">User Needs</a></li>
+								<li><a href="T.html">Terminology</a></li>
 							</ul>
 							<a href="#" class="close">Close</a>
 						</div>
@@ -52,7 +54,8 @@
 						<table>
 							<tr>
 								<td><h1>24315-1 METR ConOps<br />S: Scenarios</h1></td>
-								<td width="390px">Traceability Tables: <div class="tab">
+								<td><!-- DDG search widget,@author Juri Wornowitski,@version 3.0,@link https://www.plainlight.com/ddg --><div id="widdget" style="width:230px;margin:10px 0;"><style type="text/css">#widdget input {display:block;height:30px;padding:4px;outline:none;border:1px solid #8d8d8d;border-right:0;box-sizing:border-box;border-radius:3px 0 0 3px;width:calc(100% - 41px);font-size:15px;} #widdget button {float:left;cursor:pointer;width:43px;height:30px;color:#fff;background-image:linear-gradient(#cacaca,#929292);border:0;border-radius:0 3px 3px 0;padding:0;} #widdget button:active {background-image:linear-gradient(#909090,#585858);} #widdget button:focus {outline:none;}</style><form style="position:relative" method="get" action="https://duckduckgo.com/" target="_top"><div style="float:right;position:absolute;top:0;right:-2px;z-index:3"><button type="submit">&#128269;</button></div><input type="text" name="q" placeholder="Search METR Website" /><input type="hidden" name="sites" value="https://iso-tc204.github.io/iso24315p1/" /></form></div></td>
+								<td width="390px"><span class="actions"><a href="https://github.com/ISO-TC204/iso24315p1/discussions" class="button primary">Submit Comment</a></span>Traceability Tables: <div class="tab">
 									<button onclick="location.href='SP.html'" title="Summary Points">SP</button>
 									<button onclick="location.href='A.html'" title="Assumptions/Constraints">A</button>
 									<button onclick="location.href='N.html'" title="Notes">N</button>
@@ -66,9 +69,6 @@
 							</tr>
 						</table>
 							
-  <div class="filter">
-    <i class="fas fa-filter"></i> [Display: 1]
-  </div>
   <div class="reqviewTable table-responsive-md">
     <table class="table table-sm">
       <!-- Heading of the requirements table -->
@@ -84,7 +84,7 @@
       <tbody>
         <tr>
           <td class="id-col"><a id="S-28"></a>S-28</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:10px">
             <h1>8 Operational scenarios</h1>
             <div class="htmlContent"></div>
           </td>
@@ -93,7 +93,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-4"></a>S-4</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:20px">
             <h2>8.1 Installation of permanent traffic control devices</h2>
             <div class="htmlContent"><p>The ConOps should include a use case that explains the process for installing and removing a permanent traffic control device (e.g., a parking sign) and explain how the process needs to work in real time to ensure consistency in information, especially when a traffic control device installation does not occur on schedule and the system needs to flag the discrepancy. And also perhaps for what happens with a missing device (e.g., missing speed limit sign as approaching or leaving a town on a rural highway) This should include a discussion of the update cycle of static rules, the activation of rules with dynamic data as signs are installed, and the provisioning of dynamic data when the status of rules are condition specific.</p><p>Include a scenario that details the process to deploy (static, temporary) rules that follows a flow of: publicizing first (pull; perhaps with expected date) followed by activation of rule (with deployment of traffic control device) and announcement that the rule is active (push)</p></div>
           </td>
@@ -107,7 +107,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-5"></a>S-5</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:20px">
             <h2>8.2 Deployment of temporary traffic control devices</h2>
             <div class="htmlContent"><p>The ConOps should also include a use case for emergency response deploying traffic control device to make a crash site safe</p><p>The ConOps should provide a scenario that explains that detours might consist of (1) a simple shift lane, (2) an indication that a turn manouver is prohibited, (3) an indication that a road or lane link is closed, or (4) a complete alternative path. In the first three cases, it is up to the DDT to determine the revised path to follow.</p></div>
           </td>
@@ -120,7 +120,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-11"></a>S-11</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:20px">
             <h2>8.3 Operation of rules dependent upon dynamic data</h2>
             <div class="htmlContent"><p>The ConOps might include a scenario with a variable speed limit system that has a fixed schedule that can be overridden by events.</p><p>The scenario should use the terminology of "data" (e.g., sensors), "information" (processed data), and "delivery" (connections) to clearly indicate how it addresses these three key aspects of ITS deployments.</p><p>This example will provide a mixture of types of communications (e.g., low-latency push and high-latency pull)</p></div>
           </td>
@@ -134,7 +134,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-41"></a>S-41</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:20px">
             <h2>8.4 Non-electronic activities</h2>
             <div class="htmlContent"><p>E.g., police on-scene directing traffic or deploying signs</p></div>
           </td>
@@ -143,7 +143,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-14"></a>S-14</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:20px">
             <h2>8.5 Private parking lot</h2>
             <div class="htmlContent"><p>METR ConOps should indicate support for proxy data entry services</p><p>Include an example that explains that the process for entering METR rules might include some type of validation per the requirements of the containing jurisdiction</p><p>We should have an example of a OEM DDT constraint that says not to exceed 15mph inside of a parking lot</p></div>
           </td>
@@ -156,7 +156,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-15"></a>S-15</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:20px">
             <h2>8.6 Rules that require permits</h2>
             <div class="htmlContent"><p>A METR operational scenario should indicate that a vehicle might be aware of a permit (and apply associated rules) or might not (and provide warnings to the driver)</p><p>Include a scenario that shows that METR will be able to include rules that define areas reserved for accessibility purposes such as loading/unloading areas and curb cutouts; explain that this is a detail that might take a while to populate and that many areas might not provide such detailed information</p></div>
           </td>
@@ -169,7 +169,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-1"></a>S-1</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:20px">
             <h2>8.7 Evacuation orders</h2>
             <div class="htmlContent"><p>METR should include an evacuation scenario that emphasize the importance of METR remaining operational and providing updates on the status of specific transport facilities (especially road closures).</p><p>&nbsp;</p></div>
           </td>
@@ -182,7 +182,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-12"></a>S-12</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:20px">
             <h2>8.8 Handling inconsistent data</h2>
             <div class="htmlContent"><p>The ConOps should include a scenario that describes a graceful fallback when traffic control devices are not consistent with METR information (e.g., a private facility where METR data has not been updated)</p><p>Include a scenario that describes the process of reporting field discrepancies.</p></div>
           </td>
@@ -195,7 +195,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-7"></a>S-7</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:20px">
             <h2>8.9 ADS fallback based on METR information</h2>
             <div class="htmlContent"><p>The ConOps should include an example where an ADS is required to fallback to manual mode when leaving METR-coverage. We should note that this is our assumption, but the exact rules are up to the jurisdiction and OEM to determine.</p><p>The ConOps should include a scenario of an ODD boundary where a ADS-equipped vehicle needs to navigate to an area where it can reach achieve a "minimal risk condition". The scenario should provide examples that the jurisdiction (or private campus) might have rules prohibiting temporary parking and the ADS-equipped vehicle will need to navigate to an appropriate location.</p></div>
           </td>
@@ -208,7 +208,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-8"></a>S-8</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:20px">
             <h2>8.10 Starting outside of METR coverage</h2>
             <div class="htmlContent"><p>The ConOps should include a scenario where a vehicle starts in an area without any connectivity. This scenario should include a note that we assume that for the near future, every ADS-equipped vehicle will have a manual drive mode (or be small enough to easily transport). If not, care should be taken to ensure that the rules do not expire while the car is parked, because any remote refresh would have to be performed by a trusted source and it is not yet determined what the requirements are for such a trusted source.</p></div>
           </td>
@@ -221,7 +221,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-31"></a>S-31</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:20px">
             <h2>8.11 Discovery of rules</h2>
             <div class="htmlContent"></div>
           </td>
@@ -230,7 +230,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-38"></a>S-38</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:20px">
             <h2>8.12 Kerbside</h2>
             <div class="htmlContent"></div>
           </td>
@@ -239,7 +239,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-39"></a>S-39</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:20px">
             <h2>8.13 Micromobility and VRUs</h2>
             <div class="htmlContent"><p>Should include mention of blocked sidewalk for construction</p></div>
           </td>
@@ -248,7 +248,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-40"></a>S-40</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:20px">
             <h2>8.14 Sidewalk robots</h2>
             <div class="htmlContent"></div>
           </td>
@@ -257,7 +257,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-2"></a>S-2</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:10px">
             <h1>12 Annex B: Sample implementations of role-based architecture</h1>
             <div class="htmlContent"><p>Example system diagrams (perhaps 3) that depict implementations of the role based architecture and how roles are assigned to different systems</p></div>
           </td>
@@ -269,7 +269,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-35"></a>S-35</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:20px">
             <h2>12.1 Europe</h2>
             <div class="htmlContent"><p>Describe the envisioned European model using national access points</p></div>
           </td>
@@ -278,7 +278,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-36"></a>S-36</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:20px">
             <h2>12.2 Japan</h2>
             <div class="htmlContent"><p>Describe the prototype work developed in Japan</p></div>
           </td>
@@ -287,7 +287,7 @@
         </tr>
         <tr>
           <td class="id-col"><a id="S-37"></a>S-37</td>
-          <td class="description-col" style="padding-left:0px">
+          <td class="description-col" style="padding-left:20px">
             <h2>12.3 OEM-based</h2>
             <div class="htmlContent"><p>Describe how a privatized model might work in areas where governments have implemented an official source.</p></div>
           </td>
