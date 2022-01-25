@@ -53,7 +53,7 @@
 					<div class="inner">
 						<table>
 							<tr>
-								<td><h1>24315-1 METR ConOps<br />UN: User Needs</h1><br />    <em>Last modified on 2022-01-14 16:40</em></td>
+								<td><h1>24315-1 METR ConOps<br />UN: User Needs</h1><br />    <em>Last modified on 2022-01-19 13:45</em></td>
 								<td><!-- DDG search widget,@author Juri Wornowitski,@version 3.0,@link https://www.plainlight.com/ddg --><div id="widdget" style="width:230px;margin:10px 0;"><style type="text/css">#widdget input {display:block;height:30px;padding:4px;outline:none;border:1px solid #8d8d8d;border-right:0;box-sizing:border-box;border-radius:3px 0 0 3px;width:calc(100% - 41px);font-size:15px;} #widdget button {float:left;cursor:pointer;width:43px;height:30px;color:#fff;background-image:linear-gradient(#cacaca,#929292);border:0;border-radius:0 3px 3px 0;padding:0;} #widdget button:active {background-image:linear-gradient(#909090,#585858);} #widdget button:focus {outline:none;}</style><form style="position:relative" method="get" action="https://duckduckgo.com/" target="_top"><div style="float:right;position:absolute;top:0;right:-2px;z-index:3"><button type="submit">&#128269;</button></div><input type="text" name="q" placeholder="Search METR Website" /><input type="hidden" name="sites" value="https://iso-tc204.github.io/iso24315p1/" /></form></div></td>
 								<td width="390px"><span class="actions" style="position: relative; left: 70px;"><a href="https://github.com/ISO-TC204/iso24315p1/discussions" class="button primary">Submit Comment</a><br /></span>Traceability Tables: <div class="tab">
 									<button onclick="location.href='SP.html'" title="Summary Points">SP</button>
@@ -76,6 +76,7 @@
         <tr>
           <th class="id-col"><i class="fas fas fa-asterisk"></i> ID</th>
           <th class="description-col"><i class="fas fa-align-left"></i> Description</th>
+          <th class="discussion-col"><i class="fas fa-comments"></i> Discussion</th>
           <th class="links-col"><i class="fas fa-link"></i> Links</th>
           <th class="attributes-col"><i class="fas fa-cogs"></i> Custom Attributes</th>
         </tr>
@@ -88,6 +89,8 @@
           <td class="description-col" style="padding-left:10px">
             <h1>6 Justification for and nature of changes</h1>
             <div class="htmlContent"></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
           </td>
@@ -102,6 +105,8 @@
             <h2>6.3 User need statements</h2>
             <div class="htmlContent"></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
           </td>
           <td class="attributes-col">
@@ -114,6 +119,8 @@
           <td class="description-col" style="padding-left:30px">
             <h3>6.3.1 Trustworthiness Needs</h3>
             <div class="htmlContent"></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
           </td>
@@ -128,6 +135,12 @@
             <h4>6.3.1.1 Trustworthiness — Reliability — Availability — Connectivity</h4>
             <div class="htmlContent"><p>A METR user needs to be aware of geographic locations that are known or suspected to have limited or no connectivity to the wide area wireless communication services used by the METR user.</p></div>
           </td>
+          <td class="discussion-col">
+              <div class="comment">
+                <div class="comment-header"><i class="fas fa-comment"></i> 2021-12-21: Kenneth Vaughn</div>
+                <div class="comment-text"><p>Should the text reference "wide area wireless communication services" or "METR distribution system"?</p></div>
+              </div>
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
                 <div class="link"> <span><a href='SP.html#SP-165'>SP-165</a></span>  In some cases, authorities might disable…</div>
@@ -137,8 +150,8 @@
           </td>
           <td class="attributes-col">
             <ul>
-              <li><i class="fas fa-cog"></i>&nbsp;<span class="attribute-name">Additional Details:</span> <span class="attribute-value"><p>In some cases, governmental authorities can disable communication systems for national security purposes. To the extent possible, METR user systems should always maintain relevant, up-to-date, non-urgent rules for areas that the METR user system is expected to travel.</p></span></li>
-              <li><i class="fas fa-cog"></i>&nbsp;<span class="attribute-name">Justification:</span> <span class="attribute-value"><p>METR users need to be aware before they leave areas with reliable connectivity to their current wide area wireless communication service so that they can download any additional rules for downstream locations, as they might deem appropriate. Locations that are known to have poor connectivity for major wide area wireless communication services should provide all urgent rules through localized broadcast.&nbsp;</p></span></li>
+              <li><i class="fas fa-cog"></i>&nbsp;<span class="attribute-name">Additional Details:</span> <span class="attribute-value"><p>In some cases, governmental authorities can disable communication systems for national security purposes. To the extent possible, METR user systems should always maintain relevant, up-to-date, expected rules for areas that the METR user system is expected to travel.</p></span></li>
+              <li><i class="fas fa-cog"></i>&nbsp;<span class="attribute-name">Justification:</span> <span class="attribute-value"><p>METR users need to be aware before they leave areas with reliable connectivity to their current wide area wireless communication service so that they can download any additional rules for downstream locations, as they might deem appropriate. Locations that are known to have poor connectivity for major wide area wireless communication services should provide all unexpected rules through localized broadcast.&nbsp;</p></span></li>
               <li><i class="fas fa-cog"></i>&nbsp;<span class="attribute-name">Example:</span> <span class="attribute-value"><p>A METR user travels into zone without wide area wireless connectivity and encounters a temporary lane closure. Such a lane closure needs to be publicized via localized broadcast to ensure all users properly informed of the condition. In addition, user systems might alter their normal communications cycle with the disseminator if they are aware that wide area wireless connectivity will not be available.&nbsp;</p></span></li>
             </ul>
           </td>
@@ -148,6 +161,8 @@
           <td class="description-col" style="padding-left:40px">
             <h4>6.3.1.2 Trustworthiness — Reliability — Availability — Geographic coverage</h4>
             <div class="htmlContent"><p>A METR user needs to be aware of the jurisdictional areas and sub-areas supported by the distribution system.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
@@ -171,6 +186,8 @@
             <h4>6.3.1.3 Trustworthiness — Reliability — Availability — Rule coverage</h4>
             <div class="htmlContent"><p>A METR user needs to be aware of the availability of each relevant rule set for each relevant defined sub-area.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> is assigned to:</div>
                 <div class="link"> <span><a href='RR.html#RR-14'>RR-14</a></span>  Publicise capabilities</div>
@@ -186,10 +203,10 @@
           </td>
           <td class="attributes-col">
             <ul>
-              <li><i class="fas fa-cog"></i>&nbsp;<span class="attribute-name">Additional Details:</span> <span class="attribute-value"><p>It is expected that METR will organize rules into a set of categories. It is further expected that different categories of rules will be supported by each sub-area, especially during the prolonged deployment phase of METR. Distribution systems will need to indicate the extent to which rule categories supported for each defined sub-area. Possible states for a rule category are likely to include:&nbsp;</p><ol><li>all electronic rules available&nbsp;</li><li>electronic rules exist, but are not currently available (e.g., validity period has been exceeded for at least one source for the sub-area) or do not provide complete coverage (e.g., electronic stop sign information has not been fully entered)&nbsp;</li><li>electronic rules exist, but version do not define all exceptions,&nbsp;</li><li>rules exist but not in electronic form (e.g., electronic transformation not implemented yet)&nbsp;</li><li>rules do not exist (i.e., the category contents is null and all associated jurisdictional entities agree to notify METR if rules are created)&nbsp;</li><li>rules are not known to exist (e.g., at least one jurisdictional entity does not participate in METR).</li></ol><p>NOTE: The METR distribution system is typically only responsible for providing non-urgent rule categories; urgent rule providers typically represent jurisdictional entities but the METR distribution system needs to convey which of the rule categories will be provided by those urgent rule providers.</p></span></li>
+              <li><i class="fas fa-cog"></i>&nbsp;<span class="attribute-name">Additional Details:</span> <span class="attribute-value"><p>It is expected that METR will organize rules into a set of categories. It is further expected that different categories of rules will be supported by each sub-area, especially during the prolonged deployment phase of METR. Distribution systems will need to indicate the extent to which rule categories supported for each defined sub-area. Possible states for a rule category are likely to include:&nbsp;</p><ol><li>all electronic rules available&nbsp;</li><li>electronic rules exist, but are not currently available (e.g., validity period has been exceeded for at least one source for the sub-area) or do not provide complete coverage (e.g., electronic stop sign information has not been fully entered)&nbsp;</li><li>electronic rules exist, but version do not define all exceptions,&nbsp;</li><li>rules exist but not in electronic form (e.g., electronic transformation not implemented yet)&nbsp;</li><li>rules do not exist (i.e., the category contents is null and all associated jurisdictional entities agree to notify METR if rules are created)&nbsp;</li><li>rules are not known to exist (e.g., at least one jurisdictional entity does not participate in METR).</li></ol><p>NOTE: The METR distribution system is typically only responsible for providing expected rule categories; unexpected rules and supplemental data are typically provided by jurisdictional entities. Nonetheless, the METR distribution system needs to convey which unexpected rule and supplemental data categories will be provided by those other providers.</p></span></li>
               <li><i class="fas fa-cog"></i>&nbsp;<span class="attribute-name">Justification:</span> <span class="attribute-value"><p>METR user systems might depend upon certain METR data to make safety-critical decisions. To ensure safe operations, a METR user system needs to be aware of what rule information is available electronically and to what extent it can rely upon the electronic information. ADS-equipped vehicles might limit their operational design domain (ODD) based on the availability of rules from certain rule categories. To facilitate quick identification of the rules supported by a jurisdiction, this document proposes that the categories of rules should be standardized, such as indicated in Annex D.</p></span></li>
-              <li><i class="fas fa-cog"></i>&nbsp;<span class="attribute-name">Example:</span> <span class="attribute-value"><p>An ADS-equipped automobile might have an ODD that requires electronic speed limits. This ODD constraint would be met for any stretch of road where:&nbsp;</p><ol><li>non-urgent speed limits are known, for example, because:&nbsp;<ol><li>all electronic automobile speed limits are available for the jurisdictional area;&nbsp;</li><li>electronic automobile speed limits are available for the stretch of road, even if they are not available for the entire area; or&nbsp;</li><li>automobile speed limits are known to not be locally defined for the stretch of road (e.g., assuming that the default speed limit for the type of road is known)
-and&nbsp;</li></ol></li><li>urgent speed limits are electronically provided to the extent that the jurisdiction allows their use.</li></ol></span></li>
+              <li><i class="fas fa-cog"></i>&nbsp;<span class="attribute-name">Example:</span> <span class="attribute-value"><p>An ADS-equipped automobile might have an ODD that requires electronic speed limits. This ODD constraint would be met for any stretch of road where:&nbsp;</p><ol><li>expected speed limits are known, for example, because:&nbsp;<ol><li>all electronic automobile speed limits are available for the jurisdictional area;&nbsp;</li><li>electronic automobile speed limits are available for the stretch of road, even if they are not available for the entire area; or&nbsp;</li><li>automobile speed limits are known to not be locally defined for the stretch of road (e.g., assuming that the default speed limit for the type of road is known)
+and&nbsp;</li></ol></li><li>variable and unexpected speed limits are electronically provided to the extent that the jurisdiction allows their use.</li></ol></span></li>
             </ul>
           </td>
         </tr>
@@ -198,6 +215,8 @@ and&nbsp;</li></ol></li><li>urgent speed limits are electronically provided to t
           <td class="description-col" style="padding-left:40px">
             <h4>6.3.1.4 Trustworthiness — Reliability — Availability — Supplemental data coverage</h4>
             <div class="htmlContent"><p>A METR user needs to be aware of the availability of each category of supplemental data for each relevant defined sub-area.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
@@ -222,6 +241,8 @@ and&nbsp;</li></ol></li><li>urgent speed limits are electronically provided to t
             <h4>6.3.1.5 Trustworthiness — Reliability — Availability — Degradation</h4>
             <div class="htmlContent"><p>A METR user needs to be aware of degraded operations of the METR environment to the extent that it may impact the provision of relevant data.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
                 <div class="link"> <span><a href='SP.html#SP-190'>SP-190</a></span>  METR data must be reliable and provided …</div>
@@ -231,7 +252,7 @@ and&nbsp;</li></ol></li><li>urgent speed limits are electronically provided to t
             <ul>
               <li><i class="fas fa-cog"></i>&nbsp;<span class="attribute-name">Additional Details:</span> <span class="attribute-value"><p>The user system needs to be aware when data is missing; knowing the locations where it should be receiving supplemental data will facilitate the identification of missing data.</p><p>NOTE: Beacons could advertise the location of other nearby beacons - especially ad hoc</p></span></li>
               <li><i class="fas fa-cog"></i>&nbsp;<span class="attribute-name">Justification:</span> <span class="attribute-value"><p>METR user systems might rely on data from the METR environment to make safety critical decisions. Such systems must be aware of when the provision of any of this data might be degraded or unavailable.</p></span></li>
-              <li><i class="fas fa-cog"></i>&nbsp;<span class="attribute-name">Example:</span> <span class="attribute-value"><ol><li>The distribution system is unable to obtain rule updates for one or more jurisdictions before the previous rule set for the jurisdiction expires. The METR distribution system will need to alert users requesting these rules that they are out of date.</li><li>If a traffic signal looses power, its associated RSU, might not be able to transmit its urgent signal timing data, which might be required by an ADS. In this case, the ADS is adequately informed of degraded operations if its previously obtained non-urgent data indicates that there should be an RSU broadcasting signal timing data. When the ADS approaches the signalized intersection and does not receive the expected broadcasts, it should realize that operations are degraded and take appropriate action. &nbsp;&nbsp;</li></ol></span></li>
+              <li><i class="fas fa-cog"></i>&nbsp;<span class="attribute-name">Example:</span> <span class="attribute-value"><ol><li>The distribution system is unable to obtain rule updates for one or more jurisdictions before the previous rule set for the jurisdiction expires. The METR distribution system will need to alert users requesting these rules that they are out of date.</li><li>If a traffic signal looses power, its associated RSU, might not be able to transmit its variable signal timing data, which might be required by an ADS. In this case, the ADS is adequately informed of degraded operations if its previously obtained expected rules indicate that there should be an RSU broadcasting variable signal timing data. When the ADS approaches the signalized intersection and does not receive the expected broadcasts, it should realize that operations are degraded and take appropriate action. &nbsp;&nbsp;</li></ol></span></li>
             </ul>
           </td>
         </tr>
@@ -240,6 +261,8 @@ and&nbsp;</li></ol></li><li>urgent speed limits are electronically provided to t
           <td class="description-col" style="padding-left:40px">
             <h4>6.3.1.6 Trustworthiness — Reliability — Availability — Capabilities</h4>
             <div class="htmlContent"><p>A METR user needs to be aware of which METR options are supported within its relevant METR environment.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
@@ -258,6 +281,8 @@ and&nbsp;</li></ol></li><li>urgent speed limits are electronically provided to t
             <h4>6.3.1.7 Trustworthiness — Reliability — Quality — Clarity</h4>
             <div class="htmlContent"><p>A METR user needs rules to be unambiguous.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> is assigned to:</div>
                 <div class="link"> <span><a href='RR.html#RR-9'>RR-9</a></span>  Sharing rules with peer entities to prom…</div>
@@ -270,7 +295,7 @@ and&nbsp;</li></ol></li><li>urgent speed limits are electronically provided to t
           <td class="attributes-col">
             <ul>
               <li><i class="fas fa-cog"></i>&nbsp;<span class="attribute-name">Justification:</span> <span class="attribute-value"><p>The data provided by METR will be used by a variety of METR user systems, each with their own applications. The data provided by METR must be sufficiently unambiguous to allow for its use by different users for the varied expected purposes.&nbsp;</p></span></li>
-              <li><i class="fas fa-cog"></i>&nbsp;<span class="attribute-name">Example:</span> <span class="attribute-value"><ol><li>For a road section that has different speed limits for automobiles and heavy goods vehicles, METR must ensure that the data provided is sufficiently unambiguous to prevent misinterpretation. For example, METR could provide both speed limits or it could provide one while making it clear that the rule does not apply to the other classification of vehicles.&nbsp;</li><li>A regulation might be defined such that it is in effect between midnight (0:00) and 06:00 when snow is present. For an ADS to comply with this regulation, there must be an agreement on:<ol><li>the meaning of midnight (e.g., local time or UTC),&nbsp;</li><li>identifying which entity (e.g., METR disseminator or ADS) is responsible for determining when the snow present condition is met,&nbsp;</li><li>whether the regulation applies to the ADS (e.g., does the regulation apply to police vehicles when responding to an emergency).&nbsp;</li></ol></li><li>If a user is notified of a static rule for a lower speed limit "when workers are present", it should be aware of what supplemental data source (e.g., METR distribution system, RSU, on-board sensors) it should use to determine if the "workers are present" condition is met and whether it can legally rely upon that data source.</li></ol></span></li>
+              <li><i class="fas fa-cog"></i>&nbsp;<span class="attribute-name">Example:</span> <span class="attribute-value"><ol><li>For a road section that has different speed limits for automobiles and heavy goods vehicles, METR must ensure that the data provided is sufficiently unambiguous to prevent misinterpretation. For example, METR could provide both speed limits or it could provide one while making it clear that the rule does not apply to the other classification of vehicles.&nbsp;</li><li>A regulation might be defined such that it is in effect between midnight (0:00) and 06:00 when snow is present. For an ADS to comply with this regulation, there must be an agreement on:<ol><li>the meaning of midnight (e.g., local time or UTC),&nbsp;</li><li>identifying which entity (e.g., METR disseminator or ADS) is responsible for determining when the snow present condition is met,&nbsp;</li><li>whether the regulation applies to the ADS (e.g., does the regulation apply to police vehicles when responding to an emergency).&nbsp;</li></ol></li><li>If a user is notified of a expected rule for a lower speed limit "when workers are present", it should be aware of what supplemental data source (e.g., METR distribution system, RSU, on-board sensors) it should use to determine if the "workers are present" condition is met and whether it can legally rely upon that data source.</li></ol></span></li>
             </ul>
           </td>
         </tr>
@@ -279,6 +304,8 @@ and&nbsp;</li></ol></li><li>urgent speed limits are electronically provided to t
           <td class="description-col" style="padding-left:40px">
             <h4>6.3.1.8 Trustworthiness — Reliability — Quality — Legal metrics</h4>
             <div class="htmlContent"><p>A METR user needs to be aware of the enforceability of each METR rule.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
@@ -299,6 +326,8 @@ and&nbsp;</li></ol></li><li>urgent speed limits are electronically provided to t
           <td class="description-col" style="padding-left:40px">
             <h4>6.3.1.9 Trustworthiness — Reliability — Quality — Confidence metrics</h4>
             <div class="htmlContent"><p>A METR user needs to be aware of how much confidence the data provider has that the data being provided represents present conditions.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
@@ -323,6 +352,8 @@ and&nbsp;</li></ol></li><li>urgent speed limits are electronically provided to t
             <h4>6.3.1.10 Trustworthiness — Reliability — Quality — Accredited source</h4>
             <div class="htmlContent"><p>A METR user needs to be assured that the data received is from an accredited source.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
                 <div class="link"> <span><a href='SP.html#SP-181'>SP-181</a></span>  Each METR component needs to be certifie…</div>
@@ -341,6 +372,8 @@ and&nbsp;</li></ol></li><li>urgent speed limits are electronically provided to t
             <h4>6.3.1.11 Trustworthiness — Reliability — Resilience</h4>
             <div class="htmlContent"><p>A METR user needs the METR environment to be resilient for all safety critical information.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
                 <div class="link"> <span><a href='SP.html#SP-128'>SP-128</a></span>  METR cannot rely on just one path for da…</div>
@@ -352,7 +385,7 @@ and&nbsp;</li></ol></li><li>urgent speed limits are electronically provided to t
             <ul>
               <li><i class="fas fa-cog"></i>&nbsp;<span class="attribute-name">Additional Details:</span> <span class="attribute-value"><p>Organizations responsible for components of the METR distribution system and/or supplemental data provider components must plan for, adapt to, resist, and quickly recover from all failures related to safety critical information.&nbsp;</p><p>NOTE: METR user systems need to be designed to provide safe operations even if the other METR components and/or supplemental data providers become unavailable for some period.</p></span></li>
               <li><i class="fas fa-cog"></i>&nbsp;<span class="attribute-name">Justification:</span> <span class="attribute-value"><p>METR information is used for safety-critical decisions; users should be alerted to any failure and failures should be corrected as soon as possible to minimize the period with reduced safety margins.&nbsp;</p></span></li>
-              <li><i class="fas fa-cog"></i>&nbsp;<span class="attribute-name">Example:</span> <span class="attribute-value"><ol><li>If a traffic signal stops transmitting signal timing data, a METR user system needs to be able to recognize that the data is missing and take appropriate action.&nbsp;</li><li>If an emergency crew deploys safety-critical, urgent rules, they should ensure that every approach to the site is covered by redundant communications in case one source fails.</li><li>An out-of-area ADS-equipped emergency response vehicle needs reliable rule information when responding to a natural disaster.</li></ol></span></li>
+              <li><i class="fas fa-cog"></i>&nbsp;<span class="attribute-name">Example:</span> <span class="attribute-value"><ol><li>If a traffic signal stops transmitting signal timing data, a METR user system needs to be able to recognize that the data is missing and take appropriate action.&nbsp;</li><li>If an emergency crew deploys safety-critical, unexpected rules, they should ensure that every approach to the site is covered by redundant communications in case one source fails.</li><li>An out-of-area ADS-equipped emergency response vehicle needs reliable rule information when responding to a natural disaster.</li></ol></span></li>
             </ul>
           </td>
         </tr>
@@ -360,7 +393,9 @@ and&nbsp;</li></ol></li><li>urgent speed limits are electronically provided to t
           <td class="id-col"><a id="UN-33"></a>UN-33</td>
           <td class="description-col" style="padding-left:40px">
             <h4>6.3.1.12 Trustworthiness — Reliability — Timeliness — Rules</h4>
-            <div class="htmlContent"><p>A METR user needs to be aware of each rule, including both urgent and non-urgent rules, prior to the rule becoming active and relevant to the user.</p></div>
+            <div class="htmlContent"><p>A METR user needs to be aware of each rule, including both expected and unexpected rules, prior to the rule becoming active and relevant to the user.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> is assigned to:</div>
@@ -385,9 +420,9 @@ and&nbsp;</li></ol></li><li>urgent speed limits are electronically provided to t
           </td>
           <td class="attributes-col">
             <ul>
-              <li><i class="fas fa-cog"></i>&nbsp;<span class="attribute-name">Additional Details:</span> <span class="attribute-value"><p>The need covers:</p><ol><li>unposted and posted rules;</li><li>permanent, temporary, and ad hoc rules;</li><li>rules that override other rules;</li><li>supplemental data that can impact the active state of a rule;</li><li>expected, active, and withdrawn rules;</li><li>rules that are applicable in areas where there is unreliable wide area wireless connectivity.</li></ol><p>Non-urgent rules need to indicate when they will expire and users need to be able to obtain updates prior to their expiration.</p><p>Activation/deactivation of a rule might be due to any number of reasons, including:&nbsp;</p><ol><li>a defined schedule,&nbsp;</li><li>external events (e.g., rain),&nbsp;</li><li>installation of a sign&nbsp;</li></ol><p>NOTE: Details for some rules can be difficult to codify (e.g., a person directing traffic at the scene of a crash). In such a scenario, the METR environment can advise users that the normal rules (e.g., non-urgent rules) are currently being overridden even though it may not be feasible to provide details electronically. By notifying users that there is a change in the normal rules, ADS-equipped vehicles will be able to determine if the section of road still remains within its ODD.</p></span></li>
-              <li><i class="fas fa-cog"></i>&nbsp;<span class="attribute-name">Justification:</span> <span class="attribute-value"><p>There are many rules that have been defined by regulators. While many of these rules are relatively static others can change with little notice. User systems need an accurate representation of rules at every point in time (e.g., on the scale of 0.1 second resolution) to make appropriate dynamic driving task (DDT) decisions. Since the bulk of rules are relatively static, it would be very inefficient to download all defined rules 10 times a second; instead, the METR ConOps divides rules into two basic types: rules that are relatively static are defined as "non-urgent" and rules that can change with little notice are defined as "urgent". The distinction between these two categories is based on whether a rule changes prior to the expiration time of a previously downloaded set of non-urgent rules.</p></span></li>
-              <li><i class="fas fa-cog"></i>&nbsp;<span class="attribute-name">Example:</span> <span class="attribute-value"><ol><li>A user returns to his vehicle after a long hiatus. The vehicle system needs to determine if its previously downloaded rule set is still valid prior to engaging its ADS or presenting information through its driver support system.&nbsp;</li><li>A parking restriction might be planned to go into effect two weeks from now and then be active from 06:00 to 17:00 Monday through Friday. The user needs to be aware of the non-urgent rule prior to the rule first becoming active and relevant.</li><li>A parking restriction might be implemented with short notice (e.g., due to an incident). The user needs to be aware of the urgent rule prior to the rule first becoming active and relevant.</li><li>A new stop sign is installed. The user needs to be aware that a new non-urgent rule is planned and must also be informed of the urgent data that indicates when the rule becomes active (i.e., a field crew installs the sign).</li><li>Evacuation plans might be publicized well in advance as non-urgent rules that are inactive; the activation of these rules are likely to be deployed on an urgent basis.</li></ol></span></li>
+              <li><i class="fas fa-cog"></i>&nbsp;<span class="attribute-name">Additional Details:</span> <span class="attribute-value"><p>The need covers:</p><ol><li>unposted and posted rules;</li><li>persistent and temporary rules</li><li>ad-hoc and anticipated rules;</li><li>rules that override other rules;</li><li>supplemental data that can impact the active state of a rule;</li><li>expected, active, and withdrawn rules;</li><li>rules that are applicable in areas where there is unreliable wide area wireless connectivity.</li></ol><p>Expected rules need to indicate when they will expire and users need to be able to obtain updates prior to their expiration.</p><p>Activation/deactivation of a rule might be due to any number of reasons, including:&nbsp;</p><ol><li>a defined schedule,&nbsp;</li><li>external events (e.g., rain),&nbsp;</li><li>installation of a sign&nbsp;</li></ol><p>NOTE: Details for some rules can be difficult to codify (e.g., a person directing traffic at the scene of a crash). In such a scenario, the METR environment can advise users that the expected rules are currently being overridden even though it may not be feasible to provide details electronically. By notifying users that there is a change in the expected rules, ADS-equipped vehicles will be able to determine if the section of road still remains within its ODD.</p></span></li>
+              <li><i class="fas fa-cog"></i>&nbsp;<span class="attribute-name">Justification:</span> <span class="attribute-value"><p>There are many rules that have been defined by regulators. While many of these rules are relatively static others can change with little notice. User systems need an accurate representation of rules at every point in time (e.g., on the scale of 0.1 second resolution) to make appropriate dynamic driving task (DDT) decisions. Since the bulk of rules are relatively static, it would be very inefficient to download all defined rules 10 times a second; instead, the METR ConOps divides rules into two basic types: rules that are relatively static are defined as "expected" and rules that can change with little notice are defined as "unexpected". The distinction between these two categories is based on whether the changed rule becomes active prior to the expiration of its relevant rule set.</p></span></li>
+              <li><i class="fas fa-cog"></i>&nbsp;<span class="attribute-name">Example:</span> <span class="attribute-value"><ol><li>A user returns to his vehicle after a long hiatus. The vehicle system needs to determine if its previously downloaded rule set is still valid prior to engaging its ADS or presenting information through its driver support system.&nbsp;</li><li>A parking restriction might be planned to go into effect two weeks from now and then be active from 06:00 to 17:00 Monday through Friday. The user needs to be aware of the expected rule prior to the rule first becoming active and relevant.</li><li>A parking restriction might be implemented with short notice (e.g., due to an incident). The user needs to be aware of the unexpected rule prior to the rule first becoming active and relevant.</li><li>A new stop sign is installed. The user needs to be aware that a new expected rule is planned and must also be informed of the supplemental data that indicates when the rule becomes active (i.e., a field crew installs the sign).</li><li>Evacuation plans might be publicized well in advance as expected rules that are inactive; the activation of these rules would be achieved through supplemental data.</li></ol></span></li>
             </ul>
           </td>
         </tr>
@@ -396,6 +431,8 @@ and&nbsp;</li></ol></li><li>urgent speed limits are electronically provided to t
           <td class="description-col" style="padding-left:40px">
             <h4>6.3.1.13 Trustworthiness — Reliability — Timeliness — Supplemental data</h4>
             <div class="htmlContent"><p>A METR user needs to be aware of the current values of supplemental data that can impact the state of currently relevant defined rules.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
@@ -419,6 +456,8 @@ and&nbsp;</li></ol></li><li>urgent speed limits are electronically provided to t
             <h4>6.3.1.14 Trustworthiness — Reliability — Transparency</h4>
             <div class="htmlContent"><p>A METR user needs data that are transparent.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
                 <div class="link"> <span><a href='SP.html#SP-190'>SP-190</a></span>  METR data must be reliable and provided …</div>
@@ -436,6 +475,8 @@ and&nbsp;</li></ol></li><li>urgent speed limits are electronically provided to t
           <td class="description-col" style="padding-left:40px">
             <h4>6.3.1.15 Trustworthiness — Reliability — Usability — Completeness</h4>
             <div class="htmlContent"><p>A METR user needs to be aware of all relevant data for the locations that it plans to operate.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
@@ -463,6 +504,8 @@ and&nbsp;</li></ol></li><li>urgent speed limits are electronically provided to t
             <h4>6.3.1.16 Trustworthiness — Reliability — Usability — Active status</h4>
             <div class="htmlContent"><p>A METR user needs to know the times at which each rule is active (enforceable).</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
                 <div class="link"> <span><a href='SP.html#SP-190'>SP-190</a></span>  METR data must be reliable and provided …</div>
@@ -480,6 +523,8 @@ and&nbsp;</li></ol></li><li>urgent speed limits are electronically provided to t
           <td class="description-col" style="padding-left:40px">
             <h4>6.3.1.17 Trustworthiness — Reliability — Usability — Language neutrality</h4>
             <div class="htmlContent"><p>A METR user needs rules to be exchanged in a language-neutral format.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
@@ -499,6 +544,8 @@ and&nbsp;</li></ol></li><li>urgent speed limits are electronically provided to t
             <h4>6.3.1.18 Trustworthiness — Reliability — Usability — Features</h4>
             <div class="htmlContent"><p>A METR user needs to be aware of the capabilities currently supported by its current distribution system.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> is assigned to:</div>
                 <div class="link"> <span><a href='RR.html#RR-14'>RR-14</a></span>  Publicise capabilities</div>
@@ -517,6 +564,8 @@ and&nbsp;</li></ol></li><li>urgent speed limits are electronically provided to t
           <td class="description-col" style="padding-left:40px">
             <h4>6.3.1.19 Trustworthiness — Security — Communications confidentiality</h4>
             <div class="htmlContent"><p>A METR user needs each METR component and supplemental data provider to keep user information confidential.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
@@ -538,6 +587,8 @@ and&nbsp;</li></ol></li><li>urgent speed limits are electronically provided to t
           <td class="description-col" style="padding-left:40px">
             <h4>6.3.1.20 Trustworthiness — Security — Integrity — Access control</h4>
             <div class="htmlContent"><p>A METR user needs each METR component and supplemental data provider to maintain access control.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> is assigned to:</div>
@@ -561,6 +612,12 @@ and&nbsp;</li></ol></li><li>urgent speed limits are electronically provided to t
           <td class="description-col" style="padding-left:40px">
             <h4>6.3.1.21 Trustworthiness — Security — Integrity — Accountability</h4>
             <div class="htmlContent"><p>A METR user needs each METR component and supplemental data provider to provide evidence of what actions it has taken, including what data it exchanged with whom and when.</p></div>
+          </td>
+          <td class="discussion-col">
+              <div class="comment">
+                <div class="comment-header"><i class="fas fa-comment"></i> 2022-01-06: Kenneth Vaughn</div>
+                <div class="comment-text"><p>Should supplemental data providers be required to log this information or does that impose to large of a burden?</p></div>
+              </div>
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
@@ -590,6 +647,8 @@ and&nbsp;</li></ol></li><li>urgent speed limits are electronically provided to t
           <td class="description-col" style="padding-left:40px">
             <h4>6.3.1.22 Trustworthiness — Security — Integrity — Accuracy</h4>
             <div class="htmlContent"><p>A METR user needs each METR component and supplemental data provider to provide data that is accurate.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> is assigned to:</div>
@@ -624,6 +683,8 @@ The rules should also be unambiguous; for example, they should be able to distin
             <h4>6.3.1.23 Trustworthiness — Security — Integrity — Authenticity</h4>
             <div class="htmlContent"><p>A METR user needs each METR component and supplemental data provider to ensure the authenticity of the data received.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
                 <div class="link"> <span><a href='SP.html#SP-42'>SP-42</a></span>  ConOps should explain that all component…</div>
@@ -645,6 +706,8 @@ The rules should also be unambiguous; for example, they should be able to distin
             <h4>6.3.1.24 Trustworthiness — Security — Privacy</h4>
             <div class="htmlContent"><p>A METR user needs each METR component and supplemental data provider to keep user information private.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
                 <div class="link"> <span><a href='SP.html#SP-58'>SP-58</a></span>  User privacy needs to be protected, espe…</div>
@@ -665,6 +728,8 @@ The rules should also be unambiguous; for example, they should be able to distin
             <h3>6.3.2 User needs</h3>
             <div class="htmlContent"></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
           </td>
           <td class="attributes-col">
@@ -677,6 +742,8 @@ The rules should also be unambiguous; for example, they should be able to distin
           <td class="description-col" style="padding-left:40px">
             <h4>6.3.2.1 User — Disseminator — Discovery</h4>
             <div class="htmlContent"><p>A METR user needs to discover the appropriate METR disseminator for its purposes (e.g., its vehicle classification, user classification, and location of interest).</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> is assigned to:</div>
@@ -701,6 +768,8 @@ NOTE: The provision of this service will likely rely upon an ITS service externa
             <h4>6.3.2.2 User — Disseminator — Terms of service</h4>
             <div class="htmlContent"><p>A METR user needs to discover the terms of service for accessing rules from the METR disseminator.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
           </td>
           <td class="attributes-col">
@@ -714,6 +783,8 @@ NOTE: The provision of this service will likely rely upon an ITS service externa
           <td class="description-col" style="padding-left:40px">
             <h4>6.3.2.3 User — Connectivity — Preferences</h4>
             <div class="htmlContent"><p>A METR user needs to be able to identify their preferences for usage of various communications channels.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
@@ -732,6 +803,8 @@ NOTE: The provision of this service will likely rely upon an ITS service externa
             <h4>6.3.2.4 User — Awareness — Facility classification</h4>
             <div class="htmlContent"><p>A METR user needs to understand the classification of transport facilities within a specified jurisdictional area.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
                 <div class="link"> <span><a href='SP.html#SP-104'>SP-104</a></span>  Road types regulated by a jurisdiction n…</div>
@@ -749,6 +822,8 @@ NOTE: The provision of this service will likely rely upon an ITS service externa
           <td class="description-col" style="padding-left:40px">
             <h4>6.3.2.5 User — Awareness — Vehicle classification</h4>
             <div class="htmlContent"><p>A METR user needs to understand the classification of vehicles within a specified jurisdictional area.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
@@ -770,6 +845,8 @@ NOTE: The provision of this service will likely rely upon an ITS service externa
             <h4>6.3.2.6 User — Awareness — Facility user classes</h4>
             <div class="htmlContent"><p>A METR user needs to know the classifications of transport users that are allowed to use each transport facility.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
                 <div class="link"> <span><a href='SP.html#SP-171'>SP-171</a></span>  VRUs/VRVs need to be aware of the classe…</div>
@@ -787,6 +864,8 @@ NOTE: The provision of this service will likely rely upon an ITS service externa
           <td class="description-col" style="padding-left:40px">
             <h4>6.3.2.7 User — Awareness — Mapping</h4>
             <div class="htmlContent"><p>A METR user needs electronic map(s) for the current and planned mode(s) of travel with sufficient details to accurately associate rules to transport infrastructure, including the identification of all interactions with other modes of travel.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
@@ -807,6 +886,8 @@ NOTE: The provision of this service will likely rely upon an ITS service externa
             <h4>6.3.2.8 User — Awareness — Geopositioning</h4>
             <div class="htmlContent"><p>A METR user needs to be able to determine its precise location.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
           </td>
           <td class="attributes-col">
@@ -820,6 +901,8 @@ NOTE: The provision of this service will likely rely upon an ITS service externa
           <td class="description-col" style="padding-left:40px">
             <h4>6.3.2.9 User — Conflicts — Observed</h4>
             <div class="htmlContent"><p>A METR user needs to be aware of confirmed discrepancies between relevant electronic rules and traffic control devices and be aware of the precedence between the two.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
@@ -842,6 +925,8 @@ NOTE: The provision of this service will likely rely upon an ITS service externa
             <h4>6.3.2.10 User — Facility — Jurisdiction</h4>
             <div class="htmlContent"><p>A METR user needs to be aware of the jurisdictional entity for each relevant transport facility.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
                 <div class="link"> <span><a href='SP.html#SP-139'>SP-139</a></span>  METR needs to be able to accommodate hig…</div>
@@ -859,6 +944,8 @@ NOTE: The provision of this service will likely rely upon an ITS service externa
           <td class="description-col" style="padding-left:40px">
             <h4>6.3.2.11 User — Jurisdiction — Sub-areas</h4>
             <div class="htmlContent"><p>A METR user needs to be aware of any sub-areas within a jurisdictional boundary that might be under the authority of a different jurisdictional entity or might offer different METR capabilities.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
@@ -878,6 +965,8 @@ NOTE: The provision of this service will likely rely upon an ITS service externa
           <td class="description-col" style="padding-left:40px">
             <h4>6.3.2.12 User — Rule — Categories</h4>
             <div class="htmlContent"><p>A METR user needs to be aware of all available rules for the rule categories and areas that it identifies as being relevant for its current purposes.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
@@ -900,6 +989,8 @@ NOTE: The provision of this service will likely rely upon an ITS service externa
           <td class="description-col" style="padding-left:40px">
             <h4>6.3.2.13 User — Rule — Characteristics</h4>
             <div class="htmlContent"><p>A METR user needs to be aware of the relevant characteristics associated with each rule, including the rule characteristics listed in Annex E.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
@@ -926,6 +1017,8 @@ NOTE: The provision of this service will likely rely upon an ITS service externa
             <h4>6.3.2.14 User — Rule — Definition</h4>
             <div class="htmlContent"><p>A METR user needs to understand the precise meaning of a rule as it applies within the particular jurisdiction.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
                 <div class="link"> <span><a href='SP.html#SP-40'>SP-40</a></span>  There is a lack of consistent terminolog…</div>
@@ -942,6 +1035,8 @@ NOTE: The provision of this service will likely rely upon an ITS service externa
           <td class="description-col" style="padding-left:40px">
             <h4>6.3.2.15 User — Rule — Precedence</h4>
             <div class="htmlContent"><p>A METR user needs to be aware of the precedence of each electronic rule received, which includes precedence with respect to (non-electronic) traffic control devices, and other electronic rules from the same or another jurisdiction.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
@@ -963,6 +1058,8 @@ NOTE: The provision of this service will likely rely upon an ITS service externa
             <h4>6.3.2.16 User — Rule — Distribution — Prioritization</h4>
             <div class="htmlContent"><p>A METR user needs rules to be distributed in a prioritized manner.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
           </td>
           <td class="attributes-col">
@@ -978,6 +1075,8 @@ NOTE: The provision of this service will likely rely upon an ITS service externa
             <h4>6.3.2.17 User — Rule — Distribution — Efficiency</h4>
             <div class="htmlContent"><p>A METR user needs to obtain relevant rules in an efficient manner.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
                 <div class="link"> <span><a href='SP.html#SP-37'>SP-37</a></span>  Pull process must support filtering</div>
@@ -990,7 +1089,7 @@ NOTE: The provision of this service will likely rely upon an ITS service externa
           </td>
           <td class="attributes-col">
             <ul>
-              <li><i class="fas fa-cog"></i>&nbsp;<span class="attribute-name">Additional Details:</span> <span class="attribute-value"><p>To enhance the system efficiency, users should be able to subset rules based on:&nbsp;</p><ol><li>the classification of the vehicle within the target jurisdiction (i.e., passenger vehicles do not need rules for commercial vehicles or sidewalk robots),&nbsp;</li><li>location and intent (e.g., a vehicle might wish to store all rules related to its home location but only to retrieve rules along a narrow corridor for a long trip),&nbsp;</li><li>category of rule (e.g., some vehicles might not use parking rules in any way so it would be pointless to download them),&nbsp;</li><li>temporal constraints (lawyers and insurance companies might wish to discover rules that were in effect on a past date),&nbsp;</li><li>other characteristics that might relate to special rules (e.g., emergency response, delivery, dangerous goods, permitted, heavy, and other vehicles might be subject to special regulations of which only they need to be aware).&nbsp;</li></ol></span></li>
+              <li><i class="fas fa-cog"></i>&nbsp;<span class="attribute-name">Additional Details:</span> <span class="attribute-value"><p>To enhance the system efficiency, users should be able to subset rules based on:&nbsp;</p><ol><li>the classification of the vehicle within the target jurisdiction (i.e., passenger vehicles do not need rules for commercial vehicles or pathway robots),&nbsp;</li><li>location and intent (e.g., a vehicle might wish to store all rules related to its home location but only to retrieve rules along a narrow corridor for a long trip),&nbsp;</li><li>category of rule (e.g., some vehicles might not use parking rules in any way so it would be pointless to download them),&nbsp;</li><li>temporal constraints (lawyers and insurance companies might wish to discover rules that were in effect on a past date),&nbsp;</li><li>other characteristics that might relate to special rules (e.g., emergency response, delivery, dangerous goods, permitted, heavy, and other vehicles might be subject to special regulations of which only they need to be aware).&nbsp;</li></ol></span></li>
               <li><i class="fas fa-cog"></i>&nbsp;<span class="attribute-name">Justification:</span> <span class="attribute-value"><p>User systems rely upon wireless communication media that often have limited bandwidth. Processing and storing data increases hardware requirements. Preventing unnecessary the downloads allows a more efficient system; however, the need to obtain complete rule sets with proper accountability remains.&nbsp;</p></span></li>
               <li><i class="fas fa-cog"></i>&nbsp;<span class="attribute-name">Example:</span> <span class="attribute-value"><p>A distribution system might package rules according to rule category, sub-area, and block, where a block is a subdivision of a sub-area. Each block might be of a different size and shape (e.g., speed limit blocks might be along roads whereas parking rule blocks might form a grid).</p><p>User systems could then request the rule categories they deem most important given their current circumstances along with a specific area of interest. They would then receive the highest priority rules in an efficient manner while still allowing the distribution system to maintain a store of standardized blocks that it can send to any user.</p></span></li>
             </ul>
@@ -1001,6 +1100,8 @@ NOTE: The provision of this service will likely rely upon an ITS service externa
           <td class="description-col" style="padding-left:40px">
             <h4>6.3.2.18 User — Rule — Applicability — Permits</h4>
             <div class="htmlContent"><p>A METR user system needs to be aware of the permissions to which it or its user is currently granted.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
@@ -1023,6 +1124,8 @@ NOTE: The provision of this service will likely rely upon an ITS service externa
             <h4>6.3.2.19 User — Rule — Journey planning</h4>
             <div class="htmlContent"><p>A METR user needs to be able to obtain all relevant rules for a journey.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
                 <div class="link"> <span><a href='SP.html#SP-9'>SP-9</a></span>  User systems might support the ability t…</div>
@@ -1038,6 +1141,12 @@ NOTE: The provision of this service will likely rely upon an ITS service externa
           <td class="description-col" style="padding-left:40px">
             <h4>6.3.2.20 User — Rule — Obsolescence</h4>
             <div class="htmlContent"><p>A METR user needs to be able to operate a vehicle even if it has been unable to establish a connection to the METR distribution system for a prolonged period.</p></div>
+          </td>
+          <td class="discussion-col">
+              <div class="comment">
+                <div class="comment-header"><i class="fas fa-comment"></i> 2022-01-07: Kenneth Vaughn</div>
+                <div class="comment-text"><p>Do we want to delete this entirely or leave a placeholder for the future?</p></div>
+              </div>
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
@@ -1057,6 +1166,8 @@ NOTE: The provision of this service will likely rely upon an ITS service externa
             <h4>6.3.2.21 User — Status — Manual inputs</h4>
             <div class="htmlContent"><p>A METR user system needs to be aware of vehicle characteristics, such as auxiliary equipment, that are implemented manually and might not be detected automatically by vehicle sensors.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
                 <div class="link"> <span><a href='SP.html#SP-164'>SP-164</a></span>  An ADS-equipped vehicle might need some …</div>
@@ -1074,6 +1185,8 @@ NOTE: The provision of this service will likely rely upon an ITS service externa
             <h4>6.3.2.22 User — Status — Environmental awareness</h4>
             <div class="htmlContent"><p>A METR user system needs to be able to determine the environmental conditions within which it is operating, to the extent that these conditions are used in rule definitions.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
           </td>
           <td class="attributes-col">
@@ -1088,6 +1201,8 @@ NOTE: The provision of this service will likely rely upon an ITS service externa
           <td class="description-col" style="padding-left:40px">
             <h4>6.3.2.23 User — System — Upgrade</h4>
             <div class="htmlContent"><p>A METR user system needs to be able to patch and upgrade its software as appropriate.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
@@ -1105,6 +1220,8 @@ NOTE: The provision of this service will likely rely upon an ITS service externa
             <h3>6.3.3 Regulator needs</h3>
             <div class="htmlContent"></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
           </td>
           <td class="attributes-col">
@@ -1117,6 +1234,8 @@ NOTE: The provision of this service will likely rely upon an ITS service externa
           <td class="description-col" style="padding-left:40px">
             <h4>6.3.3.1 Regulator — Jurisdictions — Assign sub-jurisdiction</h4>
             <div class="htmlContent"><p>For each contained sub-area, the jurisdictional entity needs to designate itself or another jurisdictional entity to be the responsible authority.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
@@ -1135,6 +1254,8 @@ NOTE: The provision of this service will likely rely upon an ITS service externa
             <h4>6.3.3.2 Regulator — Jurisdictions — Regulator</h4>
             <div class="htmlContent"><p>A jurisdictional entity needs to authorize one or more regulators for its jurisdiction.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
           </td>
           <td class="attributes-col">
@@ -1151,6 +1272,8 @@ NOTE: The provision of this service will likely rely upon an ITS service externa
             <h4>6.3.3.3 Regulator — Jurisdictions — Agents</h4>
             <div class="htmlContent"><p>A regulator needs to be able to designate translator agent(s) as needed.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
           </td>
           <td class="attributes-col">
@@ -1165,6 +1288,8 @@ NOTE: The provision of this service will likely rely upon an ITS service externa
           <td class="description-col" style="padding-left:40px">
             <h4>6.3.3.4 Regulator — Rules — Enforcement information</h4>
             <div class="htmlContent"><p>For each rule, a regulator may choose to publicize who is authorized to enforce the rule and/or the penalties that might apply for violating the rule.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
@@ -1181,7 +1306,13 @@ NOTE: The provision of this service will likely rely upon an ITS service externa
           <td class="id-col"><a id="UN-56"></a>UN-56</td>
           <td class="description-col" style="padding-left:40px">
             <h4>6.3.3.5 Regulator — Publicize — Rules at a distance</h4>
-            <div class="htmlContent"><p>A regulator might choose to publicize ad hoc rules and dynamically activated rules to a large geographic area.</p></div>
+            <div class="htmlContent"><p>A regulator might choose to publicize unexpected rules to a large geographic area.</p></div>
+          </td>
+          <td class="discussion-col">
+              <div class="comment">
+                <div class="comment-header"><i class="fas fa-comment"></i> 2022-01-07: Kenneth Vaughn</div>
+                <div class="comment-text"><p>Is this in the scope of METR? It is largely a traveller information use case rather than a rule use case, but it is a gray area.</p></div>
+              </div>
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
@@ -1200,6 +1331,8 @@ NOTE: The provision of this service will likely rely upon an ITS service externa
             <h4>6.3.3.6 Regulator — Conflicts — Electronic</h4>
             <div class="htmlContent"><p>A regulator needs to be informed when a METR component detects any conflict among two or more electronic rules.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
                 <div class="link"> <span><a href='SP.html#SP-195'>SP-195</a></span>  The METR ConOps should identify the need…</div>
@@ -1215,6 +1348,8 @@ NOTE: The provision of this service will likely rely upon an ITS service externa
           <td class="description-col" style="padding-left:40px">
             <h4>6.3.3.7 Regulator — Conflicts — Physical</h4>
             <div class="htmlContent"><p>A regulator needs to be informed when a METR user system detects any discrepancies between rules being electronically distributed and physically observed traffic control devices.<br></p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
@@ -1243,6 +1378,8 @@ The ConOps should allow flexibility for a user system to report any conflicts in
             <h4>6.3.3.8 Regulator — Discovery</h4>
             <div class="htmlContent"><p>A regulator needs to discover and validate rules detected and reported by vehicle sensor observations.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
                 <div class="link"> <span><a href='SP.html#SP-168'>SP-168</a></span>  In order to automatically update systems…</div>
@@ -1263,6 +1400,8 @@ The ConOps should allow flexibility for a user system to report any conflicts in
             <h3>6.3.4 Third party needs</h3>
             <div class="htmlContent"></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
           </td>
           <td class="attributes-col">
@@ -1275,6 +1414,8 @@ The ConOps should allow flexibility for a user system to report any conflicts in
           <td class="description-col" style="padding-left:40px">
             <h4>6.3.4.1 Third party — Verify accuracy</h4>
             <div class="htmlContent"><p>An authorized third party needs to be able to verify that rules currently being electronically distributed are consistent with traffic control devices.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
