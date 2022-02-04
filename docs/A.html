@@ -76,6 +76,7 @@
         <tr>
           <th class="id-col"><i class="fas fas fa-asterisk"></i> ID</th>
           <th class="description-col"><i class="fas fa-align-left"></i> Description</th>
+          <th class="discussion-col"><i class="fas fa-comments"></i> Discussion</th>
           <th class="links-col"><i class="fas fa-link"></i> Links</th>
         </tr>
       </thead>
@@ -88,6 +89,8 @@
             <h1>6 Justification for and nature of changes</h1>
             <div class="htmlContent"></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
           </td>
         </tr>
@@ -96,6 +99,8 @@
           <td class="description-col" style="padding-left:20px">
             <h2>6.5 Deferred user needs</h2>
             <div class="htmlContent"></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
           </td>
@@ -106,6 +111,8 @@
             <h3>6.5.1 Precise legal meaning of rules</h3>
             <div class="htmlContent"><p>The initial version of METR does not attempt to address the need for METR users to understand the precise legal meaning and interpretation of a rule; for example by translating the native language definition (e.g., for a "STOP" sign, "The driver of any vehicle approaching a stop sign at the entrance to, or within, an intersection, shall stop at a limit line, if marked, otherwise before entering the crosswalk on the near side of the intersection. If there is no limit line or crosswalk, the driver shall stop at the entrance to the intersecting roadway or railroad grade crossing.") into an exact electronic structure. The reason for this is multi-fold:<br>(1) The messaging structure to handle all known scenarios, let alone all possible scenarios, in a readily computer-interpretable format would be overly complex.<br>(2) The laws are likely often written to create ambiguities in meaning (e.g., one could argue that in the above example, ADS-equipped vehicles are not required to stop since they do not have a driver)<br>(3) The interpretation of the legal language within laws into practical meanings is often subjective and is within the realm of the judicial process rather than the executive process of a translator.<br>(4) The effort to define such details would likely require substantially more time to standardize.<br><br>Future efforts might address areas of known variability within meaning of signs so that systems can be aware of local meanings when significant issues are known. For example, what constitutes a "stopped" vehicle versus a "parked" vehicle; but the initial release of METR will concentrate on identifying the application of rules rather than the legal definition of the rules.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
           </td>
         </tr>
@@ -114,6 +121,8 @@
           <td class="description-col" style="padding-left:30px">
             <h3>6.5.2 Aerial drones</h3>
             <div class="htmlContent"><p>The initial edition of METR does not attempt to address any specific needs related to aerial drones. While it is expected that the general design of METR will allow for the future addition of rules related to aerial drones, if desired, no specific needs related to these drones are included within this version of the standard.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
@@ -126,6 +135,8 @@
             <h2>6.6 Assumptions and constraints</h2>
             <div class="htmlContent"></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
           </td>
         </tr>
@@ -135,6 +146,8 @@
             <h3>6.6.1 Assumptions</h3>
             <div class="htmlContent"></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
           </td>
         </tr>
@@ -143,6 +156,8 @@
           <td class="description-col" style="padding-left:40px">
             <h4>6.6.1.1 Users — Modes</h4>
             <div class="htmlContent"><p>The scope of METR is intended to include all of the rules related to surface transport, as perceived by ISO/TC 204.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
@@ -155,6 +170,8 @@
             <h4>6.6.1.2 Users — Variety</h4>
             <div class="htmlContent"><p>METR users include ADS, driver support systems, and humans (e.g., drivers, pedestrians, ancillary users).</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
                 <div class="link"> <span><a href='SP.html#SP-10'>SP-10</a></span>  METR should support ordinary traffic (i.…</div>
@@ -165,6 +182,8 @@
           <td class="description-col" style="padding-left:40px">
             <h4>6.6.1.3 Users — Mixed environment</h4>
             <div class="htmlContent"><p>Vehicles that support METR need to be able to operate along side vehicles that do not support or are not connected to METR.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
@@ -177,6 +196,8 @@
             <h4>6.6.1.4 Users — Stationary users</h4>
             <div class="htmlContent"><p>Some METR receivers will not be mobile (e.g., PCs used for pre-trip planning).</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
                 <div class="link"> <span><a href='SP.html#SP-7'>SP-7</a></span>  METR should support user systems that mi…</div>
@@ -188,6 +209,8 @@
             <h4>6.6.1.5 Communications — Stationary components — Sufficient bandwidth</h4>
             <div class="htmlContent"><p>Sufficient communication bandwidth will be available among the various components of the METR distribution system to support trustworthy METR operations.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
           </td>
         </tr>
@@ -196,6 +219,8 @@
           <td class="description-col" style="padding-left:40px">
             <h4>6.6.1.6 Communications — Mobile users — Mobile wireless internet</h4>
             <div class="htmlContent"><p>All mobile METR receivers will support mobile wireless internet with at least 3G speeds.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
@@ -209,6 +234,8 @@
             <h4>6.6.1.7 Communications — Mobile users — Instability of internet access</h4>
             <div class="htmlContent"><p>Mobile wireless internet connectivity can be unstable for any location.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
                 <div class="link"> <span><a href='SP.html#SP-5'>SP-5</a></span>  Mobile wireless internet is not guarante…</div>
@@ -220,6 +247,8 @@
             <h4>6.6.1.8 Communications — Mobile users — Areas without internet coverage</h4>
             <div class="htmlContent"><p>Mobile wireless internet might not be available at any time in some locations.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
                 <div class="link"> <span><a href='SP.html#SP-6'>SP-6</a></span>  Mobile wireless internet might not be av…</div>
@@ -230,6 +259,8 @@
           <td class="description-col" style="padding-left:40px">
             <h4>6.6.1.9 Communications — Mobile users — Short-range wireless</h4>
             <div class="htmlContent"><p>All motor vehicles that support METR will support short-range wireless communications meeting local standards (e.g., DSRC, LTE-V2X).</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
@@ -243,6 +274,8 @@
             <h4>6.6.1.10 Communications — Delivery — Expected Rules</h4>
             <div class="htmlContent"><p>Expected rules will be retrieved at times determined by the METR receiver. This will prevent any requirements for METR receivers to consume energy waiting for broadcasts while also minimizing data loading on the system (e.g., to better ensure every vehicle has the latest rules).&nbsp;</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
                 <div class="link"> <span><a href='SP.html#SP-27'>SP-27</a></span>  METR should be based on a centralized pu…</div>
@@ -253,6 +286,8 @@
           <td class="description-col" style="padding-left:40px">
             <h4>6.6.1.11 Communications — Delivery — Unexpected rules</h4>
             <div class="htmlContent"><p>METR receivers will be notified of relevant unexpected rules prior to their need for the rules. For example, the rules could be:&nbsp;</p><ol><li>broadcast within the vicinity of the unexpected rule,</li><li>published to all subscribed receivers in a timely manner, perhaps at a distance from the unexpected rule location.</li></ol></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
@@ -265,6 +300,8 @@
             <h4>6.6.1.12 Geopositioning — Accuracy</h4>
             <div class="htmlContent"><p>Vehicle sensors will be able to correspond map data to the physical world based on GNSS data combined with visual markers (e.g., pavement markings).&nbsp;</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
           </td>
         </tr>
@@ -274,6 +311,8 @@
             <h4>6.6.1.13 Safety — Regulators</h4>
             <div class="htmlContent"><p>Regulators are responsible for ensuring that the rules distributed by METR promote safe operations.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
           </td>
         </tr>
@@ -282,6 +321,8 @@
           <td class="description-col" style="padding-left:40px">
             <h4>6.6.1.14 Safety — Users</h4>
             <div class="htmlContent"><p>The dynamic driving task includes the responsibility to provide for the safe operation of the vehicle under all conditions, even in the absence of METR information. For example, the DDT is responsible for detecting a lane closure and responding appropriately even in the absence of METR rule indicating a lane closure.&nbsp;</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
@@ -295,6 +336,8 @@
             <h4>6.6.1.15 Safety — Reliance</h4>
             <div class="htmlContent"><p>For the foreseeable future, METR should be considered as a supplement to existing traffic control devices rather than a replacement of those devices; however, this will likely change over time.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
                 <div class="link"> <span><a href='SP.html#SP-163'>SP-163</a></span>  For the foreseeable future, METR should …</div>
@@ -306,6 +349,8 @@
             <h3>6.6.2 Constraints</h3>
             <div class="htmlContent"></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
           </td>
         </tr>
@@ -314,6 +359,8 @@
           <td class="description-col" style="padding-left:40px">
             <h4>6.6.2.1 Communications — Delivery — Efficiency</h4>
             <div class="htmlContent"><p>METR needs to be designed to enable efficient data exchanges that do not require frequent downloading of rules that seldom change.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
@@ -326,6 +373,8 @@
             <h4>6.6.2.2 Forwards and backwards compatibility</h4>
             <div class="htmlContent"><p>Every version of METR needs to be backwards compatible to support seamless migrations of technology. As such, METR needs to be designed to support forwards compatibility features, such as a version number, the ability to identify protocols used for each METR information category, encryption algorithms used, etc.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
                 <div class="link"> <span><a href='SP.html#SP-198'>SP-198</a></span>  Every version of METR needs to be backwa…</div>
@@ -336,6 +385,8 @@
           <td class="description-col" style="padding-left:40px">
             <h4>6.6.2.3 Existing standards</h4>
             <div class="htmlContent"><p>The design of METR needs to rely upon existing standards as appropriate (e.g., for interface and data definitions). This should include reuse of existing structures, such as those defined within TN-ITS and TMDD.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
@@ -349,6 +400,8 @@
             <h4>6.6.2.4 Supplemental data</h4>
             <div class="htmlContent"><p>METR needs to rely upon existing data sources as appropriate. For example, an emergency vehicle announcing its presence via C-ITS broadcasts can be used to activate rules rather than requiring METR-specific transmissions.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
                 <div class="link"> <span><a href='SP.html#SP-23'>SP-23</a></span>  State of rules in force on the transport…</div>
@@ -360,6 +413,8 @@
             <h4>6.6.2.5 Limitations of short-range wireless communications</h4>
             <div class="htmlContent"><p>Short range wireless communication channels have limited data capacity, which must be respected while still delivering all applicable rules to transport users. (e.g., this might require the use of short range wireless messages to notify METR users that more extensive data from central).</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
                 <div class="link"> <span><a href='SP.html#SP-34'>SP-34</a></span>  Use of push should be minimized while st…</div>
@@ -370,6 +425,8 @@
           <td class="description-col" style="padding-left:40px">
             <h4>6.6.2.6 Aerial drones</h4>
             <div class="htmlContent"><p>The design of METR needs to be flexible enough to support rules for low-altitude aerial drones, although these devices are not directly included in the first edition of this standard.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
