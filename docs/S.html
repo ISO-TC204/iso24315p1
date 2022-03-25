@@ -53,7 +53,7 @@
 					<div class="inner">
 						<table>
 							<tr>
-								<td><h1>24315-1 METR ConOps<br />S: Scenarios</h1><br />    <em>Last modified on 2022-03-10 15:08</em></td>
+								<td><h1>24315-1 METR ConOps<br />S: Scenarios</h1><br />    <em>Last modified on 2022-03-16 15:41</em></td>
 								<td><!-- DDG search widget,@author Juri Wornowitski,@version 3.0,@link https://www.plainlight.com/ddg --><div id="widdget" style="width:230px;margin:10px 0;"><style type="text/css">#widdget input {display:block;height:30px;padding:4px;outline:none;border:1px solid #8d8d8d;border-right:0;box-sizing:border-box;border-radius:3px 0 0 3px;width:calc(100% - 41px);font-size:15px;} #widdget button {float:left;cursor:pointer;width:43px;height:30px;color:#fff;background-image:linear-gradient(#cacaca,#929292);border:0;border-radius:0 3px 3px 0;padding:0;} #widdget button:active {background-image:linear-gradient(#909090,#585858);} #widdget button:focus {outline:none;}</style><form style="position:relative" method="get" action="https://duckduckgo.com/" target="_top"><div style="float:right;position:absolute;top:0;right:-2px;z-index:3"><button type="submit">&#128269;</button></div><input type="text" name="q" placeholder="Search METR Website" /><input type="hidden" name="sites" value="https://iso-tc204.github.io/iso24315p1/" /></form></div></td>
 								<td width="390px"><span class="actions" style="position: relative; left: 70px;"><a href="https://github.com/ISO-TC204/iso24315p1/discussions" class="button primary">Submit Comment</a><br /></span>Traceability Tables: <div class="tab">
 									<button onclick="location.href='SP.html'" title="Summary Points">SP</button>
@@ -76,6 +76,7 @@
         <tr>
           <th class="id-col"><i class="fas fas fa-asterisk"></i> ID</th>
           <th class="description-col"><i class="fas fa-align-left"></i> Description</th>
+          <th class="discussion-col"><i class="fas fa-comments"></i> Discussion</th>
           <th class="links-col"><i class="fas fa-link"></i> Links</th>
         </tr>
       </thead>
@@ -88,6 +89,8 @@
             <h1>8 Operational scenarios</h1>
             <div class="htmlContent"><p>** Under Development **</p><p>** Diagrams need to be added **</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
           </td>
         </tr>
@@ -96,6 +99,8 @@
           <td class="description-col" style="padding-left:20px">
             <h2>8.1 General</h2>
             <div class="htmlContent"><p>This section is intended to provide an overview of the major operational uses for the METR. These scenarios are arranged based on the service packages that make up the METR. &nbsp;Each scenario begins with a brief description followed by one or more diagrams that define different sequences of actions that occur in the scenario. &nbsp;Following each diagram, each sequence is described in terms of the overall flow of the service package – what happens first, what information is shared, what activities are required in order for the service or application to succeed, what other factors need to be considered?</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
           </td>
@@ -106,6 +111,8 @@
             <h2>8.2 Sandy the busy mum</h2>
             <div class="htmlContent"></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
           </td>
         </tr>
@@ -115,6 +122,8 @@
             <h3>8.2.1 General</h3>
             <div class="htmlContent"><p>Our first operational scenario is Sandy, a busy mother, using her minivan for errands around town. Her minivan supports a Level 4 ADS coupled with a driver information system when in manual mode.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
           </td>
         </tr>
@@ -122,13 +131,18 @@
           <td class="id-col"><a id="S-44"></a>S-44</td>
           <td class="description-col" style="padding-left:30px">
             <h3>8.2.2 Refresh rule set</h3>
-            <div class="htmlContent"><p>When Sandy starts her minivan, components on her minivan immediately go to work preparing for the journey. The ADS, driver information system, and METR receiver each begin various diagnostic checks. The METR receiver checks how old each of its previously downloaded rule sets are and discovers that several have expired. The receiver downloads the rule sets necessary for the journey that are not currently downloaded or that are nearing or past their expiration. The receiver may download other rule sets (e.g., to refresh rules early), but is not required to do so. Sandy's minivan only downloads rule sets that are relevant for its supported Level 4 ADS and driver support capabilities, which includes "general rules", "motor-vehicle road geometry", "motor vehicle right-of-way", "motor vehicle parking", and "motor vehicle speed limits". Sandy can begin manually driving before the download is complete but some of the driver support features might be limited until the receiver completes the download. The Level 4 ADS will not operate until all necessary rule sets are downloaded for the vehicle's current location and immediate vicinity.</p><p>Sandy's minivan provides a large display on the center console where much of the driver information is displayed. It includes a dedicated area that displays the current speed limit along with a larger area used for case-specific information, such as stop sign, traffic signal, and other information. If Sandy begins driving with recently expired rules, the minivan continues to display the old rules, but they are displayed with a transparent effect to emphasize the reduced trust and if they are sufficiently old they are no longer displayed.&nbsp;</p></div>
+            <div class="htmlContent"><p>When Sandy starts her minivan, components on her minivan immediately go to work preparing for the journey. The ADS, driver information system, and METR receiver each begin various diagnostic checks. The METR receiver checks how old each of its previously downloaded rule sets are and discovers that several have expired. The receiver downloads the rule sets necessary for the journey that are not currently downloaded or that are nearing or past their expiration. The receiver may download other rule sets (e.g., to refresh rules early), but is not required to do so. Sandy's minivan only downloads rule sets that are relevant for its supported Level 4 ADS and driver support capabilities, which includes "general rules", "motor-vehicle road geometry", "motor vehicle right-of-way", "motor vehicle parking", and "motor vehicle speed limits". Sandy's ADS can have confidence in the data contained in the rules because the translator, collector, and disseminator are all required to adhere to strict data access policies within their systems and all rules are signed by each of these entities and exchanged over encrypted links.</p><p>Sandy can begin manually driving before the download is complete but some of the driver support features might be limited until the receiver completes the download. The Level 4 ADS will not operate until all necessary rule sets are downloaded for the vehicle's current location and immediate vicinity.</p><p>Sandy's minivan provides a large display on the center console where much of the driver information is displayed. It includes a dedicated area that displays the current speed limit along with a larger area used for case-specific information, such as stop sign, traffic signal, and other information. If Sandy begins driving with recently expired rules, the minivan continues to display the old rules, but they are displayed with a transparent effect to emphasize the reduced trust and if they are sufficiently old they are no longer displayed.&nbsp;</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
                 <div class="link"> <span><a href='UN.html#UN-88'>UN-88</a></span>  Trustworthiness — Reliability — Quality …</div>
                 <div class="link"> <span><a href='UN.html#UN-33'>UN-33</a></span>  Trustworthiness — Reliability — Timeline…</div>
                 <div class="link"> <span><a href='UN.html#UN-14'>UN-14</a></span>  Trustworthiness — Reliability — Usabilit…</div>
+                <div class="link"> <span><a href='UN.html#UN-22'>UN-22</a></span>  Trustworthiness — Security — Communicati…</div>
+                <div class="link"> <span><a href='UN.html#UN-21'>UN-21</a></span>  Trustworthiness — Security — Integrity —…</div>
+                <div class="link"> <span><a href='UN.html#UN-25'>UN-25</a></span>  Trustworthiness — Security — Integrity —…</div>
                 <div class="link"> <span><a href='UN.html#UN-86'>UN-86</a></span>  User — Awareness — Geopositioning</div>
                 <div class="link"> <span><a href='UN.html#UN-47'>UN-47</a></span>  User — Rule — Categories</div>
                 <div class="link"> <span><a href='UN.html#UN-34'>UN-34</a></span>  User — Rule — Distribution — Efficiency</div>
@@ -140,6 +154,8 @@
           <td class="description-col" style="padding-left:30px">
             <h3>8.2.3 Snowy conditions</h3>
             <div class="htmlContent"><p>Local ordinances in Sandy’s locale specify that ADS are not permitted to operate during snowy conditions (partially due to an incident from years prior where several ADS-equipped vehicles behaved erratically during a snowstorm). The ordinance is written such that the assessment of whether "snowy conditions" exist is determined by the local transportation operator. Due to current conditions this morning, the operator has temporarily activated the rule banning the operation of ADS due to the snowy conditions. This ban is automatically transmitted to all ADS-equipped vehicles within the jurisdiction as a part of the "wide area supplemental data set".</p><p>Due to the ban, the ADS is unable to engage, and Sandy is required to assume all responsibility for the dynamic driving task; however, she still has the assistance of the driver information system (including anti-lock brakes, automated emergency braking, etc).</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
@@ -159,6 +175,8 @@
             <h3>8.2.4 Start of snowfall</h3>
             <div class="htmlContent"><p>Within this jurisdiction, a lower speed limit applies when raining. Unlike the ADS-ban, the lower speed limits take effect dynamically based on conditions rather than through a centralized manual assessment. As a result, to provide trustworthy information to the driver, the driver support system has to always be aware of whether it is raining or not and to be aware of what qualifies as "rain" within the jurisdiction (e.g., Does snow activate this rule? What rate of precipitation activates the rule?). All this information is provided within the electronic representation of the rule as provided by METR.</p><p>Sandy's vehicle is equipped with sensors that can determine the rate and type of precipitation and provide this supplemental data to the METR receiver, which then compares the data with the rule information to determine the current legal speed limit. Today, the receiver determines that the current snowfall is legally considered to be "rain" and the receiver reports a lower speed limit to the driver information system, which displays the lower speed limit to Sandy. As the precipitation is first detected, the driver information system also chimes once to alert Sandy to the lower speed limit.&nbsp;</p><p>Other vehicles might detect rain conditions in other ways. For example, a vehicle might contact its OEM to obtain current weather conditions, or another vehicle might base its logic on the state of the windshield wipers. The acceptable forms of supplemental data are specified within the electronic rule as determined by the regulator and translator.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
                 <div class="link"> <span><a href='RC.html#RC-17'>RC-17</a></span>  Supplemental data</div>
@@ -172,6 +190,8 @@
           <td class="description-col" style="padding-left:30px">
             <h3>8.2.5 Operation of a traffic signal</h3>
             <div class="htmlContent"><p>The "motor vehicle right-of-way" rule set includes the location of traffic signals along the expected route and an indication of whether each of the signals support the provision of electronic intersection status information. By being aware of these locations and capabilities, the receiver knows where to expect to receive intersection status information, which is one type of supplemental data. The intersection status information provides indications of which manoeuvres have right-of-way in real time. As this supplemental data is received, it is conveyed to Sandy through the main display screen allowing her to see the current permissions even when the view of the signal head is blocked by another vehicle or obscured due to sunlight. Further, because the vehicle can determine its own location and it has the location of known traffic signals, the receiver will be able to detect instances when expected intersection status information is missing. In this case, it will be able to warn Sandy of abnormal conditions and to be extra cautious.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
@@ -188,6 +208,8 @@
             <h3>8.2.6 Locating appropriate parking</h3>
             <div class="htmlContent"><p>As Sandy reaches her destination to meet her child, she searches for an appropriate parking spot. As her son has disabilities, she has an accessible parking permit that has been electronically registered with the METR receiver on her minivan. The driver information system is also aware that the minivan's accessible door is on the right side of the van. As a result, as she enters the parking lot, the driver support system on her minivan guides her to the area of the lot with accessible parking spaces and highlights spots that have accessibility aisles on the right side of the parking space.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
                 <div class="link"> <span><a href='RC.html#RC-21'>RC-21</a></span>  Mapping resolution</div>
@@ -203,6 +225,8 @@
             <h2>8.3 Trip to grandma&#x27;s house</h2>
             <div class="htmlContent"></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
           </td>
         </tr>
@@ -212,6 +236,8 @@
             <h3>8.3.1 Overview</h3>
             <div class="htmlContent"><p>Little Red Riding Hood has decided to take a trip to her grandma's house 1,000 km away using her new Level 4 ADS-equipped vehicle to overcome the mountains and valleys along the way.&nbsp;</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
           </td>
         </tr>
@@ -219,11 +245,15 @@
           <td class="id-col"><a id="S-48"></a>S-48</td>
           <td class="description-col" style="padding-left:30px">
             <h3>8.3.2 Download rule set for long journey</h3>
-            <div class="htmlContent"><p>Based on the information contained on her calendar, Ms. Hood's virtual assistant alerts her car that a trip to her grandmother's house is planned for the following day. In addition to taking advantage of opportunities to top off the car's battery, the vehicle's on-board computer notifies the METR receiver of this planned trip. Because it was notified a day in advance, the METR receiver has the flexibility to retrieve the rule set for the trip using Ms. Hood's preferred connectivity option, which is her home Wi-Fi connection. The connection becomes available the evening before the trip and all the relevant rules that are expected to be needed for the journey are retrieved. This includes retrieving rule sets for different national jurisdictions.</p><p>The next morning, Ms. Hood gets into her vehicle and confirms that she wishes to travel to her grandma's house and that she wants to engage the ADS mode. The ADS informs her that the trip includes a segment at the end that is outside of the ADS's ODD and that she will have to agree to accept manual control for this portion of the journey. While she agrees to this condition, the ADS is already checking other aspects of her journey to ensure everything is in order.</p></div>
+            <div class="htmlContent"><p>Based on the information contained on her calendar, Ms. Hood's virtual assistant alerts her car that a trip to her grandmother's house is planned for the following day. Due to some previous encounters with unseemly characters, Ms. Hood is very concerned about her privacy and keeping her information confidential. Protecting her information requires all components with access to her information adhere to strict security practices and Ms. Hood is aware that this is a built-in aspect of the METR components. For example, the METR interface is encrypted to ensure confidentiality while the data is in motion and the disseminator does not store her requests nor the details about what information it supplies to Ms. Hood's vehicle, nor does it use this information for any other purpose. Likewise, her vehicle implements strict access controls on the data it stores. All of these policies prevent unauthorized data access.</p><p>This level of security allows the vehicle's on-board computer to notify the METR receiver of Ms. Hood's planned trip. Because it was notified a day in advance, the METR receiver has the flexibility to retrieve the rule set for the trip using Ms. Hood's preferred connectivity option, which is her home Wi-Fi connection. The connection becomes available the evening before the trip and all the relevant rules that are expected to be needed for the journey are retrieved. This includes retrieving rule sets for different national jurisdictions.</p><p>The next morning, Ms. Hood gets into her vehicle and confirms that she wishes to travel to her grandma's house and that she wants to engage the ADS mode. The ADS informs her that the trip includes a segment at the end that is outside of the ADS's ODD and that she will have to agree to accept manual control for this portion of the journey. While she agrees to this condition, the ADS is already checking other aspects of her journey to ensure everything is in order.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
                 <div class="link"> <span><a href='UN.html#UN-33'>UN-33</a></span>  Trustworthiness — Reliability — Timeline…</div>
+                <div class="link"> <span><a href='UN.html#UN-22'>UN-22</a></span>  Trustworthiness — Security — Communicati…</div>
+                <div class="link"> <span><a href='UN.html#UN-26'>UN-26</a></span>  Trustworthiness — Security — Data privac…</div>
                 <div class="link"> <span><a href='UN.html#UN-30'>UN-30</a></span>  User — Connectivity — Preferences</div>
                 <div class="link"> <span><a href='UN.html#UN-41'>UN-41</a></span>  User — Rule — Journey planning</div>
           </td>
@@ -233,6 +263,8 @@
           <td class="description-col" style="padding-left:30px">
             <h3>8.3.3 Encountering road works</h3>
             <div class="htmlContent"><p>As the ADS leaves Ms. Hood's neighbourhood, the METR receiver receives a broadcast message that there are road works, and the lane lines are shifted by 1 meter for a downstream road section. The METR receiver informs the ADS of this information thereby allowing the vehicle to traverse this section of roadway without disturbing Ms. Hood at all.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
@@ -246,6 +278,8 @@
           <td class="description-col" style="padding-left:30px">
             <h3>8.3.4 Encountering a new traffic control device</h3>
             <div class="htmlContent"><p>As the vehicle proceeds through the work zone, it approaches the site of a new stop sign associated with a new side street. Even though the sign was installed minutes before, Ms. Hood's vehicle was already aware of the new sign location.&nbsp;</p><p>Stop signs are included in the pre-announced "motor vehicle right-of-way" rule set that Ms. Hood's vehicle retrieved the evening before. The rule set included an announcement of an "inactive" stop sign at this location with a flag indicating that it was planned for installation. This information had been entered the previous week and although the sign had originally been scheduled to be installed yesterday, the field crew did not install it until this morning.</p><p>When the field crew installed the sign, they also activated a roadside beacon that continually broadcasts supplemental data indicating that the stop sign is now active. They also notified the appropriate translator and had them change the pre-announced rule to indicate that the sign was now active. The crew will come back in roughly a week (after all previously distributed "motor vehicle right-of-way" rule sets have expired) to retrieve the temporary roadside beacon.&nbsp;</p><p>In the case of Ms. Hood, her vehicle downloaded the rule set the prior evening, when the rule for the new stop sign was known but before it was activated; as a result, the vehicle was aware that a sign might be encountered but would proceed as normal unless it received an update. As Ms. Hood's vehicle approaches the site of the sign, it receives the broadcast from the temporary beacon activating the sign and the Level 4 ADS stops without causing Ms. Hood to spill her coffee.&nbsp;</p><p>This approach ensures that the electronic rules stay synchronized with field conditions, even when traffic control devices are not installed according to original schedule.&nbsp;</p><p>NOTE: The same process can be followed for the installation or removal of any traffic control device.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
@@ -265,6 +299,8 @@
             <h3>8.3.5 Encountering a variable speed limit</h3>
             <div class="htmlContent"><p>As Ms. Hood's vehicle gets onto the motorway, it encounters a section of road managed with a variable speed limit system. The location of the variable speed limit system was included in the pre-announced "motor vehicle speed limit" rule set retrieved the previous evening. The ADS had also checked the speed limit as it started the trip (for trip navigation purposes) but as this is a variable speed limit system, the exact speed limit is not known for certain until the driver enters the subject road section.&nbsp;</p><p>As the ADS approaches the location of the variable speed limit system, the METR receiver expects to receive a broadcast of the current speed limit. If the broadcasted supplemental data is not received, the METR receiver might try to connect to the disseminator to retrieve the information or use its on-board cameras to detect the posted speed limit. If all of these means fail, the ADS would disengage.</p><p>In this case, the broadcasted supplemental data is received and the METR receiver provides the information to the ADS without Ms. Hood having to get involved. Ms. Hood continues comfortably towards her grandmother's house.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
                 <div class="link"> <span><a href='UN.html#UN-33'>UN-33</a></span>  Trustworthiness — Reliability — Timeline…</div>
@@ -277,6 +313,8 @@
           <td class="description-col" style="padding-left:30px">
             <h3>8.3.6 Snow chain requirements</h3>
             <div class="htmlContent"><p>As Ms. Hood begins to cross the mountain pass, the weather takes a turn for the worse and snow begins to accumulate on the roadway. Shortly afterwards, the METR receiver receives a notification that snow chain regulations have been activated. This rule indicates that there is a 30-minute grace period prior to the rule being enforced, which is designed to allow drivers to safely stop and put chains on at designated areas.</p><p>Ms. Hood's ADS is advanced enough to be allowed to drive under such conditions, but the vehicle is still required to use chains. The ADS alerts Ms. Hood of the recently activated rule and informs her that it will stop at the next safety spot to allow her to install the chains.&nbsp;</p><p>Luckily, Ms. Hood always keeps snow chains in the car. When the car stops, she gets out and installs the chains and uses the vehicle's interactive display to confirm that the chains are properly attached to the tires. Once Ms. Hood is resettled into her snug cabin, the ADS continues on its way, verifying that the tire sensors detect traction and vibrations that are consistent with having snow chains on the wheels.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
@@ -292,6 +330,8 @@
             <h3>8.3.7 Pit stop</h3>
             <div class="htmlContent"><p>As the trip continues, Ms. Hood realizes that coffee is a diuretic. She requests the ADS to accommodate a comfort break and indicates the types of conveniences that she would like to use, which includes a toilet, a convenience store, and an electric charging spot for the car.</p><p>The ADS works with Ms. Hood's virtual assistant to identify several options and Ms. Hood confirms a final selection. The ADS adds the stop as a waypoint and the METR receiver contacts the respective disseminator to obtain its necessary pre-announced rules for the newly added road segments.</p><p>As the ADS approaches the waypoint, it takes the exit and navigates to the selected convenience store without any intervention by Ms. Hood.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
                 <div class="link"> <span><a href='UN.html#UN-3'>UN-3</a></span>  Trustworthiness — Reliability — Availabi…</div>
@@ -303,6 +343,8 @@
           <td class="description-col" style="padding-left:30px">
             <h3>8.3.8 ADS fallback based on METR information</h3>
             <div class="htmlContent"><p>As Ms. Hood nears her destination, the ADS begins to remind her that end of the journey includes a section outside of its ODD and that she will have to take over the DDT. In its pre-trip planning, the ADS identified potential locations where local rules indicate that it can achieve a "minimal risk condition" for the purpose of switching to manual-drive mode; shortly before exiting the motorway, it informs Ms. Hood of where it will park so that she can assume control.</p><p>Once stopped, Ms. Hood assumes control of the vehicle and continues along her journey assisted with the driver support system. She arrives at her grandmother's house before Mr. Big Bad Wolf arrives.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
@@ -320,6 +362,8 @@
             <h3>8.3.9 Starting outside of METR coverage</h3>
             <div class="htmlContent"><p>After an extended visit with her grandmother, Ms. Hood decides to return home. However, her grandmother does not have any Internet connectivity and all the rules previously downloaded by her vehicle have expired. Ms. Hood is faced with two options:</p><ol><li>Have someone bring an updated set of rules to the vehicle and transfer them (e.g., from a smartphone to the vehicle) or</li><li>Manually drive the vehicle to an area with internet connectivity and download the rules.</li></ol><p>Since Ms. Hood's vehicle supports manual drive mode, she opts to driver herself to an area with internet connectivity rather than waiting for someone to assist her. During this portion of the trip, the vehicle's driver support system is more limited than normal since its rules are out-of-date and what information is displayed is clearly marked as being of questionable trustworthiness. Nonetheless, many driver support features still work (e.g., anti-lock brakes) and Ms. Hood can still arrive without undue burden.</p><p>Once she has received updated pre-announced rules, the ADS is allowed to re-engage and Ms. Hood returns home safely.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
                 <div class="link"> <span><a href='UN.html#UN-88'>UN-88</a></span>  Trustworthiness — Reliability — Quality …</div>
@@ -336,6 +380,8 @@
             <h2>8.4 Klaus the truck operator</h2>
             <div class="htmlContent"></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
           </td>
         </tr>
@@ -343,7 +389,9 @@
           <td class="id-col"><a id="S-58"></a>S-58</td>
           <td class="description-col" style="padding-left:30px">
             <h3>8.4.1 Overview</h3>
-            <div class="htmlContent"><p>Klaus drives a container-carrying commercial vehicle that includes a level-4 ADS. The operational design domain (ODD) for the truck includes most motorways and dual carriageways, but few single carriageways. Thus, the ADS controls the truck over long haul (inter-urban) routes, but Klaus typically takes over once the truck leaves major inter-urban facilities.&nbsp;</p></div>
+            <div class="htmlContent"><p>Klaus drives a container-carrying commercial vehicle that includes a level-4 ADS. The operational design domain (ODD) for the truck includes most motorways and dual carriageways, but few single carriageways. Thus, the ADS controls the truck over long haul (inter-urban) routes, but Klaus typically takes over once the truck leaves major inter-urban facilities. The ADS requires the following electronic rule sets to engage: "general rules", "motor-vehicle road geometry", "motor vehicle right-of-way", "motor vehicle speed limits", and "regulated vehicle". In addition, when carrying dangerous goods, it must have the "dangerous goods" rule set.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
           </td>
@@ -352,12 +400,15 @@
           <td class="id-col"><a id="S-59"></a>S-59</td>
           <td class="description-col" style="padding-left:30px">
             <h3>8.4.2 Download rules</h3>
-            <div class="htmlContent"><p>While Klaus's truck is being loaded with the next delivery, the delivery addresses are electronically provided to his navigation system. &nbsp;On-board electronics compute several viable routes that maximize the amount of time spent with the ADS engaged and retrieves rules for each of these routes from the appropriate disseminators using METR protocols. The scope of rules requested include both the ADS-controlled parts as well as the sections for which Klaus will be responsible.</p><p>When the ADS is in control, it is equipped with sufficient operational autonomy to deviate from its pre-defined route when necessary to avoid breaking any rules. If the ADS detects options (e.g., among two alternate paths), it may prompt Klaus for input, providing him with alternatives such as a longer fully automated route vs. a shorter route that has sections where Klaus must drive. In some cases (e.g., if the vehicle reverts to the fallback mode), Klaus will be alerted, and he is always allowed to take over control.&nbsp;</p><p>When Klaus is in control, an on-board display shares relevant rules when Klaus is near an area where a rule might apply. It automatically notifies him if he seems headed for a road where his truck is not permitted, warns him of speed and lane restrictions and violations automatically. If Klaus deviates from a predicted route, the on-board electronics ask for any new relevant rules from the appropriate disseminator.</p></div>
+            <div class="htmlContent"><p>While Klaus's truck is being loaded with the next delivery, the delivery addresses are electronically provided to his navigation system. &nbsp;The navigation system, in cooperation with an external service, computes several viable routes to provide all the deliveries while complying with corporate rules (e.g., avoiding cross-traffic turns). &nbsp;The navigation system then requests the METR receiver to report on the availability of its required rule sets for each of the routes developed. Some of the routes include sections that do not yet have all of the required rules in electronic form. The navigation system displays the various routes for Klaus, ordered based on overall efficiency which balances the desire to minimize total trip time while maximizing the percent of time spent with the ADS engaged. Once Klaus selects the route selection, the navigator requests the METR receiver to retrieve the rule sets for the entire route, contacting multiple disseminators, if necessary. The scope of rules requested include both the ADS-controlled parts as well as the sections for which Klaus will be responsible.</p><p>When the ADS is in control, it is equipped with sufficient operational autonomy to deviate from its pre-defined route when necessary to avoid breaking any rules. If the ADS detects options (e.g., among two alternate paths), it may prompt Klaus for input, providing him with alternatives such as a longer fully automated route vs. a shorter route that has sections where Klaus must drive. In some cases (e.g., if the vehicle reverts to the fallback mode), Klaus will be alerted, and he is always allowed to take over control.&nbsp;</p><p>When Klaus is in control, an on-board display shares relevant rules when Klaus is near an area where a rule might apply. It automatically notifies him if he seems headed for a road where his truck is not permitted, warns him of speed and lane restrictions and violations automatically. If Klaus deviates from a predicted route, the on-board electronics ask for any new relevant rules from the appropriate disseminator.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
                 <div class="link"> <span><a href='UN.html#UN-2'>UN-2</a></span>  Trustworthiness — Reliability — Availabi…</div>
                 <div class="link"> <span><a href='UN.html#UN-3'>UN-3</a></span>  Trustworthiness — Reliability — Availabi…</div>
+                <div class="link"> <span><a href='UN.html#UN-4'>UN-4</a></span>  Trustworthiness — Reliability — Availabi…</div>
                 <div class="link"> <span><a href='UN.html#UN-33'>UN-33</a></span>  Trustworthiness — Reliability — Timeline…</div>
                 <div class="link"> <span><a href='UN.html#UN-14'>UN-14</a></span>  Trustworthiness — Reliability — Usabilit…</div>
                 <div class="link"> <span><a href='UN.html#UN-27'>UN-27</a></span>  User — Disseminator — Discovery</div>
@@ -368,6 +419,8 @@
           <td class="description-col" style="padding-left:30px">
             <h3>8.4.3 Hazardous goods</h3>
             <div class="htmlContent"><p>Today's trip includes the transport of hazardous goods. While the material is being loaded onto the truck, the shipping firm downloads information about the hazardous good to the on-board computer where it is stored. The on-board computer notifies the METR receiver of this special condition. The METR receiver then initiates the download of the "hazardous goods transport" rule set for each of the jurisdictions that it will pass through. One of the downloaded rules is a requirement for the hazardous goods manifest to be available via the on-board computer when proper emergency responder credentials are provided. The METR receiver notifies the on-board computer of this rule and the on-board computer ensures that the hazardous goods manifest is available as required by the rule prior to enabling the truck to depart.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
@@ -380,13 +433,16 @@
           <td class="id-col"><a id="S-60"></a>S-60</td>
           <td class="description-col" style="padding-left:30px">
             <h3>8.4.4 Encountering rain</h3>
-            <div class="htmlContent"><p>As Klaus begins his journey, he notices that it is beginning to rain. The Level-4 ADS detects the rain with on-board sensors and activates the headlights and windshield wipers to comply to local rules.</p></div>
+            <div class="htmlContent"><p>As Klaus begins his journey, he notices that it is beginning to rain. Local rules only require headlights to be activated when significant rain is detected, but Klaus' company has loaded all vehicles in the fleet with a rule that requires headlights to be activated anytime any precipitation is detected or anytime the windshield wipers are engaged. The Level-4 ADS detects a slight mist of rain with on-board sensors and activates the headlights and windshield wipers to comply to corporate rules.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
                 <div class="link"> <span><a href='RC.html#RC-60'>RC-60</a></span>  General</div>
                 <div class="link"> <span><a href='UN.html#UN-7'>UN-7</a></span>  Trustworthiness — Reliability — Quality …</div>
                 <div class="link"> <span><a href='UN.html#UN-12'>UN-12</a></span>  Trustworthiness — Reliability — Timeline…</div>
+                <div class="link"> <span><a href='UN.html#UN-65'>UN-65</a></span>  User — Status — Environmental awareness</div>
           </td>
         </tr>
         <tr>
@@ -394,6 +450,8 @@
           <td class="description-col" style="padding-left:30px">
             <h3>8.4.5 Ad-hoc rules due to emergency</h3>
             <div class="htmlContent"><p>As Klaus leaves the city, the METR receiver is notified through a recent ad-hoc rule via wide area broadcast (entered by the local police) that the road the ADS had planned to take is has been closed and a detour has been defined. As a result, the ADS plots a new course that avoids the road closure.&nbsp;</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
@@ -411,6 +469,8 @@
             <h3>8.4.6 Downloading new rules en-route</h3>
             <div class="htmlContent"><p>The ADS decides that the publicized detour is the most appropriate since it is being actively managed by the traffic centre to minimize delays and is designed to accommodate Klaus's large truck. The ADS notifies the METR receiver of the change and the METR receiver retrieves the additional rules for the new route. The detour route involves several signs deployed by police. Rather than issuing electronic rules for each of these signs, the police have temporarily issued a single electronic, ad-hoc rule banning ADS from operating along the detoured route.&nbsp;</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
                 <div class="link"> <span><a href='UN.html#UN-33'>UN-33</a></span>  Trustworthiness — Reliability — Timeline…</div>
@@ -422,6 +482,8 @@
             <h3>8.4.7 Transition to manual control</h3>
             <div class="htmlContent"><p>The METR receiver notifies the ADS of the ADS ban and the ADS notifies Klaus of this rule. Klaus responds by taking over manual control of the truck. As this occurs, the driver information system engages, which assumes control of the on-board display while also blocking its use for most non-driving related tasks.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
                 <div class="link"> <span><a href='UN.html#UN-33'>UN-33</a></span>  Trustworthiness — Reliability — Timeline…</div>
@@ -431,18 +493,39 @@
           <td class="id-col"><a id="S-61"></a>S-61</td>
           <td class="description-col" style="padding-left:30px">
             <h3>8.4.8 Turn prohibited</h3>
-            <div class="htmlContent"><p>As Klaus continues to follow the detour, he encounters a temporary police sign that bans large trucks from turning at the intersection. This has been installed to prevent having large trucks travel through a business district. Although the ban against large trucks was not transmitted electronically, Klaus follows the direction on the sign, which takes him to the town's ring road, and he joins the remainder of the detoured traffic on the other side of town.</p></div>
+            <div class="htmlContent"><p>As Klaus continues to follow the detour, he encounters a temporary police sign that bans large trucks from turning at the intersection. This has been installed to prevent having large trucks travel through a business district. Klaus follows the direction on the sign, however, since the ban against large trucks was not transmitted electronically, his METR receiver had not expected Klaus to continue straight and once it realizes that Klaus has deviated from the defined detour route, it immediately contacts the disseminator to retrieve its necessary regulatory rules in the immediate vicinity. In the meantime, the interpreter informs the HMI that rule information is not available and the HMI warns Klaus of this fact; for the interim, Klaus will have to rely on physical traffic control devices. Eventually, the METR receiver obtains the necessary rules and the interpreter updates the HMI so that the warning is removed and rules are once again available through the main display - along with warnings, if and when Klaus violates any rules. Klaus continues to follow signage on the sign and he ends up on the town's ring road; eventually he rejoins the remainder of the detoured traffic on the other side of town at the end of the detour.&nbsp;</p><p>As the detour ends, Klaus re-engages the ADS, as it is no longer banned.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
                 <div class="link"> <span><a href='UN.html#UN-33'>UN-33</a></span>  Trustworthiness — Reliability — Timeline…</div>
+                <div class="link"> <span><a href='UN.html#UN-55'>UN-55</a></span>  User — Rule — Distribution — Prioritizat…</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="S-93"></a>S-93</td>
+          <td class="description-col" style="padding-left:30px">
+            <h3>8.4.9 Crossing a major border</h3>
+            <div class="htmlContent"><p>As Klaus continues along his route, he crosses a national border. While international agreements and electronic technologies have made crossing this border almost seamless, there are changes in laws that impact how his METR receiver and ADS operate. In particular, the METR receiver works with other vehicle systems to address these changes, including:</p><ul><li>The speed limit is now conveyed in miles per hour rather than kilometers per hour</li><li>The definition of a dangerous goods vehicle has changed</li><li>The distinction between urban and rural roads have changed</li><li>The rules on when an ADS can operate a hazardous goods vehicle have changed</li><li>The ADS is required to be certified by the national government to operate within the country</li><li>Stop signs require a 2-second full stop</li></ul><p>From Klaus's perspective, when the ADS is operating nothing seems to change. When Klaus is in control of the vehicle, he may occasionally see warning messages that he would have not seen before (e.g., a warning that he did not stop long enough at the stop sign).</p></div>
+          </td>
+          <td class="discussion-col">
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
+                <div class="link"> <span><a href='UN.html#UN-19'>UN-19</a></span>  User — Awareness — Jurisdictional classi…</div>
+                <div class="link"> <span><a href='UN.html#UN-20'>UN-20</a></span>  User — Awareness — Self-awareness</div>
+                <div class="link"> <span><a href='UN.html#UN-32'>UN-32</a></span>  User — Facility — Jurisdiction</div>
+                <div class="link"> <span><a href='UN.html#UN-87'>UN-87</a></span>  User — Rule — Definition</div>
           </td>
         </tr>
         <tr>
           <td class="id-col"><a id="S-63"></a>S-63</td>
           <td class="description-col" style="padding-left:30px">
-            <h3>8.4.9 On-board management of rules</h3>
+            <h3>8.4.10 On-board management of rules</h3>
             <div class="htmlContent"><p>Over time, the on-board electronics accumulate more and more rules based on the different routes that the truck has driven. As the rules age and expire, the METR receiver deletes them to preserve sufficient space for new rules.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
@@ -455,6 +538,8 @@
             <h2>8.5 Bilo the jet-set professor</h2>
             <div class="htmlContent"></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
           </td>
         </tr>
@@ -464,29 +549,50 @@
             <h3>8.5.1 Overview</h3>
             <div class="htmlContent"><p>Bilo is an international expert in his field and travels a lot. He has concluded that owning a car is an unnecessary expense and he usually relies on ridesourcing and does not have a driver's license. However, today he realizes that he will need to be making several distinct trips to visit multiple field sites and it would be better to have a vehicle at his disposal. He rents a high-end Level-5 ADS-equipped vehicle with no manual controls so that he has confidence that he does not have to worry about local traffic rules.&nbsp;</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
+          </td>
+        </tr>
+        <tr>
+          <td class="id-col"><a id="S-92"></a>S-92</td>
+          <td class="description-col" style="padding-left:30px">
+            <h3>8.5.2 Configuring the car</h3>
+            <div class="htmlContent"><p>As a part of Bilo's rental car account, he has established a number of preferences. As the rental car company assigns a vehicle to his account, it also reconfigures the human-machine interface (HMI) component to use Bilo's preferred language, based on his previously established preferences.&nbsp;</p><p>When METR rules and video image detected rules are received and processed, the interpreter translates the rules to the preferred language for its proper display on the HMI. While Bilo does not necessarily need to see most of these rules, as he is in a high-end Level-5 ADS-equipped vehicle, allowing Bilo the option to display the rules in his preferred language allows him to better understand the decisions being made by the vehicle.&nbsp;</p></div>
+          </td>
+          <td class="discussion-col">
+          </td>
+          <td class="links-col">
+              <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
+                <div class="link"> <span><a href='UN.html#UN-13'>UN-13</a></span>  Trustworthiness — Reliability — Transpar…</div>
+                <div class="link"> <span><a href='UN.html#UN-17'>UN-17</a></span>  Trustworthiness — Reliability — Usabilit…</div>
           </td>
         </tr>
         <tr>
           <td class="id-col"><a id="S-68"></a>S-68</td>
           <td class="description-col" style="padding-left:30px">
-            <h3>8.5.2 Rental car</h3>
-            <div class="htmlContent"><p>In addition to the rules that all other cars retrieve, the rental car also needs to be aware of additional rules (e.g., prohibition against driving on unpaved roads, limits within which the vehicle is allowed to operate) specific to the rental car company's vehicle fleet. While these rules could be provided by other means, the rental car company determined that this was the appropriate way to convey its rules to its vehicle fleet. While Bilo agrees to these rules as a part of the rental contract, the ADS navigation logic needs to be aware of the rules to ensure that they are not violated. As a result, the rental car company authorized its vehicle fleet manager as a regulator to establish these rules and provides its own METR distribution system to provide these rules to its vehicle fleet.</p><p>The rental car company also manages various car rental locations, each with their own parking lots with rules (e.g., one-way aisles/lanes, stop signs at exit points, restricted access) established by the local property manager. The local property manager is a regulator with the authority to establish these types of campus rules. Since non-fleet vehicles may also access the parking area for dropping off customers, campus rules that might be relevant to non-fleet vehicles are distributed using the main METR distribution system used for all other jurisdictional rules. Since these rules are enforced by a private entity (e.g., the rental car company itself with the aid of a tow truck operator), the rules do not have to be approved by any higher jurisdictional entity. The campus regulator may also choose to establish rules to restricted sections of its campus that are only distributed to the vehicle fleet via the campus's own METR distribution system.</p></div>
+            <h3>8.5.3 Rental car</h3>
+            <div class="htmlContent"><p>In addition to the rules that all other cars retrieve, the rental car also needs to be aware of additional rules (e.g., prohibition against driving on unpaved roads, limits within which the vehicle is allowed to operate) specific to the rental car company's vehicle fleet. While these rules could be provided by other means, the rental car company determined that this was the appropriate way to convey its rules to its vehicle fleet. While Bilo agrees to these rules as a part of the rental contract, the ADS navigation logic needs to be aware of the rules to ensure that they are not violated. As a result, the rental car company authorized its vehicle fleet manager as a regulator to establish these rules and provides its own METR distribution system to provide these rules to its vehicle fleet. Once the vehicle fleet manager decides upon a rule, it is entered by one of its two employees that are authorized to do so (i.e., "agents").&nbsp;</p><p>The rental car company also manages various car rental locations, each with their own parking lots with rules (e.g., one-way aisles/lanes, stop signs at exit points, restricted access) established by the local property manager. The local property manager is a regulator with the authority to establish these types of campus rules. Since non-fleet vehicles may also access the parking area for dropping off customers, campus rules that might be relevant to non-fleet vehicles are distributed using the main METR distribution system used for all other jurisdictional rules. Since these rules are enforced by a private entity (e.g., the rental car company itself with the aid of a tow truck operator), the rules do not have to be approved by any higher jurisdictional entity. The campus regulator may also choose to establish rules to restricted sections of its campus that are only distributed to the vehicle fleet via the campus's own METR distribution system.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
-                <div class="link"> <span><a href='UN.html#UN-68'>UN-68</a></span>  Trustworthiness — Reliability — Quality …</div>
                 <div class="link"> <span><a href='UN.html#UN-33'>UN-33</a></span>  Trustworthiness — Reliability — Timeline…</div>
                 <div class="link"> <span><a href='UN.html#UN-14'>UN-14</a></span>  Trustworthiness — Reliability — Usabilit…</div>
+                <div class="link"> <span><a href='UN.html#UN-85'>UN-85</a></span>  Trustworthiness — Security — Integrity —…</div>
                 <div class="link"> <span><a href='UN.html#UN-27'>UN-27</a></span>  User — Disseminator — Discovery</div>
                 <div class="link"> <span><a href='UN.html#UN-45'>UN-45</a></span>  Regulator — Jurisdictions — Regulator</div>
+                <div class="link"> <span><a href='UN.html#UN-46'>UN-46</a></span>  Regulator — Jurisdictions — Agents</div>
           </td>
         </tr>
         <tr>
           <td class="id-col"><a id="S-69"></a>S-69</td>
           <td class="description-col" style="padding-left:30px">
-            <h3>8.5.3 Campus rules</h3>
+            <h3>8.5.4 Campus rules</h3>
             <div class="htmlContent"><p>The first stop on Bilo's trip is the university campus. The university covers multiple square kilometres and has a road network separate from the city transport system. All the transport rules on the campus are governed by the university rather than by the city, except for University Avenue, a city street that traverses the campus. In particular, the default speed limit on the campus streets is lower than in the city due to the high number of pedestrians. The university's transport division is responsible for defining these rules and is registered with the local government as the provider of rules for the campus based on a letter of authorization from the campus owner. However, because the university relies upon city police to issue tickets, all its rules must be approved by the city prior to being enforced due to a clause in the contract with city police.</p><p>The METR receiver in Bilo's vehicle is aware of Bilo's destination and requests rules from all of the necessary jurisdictions, including the national, regional, and city governments along with the private campuses encountered, such as the university.</p><p>As Bilo enters the university campus, the ADS is aware that the jurisdiction has changed but is also aware that it is still on University Avenue and subject to the rules of the city. As the vehicle turns onto a campus street, it recognizes that the campus speed limits and other rules apply.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
@@ -499,19 +605,25 @@
         <tr>
           <td class="id-col"><a id="S-85"></a>S-85</td>
           <td class="description-col" style="padding-left:30px">
-            <h3>8.5.4 Rule discrepancy</h3>
-            <div class="htmlContent"><p>Suddenly, Bilo's ADS detects an inconsistency. METR indicates that the road uses the lower university default speed limit, but the ADS detects a speed limit sign with a slightly higher speed. The ADS obeys the lower speed limit to be safe, but it reports the discrepancy to the report handler. When the report handler receives frequent notices of a discrepancy (based on street volumes), it provides an anonymized report to the rule verifier to investigate the discrepancy. It turns out that the university posted a new speed limit sign but did not yet enter the information into METR. The rule verifier notifies the university and the traffic division received a bit of a slap on the wrist for failing to follow its defined procedures.</p></div>
+            <h3>8.5.5 Rule discrepancy</h3>
+            <div class="htmlContent"><p>Suddenly, Bilo's ADS detects an inconsistency. METR indicates that the road uses the lower university default speed limit, but the vehicle's video imaging system detects a speed limit sign with a slightly higher speed. The interpreter considers that the METR speed limit has not been verified for a couple of years, that it is signed by a less trustworthy source (i.e., a university rather than a large city), and that crowdsourced information started reporting an inconsistency a day earlier; it also notes that its video imaging system reported a high confidence on its reading of the sign. While the interpreter concludes that its video imaging system has more reliable data, it determines that it is safer to follow the lower speed limit and reports this lower speed limit to the ADS. The interpreter also notifies the discrepancy reporter, which then notifies the report handler at a randomized time after it reaches stable WiFi coverage (i.e., the delayed notification increases privacy by preventing the data from being used to identify its location at a point in time).&nbsp;</p><p>When the report handler receives frequent notices of a discrepancy (based on street volumes), it provides an anonymized report to the rule verifier to investigate the discrepancy. It turns out that the university posted a new speed limit sign but did not yet enter the information into METR. The rule verifier notifies the university and the traffic division received a bit of a slap on the wrist for failing to follow its defined procedures. Nonetheless, the discrepancy feedback mechanism allowed the inaccuracy to be corrected within 72 hours.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
+                <div class="link"> <span><a href='UN.html#UN-8'>UN-8</a></span>  Trustworthiness — Reliability — Quality …</div>
+                <div class="link"> <span><a href='UN.html#UN-24'>UN-24</a></span>  Trustworthiness — Security — Integrity —…</div>
                 <div class="link"> <span><a href='UN.html#UN-58'>UN-58</a></span>  Regulator — Conflicts — Physical</div>
           </td>
         </tr>
         <tr>
           <td class="id-col"><a id="S-14"></a>S-14</td>
           <td class="description-col" style="padding-left:30px">
-            <h3>8.5.5 Permitted parking</h3>
+            <h3>8.5.6 Permitted parking</h3>
             <div class="htmlContent"><p>The large university campus requires visitors to have parking passes. During the trip to the university, the ADS identifies its preferred parking spot and interfaces with the METR receiver to obtain the rules for using the parking facility. The ADS then informs Bilo that he will be required to register and pay for a temporary permit to park on campus. Since Bilo is not driving, he fills out the necessary forms using the on-board computer and pays the associated fee. Once payment is confirmed and Bilo's visit is approved, the electronic permit is downloaded to the on-board computer and the on-board computer notifies both the ADS and the METR receiver of the newly received permit. The METR receiver then downloads additional rules for operating inside of the parking lot based on presenting the new certificate.</p><p>As the vehicle reaches the parking lot, it discovers it is controlled by a gate. The on-board computer presents its permit electronically to the gate controller and is granted access without interfering with the METR receiver.</p><p>As the vehicle enters the parking lot for which it has a permit, the ADS continues to control the vehicle, but in this case, the prevailing limiting speed limit is one defined by the vehicle's OEM. Although the university parking lot has a speed limit of 25 kph, the ADS is equipped with internal logic that limits its speed in parking lots to 20 kph. The METR receiver is constantly integrating all the rules it has (e.g., from national, regional, local, campus, fleet, OEM) and provides the resultant rules (i.e., typically the most restrictive rules) to the ADS, which applies them in its performance of the DDT.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
@@ -528,8 +640,10 @@
         <tr>
           <td class="id-col"><a id="S-39"></a>S-39</td>
           <td class="description-col" style="padding-left:30px">
-            <h3>8.5.6 Micromobility and VRUs</h3>
+            <h3>8.5.7 Micromobility and VRUs</h3>
             <div class="htmlContent"><p>Once parked, Bilo exits his vehicle and realizes that he is still some distance from his scheduled meeting location, and he is running late. While Bilo normally avoids e-scooters, he decides that he will need to use one to get to his meeting on time. He notifies his virtual assistant, who arranges the rental and guides him to the nearest e-scooter available. As he approaches the e-scooter, the virtual assistant coordinates with the e-scooter rental company to ensure that access is provided as soon as he boards the vehicle.</p><p>Bilo's virtual assistant also downloads the local e-scooter rule set and informs Bilo of the optimal route to reach the destination. As Bilo is in a bit of a rush, the virtual assistant reminds him several times to not exceed the campus speed limit for e-scooters and to stay within the designated e-scooter lanes.</p><p>After encountering various challenges along the way, Bilo makes it to his meeting on time.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
@@ -545,6 +659,8 @@
             <h2>8.6 Partially blind Fiona</h2>
             <div class="htmlContent"></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
           </td>
         </tr>
@@ -554,6 +670,8 @@
             <h3>8.6.1 Overview</h3>
             <div class="htmlContent"><p>Fiona just bought a new cup and saucer and is headed home from the store. Due to a recent eye injury from an e-scooter incident, she relies heavily on ride-sourced services that she accesses through her smartphone. When she requests service, she enters her origin and destination, and the ride-sourced service determines whether to send a driverless or conventional (driver-provided) car based on current demands and the rules that currently apply.&nbsp;</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
           </td>
         </tr>
@@ -562,6 +680,8 @@
           <td class="description-col" style="padding-left:30px">
             <h3>8.6.2 Navigation to meeting spot</h3>
             <div class="htmlContent"><p>The ride-sourced service notes that Fiona's account is authorized for using special kerbside passenger loading location for those with disabilities. The ride-sourcing service maintains its own database of METR rules by downloading a small number of rule sets. While many of these rules are static and could be maintained separate from METR, the ride-sourcing company has realized that using METR is important to accommodate changes to rules due to special events and other reasons.</p><p>The ride-sourcing service directs both Fiona and the driver of the conventional car that she is to meet to the closest passenger loading location for those with disabilities. The ride-sourcing service also provides an electronic copy of Fiona's permit to the driver with a timestamp so that the driver has evidence that he is authorized to access the restricted passenger loading location. In this case, the closest passenger loading location is co-located with a bus stop.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
@@ -576,6 +696,8 @@
             <h3>8.6.3 Kerbside pickup</h3>
             <div class="htmlContent"><p>As the driver approaches the passenger loading location, the METR receiver provides the driver information system with the rule defining the boundary of the bus-only lane. Although the driver has been informed of his permission to enter the bus lane, the ride-sourcing app has not been integrated with the driver information system so the driver information system is unaware of the permission and it warns the driver that he is infringing upon the bus-only lane. The driver acknowledges the alert once he comes to a stop and then locates Fiona and assists her into his vehicle.</p><p>Now happily seated, Fiona enjoys the ride back to her house.</p><p><br></p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
                 <div class="link"> <span><a href='UN.html#UN-33'>UN-33</a></span>  Trustworthiness — Reliability — Timeline…</div>
@@ -588,6 +710,8 @@
             <h2>8.7 Rosie the delivery robot</h2>
             <div class="htmlContent"></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
           </td>
         </tr>
@@ -597,6 +721,8 @@
             <h3>8.7.1 Overview</h3>
             <div class="htmlContent"><p>Rosie, along with eleven other sibling robots, has a simple task in life: to deliver packages along the last mile from a delivery van, that they all share as a home. However, this seemingly simple task entails knowing all sorts of information about local rules as well as being able to access live data from sensors to avoid collisions with her sister robots and other obstacles along the route, including humans, pets, wild animals, potholes, and other obstructions.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
           </td>
         </tr>
@@ -605,6 +731,8 @@
           <td class="description-col" style="padding-left:30px">
             <h3>8.7.2 Parking the van</h3>
             <div class="htmlContent"><p>Rosie's parent van is a level-4 ADS-equipped vehicle with a broad ODD, and it has a human operator to address any problems that might occur. One morning the van drives to and parks at a location that METR rules indicate is a valid parking spot for the delivery vehicle and is reasonably centrally located to all twelve final delivery points. The van then opens its doors, and all twelve robots swing into action to disperse and deliver packages.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
@@ -621,6 +749,8 @@
             <h3>8.7.3 Sidewalk closure</h3>
             <div class="htmlContent"><p>On the way to the parking spot, Rosie was already provided with all the pathway robot rules for the area that she will be serving. Even though Rosie is only two blocks away from her delivery location, as the doors open on the delivery van, she receives supplemental data from a nearby beacon that the sidewalk she was planning to use is closed due to construction activities. Additional rules inform her that she is not allowed to operate on the sidewalk on the other side of the street either – the local regulator determined that the foot traffic in the area was high enough that the single sidewalk on the street should be limited to human users. And due to her small engine, Rosie is not allowed to operate in the travel lanes of the street. Instead, she is forced to find an alternate route using only sidewalks, which takes her to locations that have not been recently mapped by the delivery firm.&nbsp;</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
                 <div class="link"> <span><a href='UN.html#UN-33'>UN-33</a></span>  Trustworthiness — Reliability — Timeline…</div>
@@ -636,6 +766,8 @@
             <h3>8.7.4 Reporting unexpected conditions</h3>
             <div class="htmlContent"><p>As Rosie traverses the alternate path, dodging various pedestrians and e-scooters along the way, she encounters a section of sidewalk where the map indicates there should be a crosswalk ramp, but no ramp is present. missing ramp is not a problem for most humans, they are just stepping off the kerb and proceeding on their journey, but Rosie is not allowed (and not equipped) to do this. Instead, she notifies her parent van of the situation, and the van reroutes her to use yet another diversion route. The van then notifies its central office, which notifies the report handler to investigate. Rosie eventually makes her delivery and returns to her van to meet up with all her other sisters.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
                 <div class="link"> <span><a href='UN.html#UN-58'>UN-58</a></span>  Regulator — Conflicts — Physical</div>
@@ -646,6 +778,8 @@
           <td class="description-col" style="padding-left:30px">
             <h3>8.7.5 Propagation of conditions</h3>
             <div class="htmlContent"><p>In the meantime, the report handler receives sufficient reports of the missing crosswalk ramp that it notifies the rule verifier of the discrepancy. The rule verifier confirms the missing ramp and works with the map provider to correct the issue. The updates is information then becomes available to other users in the area that indicate their plans to use that sidewalk if they happen to have sidewalk requirements that exceed the current limitation (e.g., vulnerable road users in wheelchairs).</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
@@ -658,6 +792,8 @@
             <h2>8.8 Thibideaux on the Bayou</h2>
             <div class="htmlContent"></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
           </td>
         </tr>
@@ -667,6 +803,8 @@
             <h3>8.8.1 Overview</h3>
             <div class="htmlContent"><p>Thibideaux is enjoying his étouffée when he receives an evacuation order on his smartphone due to approaching "Hurricane Knut". He hops on his airboat and gets to his Level-3 ADS pickup that is parked on the bank of the bayou. As he arrives, he notices that the water has already risen since he parked but luckily, he can still get out before the gators notice he is there.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
           </td>
         </tr>
@@ -674,12 +812,15 @@
           <td class="id-col"><a id="S-1"></a>S-1</td>
           <td class="description-col" style="padding-left:30px">
             <h3>8.8.2 Evacuation orders</h3>
-            <div class="htmlContent"><p>Thibideaux attempts to engage his ADS once he gets on the road, but along with the evacuation order the city issued a couple of ad-hoc METR rules. The first was the evacuation order that everyone should leave specified low-lying areas. These areas are designated as a geofence and contained as a part of the evacuation rule. The second rule was a temporary ban on the use of ADS in the evacuation area and on all evacuation routes. As a result of these rules, Thibideaux is forced to manually drive the car with the assistance of the driver support system.</p><p>&nbsp;</p></div>
+            <div class="htmlContent"><p>Thibideaux attempts to engage his ADS once he gets on the road, but along with the evacuation order the city issued a couple of ad-hoc METR rules. The first was the evacuation order that everyone should leave specified low-lying areas. These areas are designated as a geofence and contained as a part of the evacuation rule. The second rule was a temporary ban on the use of ADS in the evacuation area and on all evacuation routes. These rules were prioritized by the translator, which resulted in them being sent to all receivers contacting the disseminator as soon as contact is made (i.e., to ensure that they are delivered prior to communications being lost). As a result of these rules, Thibideaux is forced to manually drive the car with the assistance of the driver support system.</p><p>&nbsp;</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
                 <div class="link"> <span><a href='UN.html#UN-33'>UN-33</a></span>  Trustworthiness — Reliability — Timeline…</div>
                 <div class="link"> <span><a href='UN.html#UN-67'>UN-67</a></span>  User — Awareness — Mapping</div>
+                <div class="link"> <span><a href='UN.html#UN-55'>UN-55</a></span>  User — Rule — Distribution — Prioritizat…</div>
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
                 <div class="link"> <span><a href='SP.html#SP-20'>SP-20</a></span>  The ConOps should provide practical use …</div>
                 <div class="link"> <span><a href='SP.html#SP-165'>SP-165</a></span>  In some cases, authorities might disable…</div>
@@ -691,6 +832,8 @@
           <td class="description-col" style="padding-left:30px">
             <h3>8.8.3 Manual traffic directions</h3>
             <div class="htmlContent"><p>As Thibideaux creeps along in slow traffic, he approaches the motorway and discovers that the motorway is now operating in evacuation mode with both sides of the motorway being used to evacuate people from the shoreline. A police officer is on-site directing everyone in his lane to enter the motorway - in what is normally the wrong way. Thibideaux follows the orders of the police officer and enters the motorway using what is normally an off-ramp.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
@@ -705,6 +848,8 @@
             <h3>8.8.4 Ignoring signs that are overridden</h3>
             <div class="htmlContent"><p>As Thibideaux enters the motorway, he observes "do not enter" signs along with several signs facing the other way. It is odd driving on the other side of the road, but he understands the situation as this is what agencies have always told him would happen in case of an evacuation.&nbsp;</p><p>Normally, if Thibideaux entered the motorway using the off ramp, his driver information system would be constantly issuing audio and visual warnings due to the wrong way travel. It would also issue electronic warnings to other drivers. Fortunately, his driver information system is aware of the situation. Shortly after the METR receiver received the evacuation rule and rule banning the operation of ADS, it also received a rule indicating that this stretch of motorway was being converted into its hurricane evacuation mode, which includes contraflow operation. This information was provided to the driver information system, and, as a result, it does not issue any of the warnings and is able to distinguish electronic wrong way warnings from other vehicles when they are properly driving in the evacuation direction.</p><p>While the trip takes longer than normal, Thibideaux arrives at his relative's house, where he can safely ride out the storm while enjoying the local gumbo while listening to Buckwheat Zydeco.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
                 <div class="link"> <span><a href='UN.html#UN-39'>UN-39</a></span>  User — Rule — Precedence</div>
@@ -714,12 +859,15 @@
           <td class="id-col"><a id="S-12"></a>S-12</td>
           <td class="description-col" style="padding-left:30px">
             <h3>8.8.5 Reporting inconsistent data</h3>
-            <div class="htmlContent"><p>While Thibideaux likes his relatives, he only likes them so much. He decides to leave shortly after the storm and return to his own home on the bayou. As he starts his truck, his METR receiver is notified that cellular data coverage is unavailable for portions of his route back. As he travels the motorway, he begins to see all the devastation left by the storm, which includes fallen trees, blown-down signs, and high water levels. &nbsp;</p><p>The ADS ban is still in effect, so he is manually driving, but with his driver support system, he is aware of the pre-announced speed limit, stop signs, gator crossing, and other rules based on stored METR information. He is also alerted several times along the trip with ad-hoc rules that have been established by the police to warn of specific high-water areas.&nbsp;</p><p>The driver information system also detects the missing signs and reports the inconsistencies to its disseminator. The disseminator passes the information up to the regulator and within a couple of hours of the storm passing through, the agency is aware of all the missing signs in the region due to various drivers getting back on the roads.</p></div>
+            <div class="htmlContent"><p>While Thibideaux likes his relatives, he only likes them so much. He decides to leave shortly after the storm and return to his own home on the bayou. As he starts his truck, his METR receiver is notified that cellular data coverage is unavailable for portions of his route back. As he travels the motorway, he begins to see all the devastation left by the storm, which includes fallen trees, blown-down signs, and high water levels. &nbsp;</p><p>The ADS ban is still in effect, so he is manually driving, but with his driver information system, he is aware of the pre-announced speed limit, stop signs, gator crossing, and other rules based on stored METR information. He is also alerted several times along the trip with ad-hoc rules that have been established by the police to warn of specific high-water areas. Some of these are broadcast through the use of localized beacons while others are announced a wide-area signal where coverage is available.</p><p>As he travels, the interpreter on-board Thibideaux's vehicle compares the METR rules against what is reported by its cameras. The interpreter of the rules is aware that the area has recently experienced a hurricane and when inconsistencies between METR rules and physical traffic control devices (e.g., mainly due to missing signs coupled with a few temporary detour signs placed by police), it notifies its discrepancy reporter.&nbsp;</p><p>Intermittently, Thibideaux's pickup enters into cellular coverage. Due to the number of discrepancy reports that it is holding, the discrepancy reporter decides to immediately upload the discrepancy reports to the report handler. As the report handler receives multiple reports from independent sources, it notifies the verifier of the reported discrepancies. Normally, the report handler and the verifier would flag the number of distinct discrepancies at different locations as suspect, but because they are aware of the recent hurricane, they accept that these might be real reports worthy of investigation. Within a couple of hours of the storm passing through, the agency is aware of virtually all potentially missing signs in the region due to various drivers reporting discrepancies; unfortunately, the shear volume of missing signs means that it will be a while before they are all investigated and replaced. To minimize the volume of discrepancy reports exchanged, the verifier notifies the translator to issue a notice for each discrepancy reported and to indicate that it is being investigated. At this point, the notices include an indication that interpreters should make their own best judgement of which source to believe (i.e., as the reports are not yet verified, it is inappropriate for the verifier to provide guidance).&nbsp;</p><p>As the verifier investigates each inconsistency, it directs the translator to update its data, for example to:</p><ol><li>Update the notice to indicate that the METR rule should take precedence (e.g., for a missing sign),</li><li>Replace the notice with a new temporary rule (e.g., to reflect a temporary sign deployed by police),</li><li>Update the notice to advise METR users to ignore the traffic control device (e.g., a sign that has been bent such that it is visible to unintended vehicles).</li></ol><p>With this information interpreters are better able to ensure that they provide METR users with trustworthy information in a timely manner.&nbsp;</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
                 <div class="link"> <span><a href='UN.html#UN-2'>UN-2</a></span>  Trustworthiness — Reliability — Availabi…</div>
                 <div class="link"> <span><a href='UN.html#UN-9'>UN-9</a></span>  Trustworthiness — Reliability — Resilien…</div>
+                <div class="link"> <span><a href='UN.html#UN-31'>UN-31</a></span>  User — Conflicts — Observed</div>
               <div class="links-type-name"><i class="fas fa-sign-out-alt"></i> SP:</div>
                 <div class="link"> <span><a href='SP.html#SP-20'>SP-20</a></span>  The ConOps should provide practical use …</div>
                 <div class="link"> <span><a href='SP.html#SP-91'>SP-91</a></span>  A disseminator should not publicize repo…</div>
@@ -731,6 +879,12 @@
           <td class="description-col" style="padding-left:30px">
             <h3>8.8.6 Encountering a disabled traffic signal</h3>
             <div class="htmlContent"><p>The METR receiver is aware of where traffic signals are located and where the vehicle should receive supplemental data with real-time traffic signal timing information. However, as Thibideaux approaches one of the recorded traffic signal locations, no such data is received. The driver information system warns Thibideaux that the signal is not transmitting electronic information as it should be and that he should be extra cautious; it also reminds him of the rule that requires him to treat the intersection as being under a four-way stop sign control when the signal is not displaying any indications. &nbsp;</p><p>Thibideaux realizes that the traffic signal is without power and is not showing any indications. He treats the signal as a four-way stop and proceeds.</p></div>
+          </td>
+          <td class="discussion-col">
+              <div class="comment">
+                <div class="comment-header"><i class="fas fa-comment"></i> 2022-03-10: Kenneth Vaughn</div>
+                <div class="comment-text"><p>Does the METR receiver provide data based on queries or does it notify other entities of rules?</p><p>To what extent does the METR receiver receive and process supplemental data and provide the results to other entities vs the other entities being responsible for processing the supplemental data?&nbsp;</p><p>Example 1: Does a METR receiver include a clock and determine when time-of-day rules are active or is that the responsibility of each METR user?</p><p>Example 2: Does a METR receiver process SPaT information and inform METR users when they have permission to make certain maneuvers or does the METR receiver only provide locations of signals and require the user to handle the SPaT message?</p><p>If the answer is different between Example 1 and Example 2, where is the system boundary line?</p></div>
+              </div>
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
@@ -745,6 +899,8 @@
             <h2>8.9 Larry the lawyer</h2>
             <div class="htmlContent"></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
           </td>
         </tr>
@@ -754,6 +910,8 @@
             <h3>8.9.1 Overview</h3>
             <div class="htmlContent"><p>Larry is a lawyer that has been hired to defend a client for a ticket that was issued because the Level-3 ADS that was engaged at the time of the ticket was supposedly following the speed limit being publicized through METR.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
           </td>
         </tr>
@@ -761,10 +919,14 @@
           <td class="id-col"><a id="S-87"></a>S-87</td>
           <td class="description-col" style="padding-left:30px">
             <h3>8.9.2 Defence</h3>
-            <div class="htmlContent"><p>One of the main pieces of evidence that Larry relies upon is the records that are maintained by the on-board ADS, the METR receiver, and the METR disseminator. Each of these system components record what information it received and made available.&nbsp;</p><p>From these records, Larry can demonstrate that the disseminator was publishing the pre-announced rules of a higher speed limit and that the METR receiver and ADS relied upon this information. He can further show that the rules were initially signed by the translator, in this case the city transport department, and then sent to the collector and disseminator prior to their distribution to his client's vehicle.</p></div>
+            <div class="htmlContent"><p>One of the main pieces of evidence that Larry relies upon is the records that are maintained by the on-board ADS, the METR receiver, and the METR disseminator. Each of these system components record what information it received and made available. Further, each component strictly controls data access to prevents users from inappropriately modifying their logs.</p><p>From these records, Larry can demonstrate that the disseminator was publishing the pre-announced rules of a higher speed limit and that the METR receiver and ADS relied upon this information. He can further show that the rules were initially signed by the translator, in this case the city transport department, and then sent to the collector and disseminator prior to their distribution to his client's vehicle.</p></div>
+          </td>
+          <td class="discussion-col">
           </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
+                <div class="link"> <span><a href='UN.html#UN-13'>UN-13</a></span>  Trustworthiness — Reliability — Transpar…</div>
+                <div class="link"> <span><a href='UN.html#UN-21'>UN-21</a></span>  Trustworthiness — Security — Integrity —…</div>
                 <div class="link"> <span><a href='UN.html#UN-23'>UN-23</a></span>  Trustworthiness — Security — Integrity —…</div>
           </td>
         </tr>
@@ -774,8 +936,11 @@
             <h3>8.9.3 Prosecution</h3>
             <div class="htmlContent"><p>The prosecutor points out that the lower speed limit was due to an ad hoc rule that was put into effect shortly before the ticket was issued. The prosecutor was able to demonstrate that the local RSUs sent out notices of the ad-hoc rule along with a timestamp of when the ad-hoc rule began. For whatever reason, the METR receiver did not have a record of receiving the ad-hoc rule, resulting in the violation and the ticket.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
+                <div class="link"> <span><a href='UN.html#UN-13'>UN-13</a></span>  Trustworthiness — Reliability — Transpar…</div>
                 <div class="link"> <span><a href='UN.html#UN-23'>UN-23</a></span>  Trustworthiness — Security — Integrity —…</div>
           </td>
         </tr>
@@ -785,8 +950,11 @@
             <h3>8.9.4 Rebuttal</h3>
             <div class="htmlContent"><p>Larry can demonstrate that several other vehicles in the area that day did not record any reception of the lower speed limit ad hoc rule and that no vehicles had been discovered that did receive the transmission.</p><p>The issue is left to the courts to decide.</p></div>
           </td>
+          <td class="discussion-col">
+          </td>
           <td class="links-col">
               <div class="links-type-name"><i class="fas fa-sign-in-alt"></i> incorporates:</div>
+                <div class="link"> <span><a href='UN.html#UN-13'>UN-13</a></span>  Trustworthiness — Reliability — Transpar…</div>
                 <div class="link"> <span><a href='UN.html#UN-23'>UN-23</a></span>  Trustworthiness — Security — Integrity —…</div>
           </td>
         </tr>
